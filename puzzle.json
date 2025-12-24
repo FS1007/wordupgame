@@ -1,0 +1,30 @@
+{
+  "title": "Product Management",
+  "description": "📊 What is the MoSCoW framework for Product Management? 🎯",
+  "words": [
+    {
+      "word": "MUSTHAVE",
+      "fragments": ["MUS", "THA", "VE"],
+      "orientation": "horizontal",
+      "fact": "Must Have requirements are critical, non-negotiable features essential for the product launch. Without these, the project is considered a failure and cannot proceed to production."
+    },
+    {
+      "word": "SHOULDHAVE",
+      "fragments": ["SHO", "ULD", "HAV", "E"],
+      "orientation": "vertical",
+      "fact": "Should Have requirements are important but not vital. They can be delayed if necessary, though their absence will have a significant impact on the product's value and user satisfaction."
+    },
+    {
+      "word": "COULDHAVE",
+      "fragments": ["COU", "LDH", "AVE"],
+      "orientation": "horizontal",
+      "fact": "Could Have requirements are desirable but not necessary. These are 'nice to have' features that will be included only if time and resources permit without jeopardizing higher priority items."
+    },
+    {
+      "word": "WONTHAVE",
+      "fragments": ["WON", "THA", "VE"],
+      "orientation": "vertical",
+      "fact": "Won't Have requirements are agreed to be out of scope for the current release. These are explicitly excluded to manage expectations and prevent scope creep, but may be reconsidered for future iterations."
+    }
+  ]
+}
