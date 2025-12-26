@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>WordUp - Product Management Puzzles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            opacity: 0.9;
+        }
+
+        .puzzles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .puzzle-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            border-top: 5px solid #3b82f6;
+            min-height: 280px;
+        }
+
+        .puzzle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .puzzle-card:active {
+            transform: translateY(-5px);
+        }
+
+        .puzzle-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .puzzle-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1e40af;
+            line-height: 1.3;
+        }
+
+        .puzzle-theme {
+            font-size: 1.05em;
+            color: #3b82f6;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .puzzle-description {
+            font-size: 0.95em;
+            color: #6b7280;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .puzzle-difficulty {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.9em;
+            color: #6b7280;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.8;
+            font-size: 1em;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            header {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+                line-height: 1.4;
+            }
+
+            .puzzles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .puzzle-card {
+                padding: 25px 20px;
+                min-height: auto;
+            }
+
+            .puzzle-icon {
+                font-size: 3.5em;
+                margin-bottom: 10px;
+            }
+
+            .puzzle-title {
+                font-size: 1.3em;
+            }
+
+            .puzzle-theme {
+                font-size: 0.95em;
+            }
+
+            .puzzle-description {
+                font-size: 0.9em;
+            }
+
+            footer {
+                margin-top: 40px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+
+            .puzzle-card {
+                padding: 20px 15px;
+            }
+
+            .puzzle-icon {
+                font-size: 3em;
+            }
+
+            .puzzle-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧩 WordUp</h1>
+            <p class="subtitle">Product Management Puzzles - Master PM Frameworks & Tools</p>
+        </header>
+
+        <div class="puzzles-grid">
+            <!-- Three Pillars Puzzle - Mobile Optimized -->
+            <a href="product-pillars/" class="puzzle-card">
+                <div class="puzzle-icon">🏛️📋</div>
+                <div class="puzzle-title">What are the Three Pillars of Product Management?</div>
+                <div class="puzzle-theme">PM Fundamentals</div>
+                <div class="puzzle-description">
+                    Master the core PM framework! Learn Discovery, Planning, and Development - the foundation of product success.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>3 words</strong> • 2-3 fragments • Mobile-Friendly ⭐
+                </div>
+            </a>
+
+            <!-- PM Basics Puzzle - Mobile Optimized -->
+            <a href="product-basics/" class="puzzle-card">
+                <div class="puzzle-icon">🎯💡</div>
+                <div class="puzzle-title">What are key Product Management concepts?</div>
+                <div class="puzzle-theme">PM Fundamentals</div>
+                <div class="puzzle-description">
+                    Master essential PM terminology! Learn about Roadmap, Backlog, Sprint, and Metrics - perfect for beginners.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>4 words</strong> • 2-3 fragments • Mobile-Friendly ⭐
+                </div>
+            </a>
+
+            <!-- MoSCoW Framework Puzzle -->
+            <a href="product-moscow/" class="puzzle-card">
+                <div class="puzzle-icon">📊🎯</div>
+                <div class="puzzle-title">What is the MoSCoW framework for Product Management?</div>
+                <div class="puzzle-theme">Prioritization Framework</div>
+                <div class="puzzle-description">
+                    Master the MoSCoW prioritization framework! Learn about Must Have, Should Have, Could Have, and Won't Have categories.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>4 words</strong> • 3-letter fragments • Framework
+                </div>
+            </a>
+
+            <!-- AARRR Pirate Metrics Puzzle -->
+            <a href="product-aarrr/" class="puzzle-card">
+                <div class="puzzle-icon">🏴‍☠️⚓</div>
+                <div class="puzzle-title">What is the AARRR Pirate Metrics Framework?</div>
+                <div class="puzzle-theme">Growth Metrics</div>
+                <div class="puzzle-description">
+                    Master the AARRR framework for growth! Discover Acquisition, Activation, Retention, Referral, and Revenue metrics.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>5 words</strong> • 3-letter fragments • Analytics
+                </div>
+            </a>
+
+            <!-- Product Management Tools Puzzle -->
+            <a href="product-tools/" class="puzzle-card">
+                <div class="puzzle-icon">🛠️💼</div>
+                <div class="puzzle-title">Which tools do top Product Managers rely on daily?</div>
+                <div class="puzzle-theme">PM Toolkit</div>
+                <div class="puzzle-description">
+                    Identify the essential tools in every PM's toolkit! From documentation to wireframing to roadmapping.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>5 words</strong> • 3-letter fragments • Tools
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            <p>Built for Product Managers • Drag, snap, and master PM frameworks!</p>
+        </footer>
+    </div>
+</body>
+</html>
