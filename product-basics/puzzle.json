@@ -1,0 +1,30 @@
+{
+  "title": "Product Management",
+  "description": "🎯 What are key Product Management concepts? 💼",
+  "words": [
+    {
+      "word": "ROADMAP",
+      "fragments": ["ROAD", "MAP"],
+      "orientation": "horizontal",
+      "fact": "A product roadmap maps out your product's vision and direction over time. It communicates the why and what behind what you're building to stakeholders."
+    },
+    {
+      "word": "BACKLOG",
+      "fragments": ["BACK", "LOG"],
+      "orientation": "vertical",
+      "fact": "The product backlog is a prioritized list of work for the development team. Items at the top are detailed and ready to build, while lower items are less defined."
+    },
+    {
+      "word": "SPRINT",
+      "fragments": ["SPR", "INT"],
+      "orientation": "horizontal",
+      "fact": "A sprint is a time-boxed period (1-4 weeks) when a team completes a set amount of work. Sprints enable teams to ship incremental value regularly."
+    },
+    {
+      "word": "METRICS",
+      "fragments": ["MET", "RICS"],
+      "orientation": "vertical",
+      "fact": "Product metrics track and assess product performance. Key metrics include user engagement, retention rate, conversion rate, and customer satisfaction."
+    }
+  ]
+}
