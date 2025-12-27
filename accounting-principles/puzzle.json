@@ -1,0 +1,30 @@
+{
+  "title": "Financial Accounting",
+  "description": "💰 What are the GAAP Accounting Principles? 📊",
+  "words": [
+    {
+      "word": "CONSISTENCY",
+      "fragments": ["CON", "SIS", "TENCY"],
+      "orientation": "horizontal",
+      "fact": "Consistency requires using the same accounting methods from period to period. This allows stakeholders to compare financial statements across different time periods."
+    },
+    {
+      "word": "MATERIALITY",
+      "fragments": ["MATE", "RIAL", "ITY"],
+      "orientation": "vertical",
+      "fact": "Materiality means information should be disclosed if it could influence economic decisions of users. Immaterial items can be treated in a simpler, more cost-effective way."
+    },
+    {
+      "word": "RELEVANCE",
+      "fragments": ["RELE", "VANCE"],
+      "orientation": "horizontal",
+      "fact": "Relevance ensures financial information is capable of making a difference in decisions. Information must be timely and have predictive or confirmatory value."
+    },
+    {
+      "word": "RELIABILITY",
+      "fragments": ["RELI", "ABIL", "ITY"],
+      "orientation": "vertical",
+      "fact": "Reliability means financial information must be verifiable, neutral, and faithfully represent economic reality. Users must be able to depend on the information being accurate."
+    }
+  ]
+}
