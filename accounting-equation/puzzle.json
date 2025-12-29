@@ -1,0 +1,24 @@
+{
+  "title": "Financial Accounting - Beginner",
+  "description": "📚 What is the Accounting Equation? 📊",
+  "words": [
+    {
+      "word": "ASSETS",
+      "fragments": ["ASS", "ETS"],
+      "orientation": "horizontal",
+      "fact": "Assets are resources owned by a business that have economic value. Examples include cash, inventory, equipment, and accounts receivable."
+    },
+    {
+      "word": "LIABILITIES",
+      "fragments": ["LIA", "BIL", "ITY"],
+      "orientation": "vertical",
+      "fact": "Liabilities are obligations the business owes to others. Examples include loans, accounts payable, and accrued expenses."
+    },
+    {
+      "word": "EQUITY",
+      "fragments": ["EQU", "ITY"],
+      "orientation": "horizontal",
+      "fact": "Equity represents the owner's stake in the business. The accounting equation is: Assets = Liabilities + Equity."
+    }
+  ]
+}

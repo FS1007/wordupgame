@@ -1,0 +1,24 @@
+{
+  "title": "Financial Accounting - Advanced",
+  "description": "🎯 What are the Key Financial Ratios? 📊",
+  "words": [
+    {
+      "word": "LIQUIDITY",
+      "fragments": ["LIQ", "UID", "ITY"],
+      "orientation": "horizontal",
+      "fact": "Liquidity ratios measure a company's ability to pay short-term obligations. Examples include current ratio and quick ratio."
+    },
+    {
+      "word": "SOLVENCY",
+      "fragments": ["SOL", "VEN", "CY"],
+      "orientation": "vertical",
+      "fact": "Solvency ratios measure long-term financial stability and ability to meet long-term obligations. Examples include debt-to-equity and interest coverage ratios."
+    },
+    {
+      "word": "PROFITABILITY",
+      "fragments": ["PROF", "IT", "ABI", "LI", "TY"],
+      "orientation": "vertical",
+      "fact": "Profitability ratios measure how efficiently a company generates profit. Examples include gross margin, operating margin, ROE, and ROA."
+    }
+  ]
+}

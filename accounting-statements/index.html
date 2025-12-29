@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6CE3JE34J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-D6CE3JE34J');
+        gtag('event', 'puzzle_started', {'puzzle_name': 'Financial Statements', 'category': 'Financial Accounting', 'difficulty': 'Professional'});
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Statements - WordUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🧩 WordUp</h1>
+        <p id="puzzle-description">Loading puzzle...</p>
+    </header>
+    <main>
+        <div id="game-area"></div>
+    </main>
+    <div id="victory-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-victory" class="close-btn">×</button>
+            <h2>🎉 Congratulations!</h2>
+            <p class="victory-message">You've completed the puzzle!</p>
+            <div id="facts-container">
+                <h3>Did you know?</h3>
+                <ul id="facts-list"></ul>
+            </div>
+            <button id="new-puzzle-btn" class="btn-primary">Hope you enjoyed! Visit tomorrow for a new puzzle 🎮</button>
+        </div>
+    </div>
+    <aside class="instructions" id="instructions-panel">
+        <div>
+            <button id="close-instructions" class="close-btn">×</button>
+            <h3>How to Play</h3>
+            <ol>
+                <li>Drag word fragments to position them</li>
+                <li>Connect fragments to form complete words</li>
+                <li>Completed words turn green and lock</li>
+                <li>Find all words to win!</li>
+            </ol>
+        </div>
+    </aside>
+    <button id="help-btn" class="help-btn" title="How to play">?</button>
+    <audio id="success-sound" preload="auto">
+        <source src="success.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>

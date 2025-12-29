@@ -1,0 +1,30 @@
+{
+  "title": "Financial Accounting - Professional",
+  "description": "💼 What are the Key Financial Statements? 📊",
+  "words": [
+    {
+      "word": "BALANCE",
+      "fragments": ["BAL", "ANCE"],
+      "orientation": "horizontal",
+      "fact": "Balance Sheet shows assets, liabilities, and equity at a specific point in time. It must always balance: Assets = Liabilities + Equity."
+    },
+    {
+      "word": "INCOME",
+      "fragments": ["IN", "COME"],
+      "orientation": "horizontal",
+      "fact": "Income Statement shows revenues and expenses over a period. Also called Profit & Loss (P&L), it reveals whether the company made a profit or loss."
+    },
+    {
+      "word": "CASHFLOW",
+      "fragments": ["CASH", "FLOW"],
+      "orientation": "vertical",
+      "fact": "Cash Flow Statement tracks cash inflows and outflows from operating, investing, and financing activities. Cash is king in business!"
+    },
+    {
+      "word": "RETAINED",
+      "fragments": ["RET", "AIN", "ED"],
+      "orientation": "vertical",
+      "fact": "Retained Earnings are cumulative profits kept in the business rather than paid as dividends. They connect the income statement to the balance sheet."
+    }
+  ]
+}
