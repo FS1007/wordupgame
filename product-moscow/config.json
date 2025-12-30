@@ -1,0 +1,27 @@
+{
+  "theme": {
+    "name": "blue",
+    "colors": {
+      "primary": "#3b82f6",
+      "primaryDark": "#1e3a8a",
+      "primaryHover": "#2563eb",
+      "gradientStart": "#1e3a8a",
+      "gradientEnd": "#3b82f6",
+      "pieceBackground": "white",
+      "completedBg": "#dbeafe",
+      "completedBorder": "#2563eb",
+      "textDark": "#1e40af"
+    }
+  },
+
+  "gameSettings": {
+    "snapDistance": 150,
+    "snapTolerance": 5,
+    "completionDelay": 350,
+    "cellSize": {
+      "desktop": 50,
+      "tablet": 40,
+      "mobile": 35
+    }
+  }
+}

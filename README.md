@@ -1,6 +1,31 @@
-# 🧩 WordUp - Multi-Puzzle Setup
+# 🧩 WordUp - Educational Puzzle Game
 
-## 📁 Folder Structure
+**Status:** 🚧 Refactoring in progress (1/10 puzzles migrated to shared architecture)
+
+## 🏗️ Architecture
+
+**Moving from:** Duplicated code in each puzzle folder (10 copies of game engine)
+**Moving to:** Shared core with per-puzzle configuration
+
+```
+wordupgame/
+├── shared/                    # NEW: Shared game engine
+│   ├── core.js               # Game logic (Safari 11.1+)
+│   └── styles.css            # Base styles with CSS variables
+├── accounting-principles/     # ✅ REFACTORED
+│   ├── index.html            # Links to ../shared/
+│   ├── puzzle.json           # Word data (auto-generated)
+│   └── config.json           # Theme + UX overrides (optional)
+└── [9 other puzzles...]      # TODO: Migrate to shared code
+```
+
+**Benefits:** Single source of truth for bug fixes, easy UX experimentation via config.json, no code divergence.
+
+See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for details.
+
+---
+
+## 📁 Folder Structure (Legacy)
 
 ```
 bonza-multi/
