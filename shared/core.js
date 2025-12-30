@@ -44,6 +44,7 @@ var GRID_SIZE = 10; // Snap to 10px grid for organized alignment
 
 var pieces = [];
 var completedWords = new Set();
+var audioUnlocked = false;
 
 // DOM Elements (initialized on load)
 var gameArea = null;
@@ -109,6 +110,21 @@ function getCellSizeForViewport() {
     if (width <= 480) return gameSettings.cellSize.mobile;
     if (width <= 768) return gameSettings.cellSize.tablet;
     return gameSettings.cellSize.desktop;
+}
+
+// Unlock audio for mobile Safari (requires user gesture)
+function unlockAudio() {
+    if (audioUnlocked || !successSound) return;
+
+    // Play and immediately pause to unlock audio context
+    successSound.play().then(function() {
+        successSound.pause();
+        successSound.currentTime = 0;
+        audioUnlocked = true;
+        console.log('🔊 Audio unlocked for mobile Safari');
+    }).catch(function(err) {
+        console.log('Audio unlock attempt (will retry on next interaction):', err);
+    });
 }
 
 // Safari 11.1 compatible deep merge (no spread operator)
@@ -512,6 +528,9 @@ function handleDragStart(e) {
         return;
     }
 
+    // Unlock audio on first interaction (required for mobile Safari)
+    unlockAudio();
+
     draggedPiece = e.target;
     draggedPiece.classList.add('dragging');
 
@@ -581,6 +600,9 @@ function handleTouchStart(e) {
     }
 
     e.preventDefault();
+
+    // Unlock audio on first interaction (required for mobile Safari)
+    unlockAudio();
 
     touchedPiece = target;
     touchedPiece.classList.add('dragging');
