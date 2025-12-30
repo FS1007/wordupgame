@@ -1,183 +1,86 @@
 # 🧩 WordUp - Educational Puzzle Game
 
-**Status:** 🚧 Refactoring in progress (1/10 puzzles migrated to shared architecture)
+Drag-and-drop word puzzle game (Bonza-style) with 10 educational puzzles covering accounting and product management topics.
 
 ## 🏗️ Architecture
 
-**Moving from:** Duplicated code in each puzzle folder (10 copies of game engine)
-**Moving to:** Shared core with per-puzzle configuration
-
 ```
 wordupgame/
-├── shared/                    # NEW: Shared game engine
-│   ├── core.js               # Game logic (Safari 11.1+)
-│   └── styles.css            # Base styles with CSS variables
-├── accounting-principles/     # ✅ REFACTORED
+├── shared/
+│   ├── core.js               # Game engine (Safari 11.1+)
+│   ├── styles.css            # Base styles with CSS variables
+│   └── sounds/               # Audio assets
+├── accounting-principles/
 │   ├── index.html            # Links to ../shared/
-│   ├── puzzle.json           # Word data (auto-generated)
-│   └── config.json           # Theme + UX overrides (optional)
-└── [9 other puzzles...]      # TODO: Migrate to shared code
+│   ├── puzzle.json           # Word data
+│   └── config.json           # Theme + settings (optional)
+└── [other puzzles...]
 ```
 
-**Benefits:** Single source of truth for bug fixes, easy UX experimentation via config.json, no code divergence.
-
-See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for details.
-
----
-
-## 📁 Folder Structure (Legacy)
-
-```
-bonza-multi/
-├── index.html                    # Main landing page (puzzle selector)
-├── christmas-cookies/            # Puzzle 1
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── puzzle.json
-├── christmas-cities/             # Puzzle 2
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── puzzle.json
-├── product-moscow/               # Puzzle 3
-│   ├── index.html
-│   ├── style.css (professional blue theme)
-│   ├── script.js
-│   └── puzzle.json
-└── tech-millionaires/            # Puzzle 4
-    ├── index.html
-    ├── style.css
-    ├── script.js
-    └── puzzle.json
-```
+See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for technical details.
 
 ## 🌐 Live URLs
 
-Once deployed to GitHub Pages, your URLs will be:
+Once deployed to GitHub Pages:
 
-- **Main Landing**: `https://username.github.io/bonza-multi/`
-- **Christmas Cookies**: `https://username.github.io/bonza-multi/christmas-cookies/`
-- **Christmas Cities**: `https://username.github.io/bonza-multi/christmas-cities/`
-- **Product MoSCoW**: `https://username.github.io/bonza-multi/product-moscow/`
-- **Tech Millionaires**: `https://username.github.io/bonza-multi/tech-millionaires/`
+- **Main Landing**: `https://username.github.io/wordupgame/`
+- **Individual Puzzles**: `https://username.github.io/wordupgame/[puzzle-name]/`
 
-## 🚀 Deployment Instructions
+## 🚀 Deployment
 
-### GitHub Pages Setup
+See [`DEPLOYMENT-GUIDE.md`](./DEPLOYMENT-GUIDE.md) for GitHub Pages setup instructions.
 
-1. **Create Repository**:
-   - Go to GitHub
-   - Create new repository named `bonza-multi` (or any name)
-   - Make it public
+## ✨ Features
 
-2. **Upload Files**:
-   - Upload the entire `bonza-multi` folder contents to your repository
-   - Make sure to keep the folder structure intact
+- **Interactive Animations**: Smooth drag-and-drop with spring physics and wobble effects
+- **Visual Polish**: Gradient backgrounds, depth shadows, and subtle idle animations
+- **Celebration Effects**: Particle bursts and confetti when completing words
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Theme Support**: Easy color customization via `config.json`
+- **Safari 11.1+ Compatible**: No modern ES6 features that break older browsers
 
-3. **Enable GitHub Pages**:
-   - Go to Settings → Pages
-   - Source: `main` branch, `/ (root)` folder
-   - Save
+## 🎓 Puzzles
 
-4. **Access Your Puzzles**:
-   - Main page: `https://username.github.io/bonza-multi/`
-   - Individual puzzles: Add folder name to URL
+10 educational puzzles covering:
+- **Accounting**: GAAP principles, financial statements, accounting equation
+- **Product Management**: MoSCoW prioritization, agile methodologies
 
-## 🎯 Sharing Links
+## 🔧 Local Development
 
-### With Family & Friends (Christmas Puzzles):
-- **Cookies**: Share `yoursite.com/christmas-cookies/`
-- **Cities**: Share `yoursite.com/christmas-cities/`
+```bash
+# Start local server (required for fetch API)
+python3 -m http.server 8000
 
-### With Colleagues (Professional Puzzles):
-- **MoSCoW Framework**: Share `yoursite.com/product-moscow/`
-- **Tech Millionaires**: Share `yoursite.com/tech-millionaires/`
+# Visit puzzle
+open http://localhost:8000/accounting-principles/
+```
 
-## ➕ Adding New Puzzles
+## 📚 Documentation
 
-### Quick Setup:
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Technical design and implementation
+- **[DEPLOYMENT-GUIDE.md](./DEPLOYMENT-GUIDE.md)** - GitHub Pages setup
+- **[CLAUDE.md](./CLAUDE.md)** - Quick context for AI assistants
 
-1. **Create new folder**:
-   ```
-   mkdir my-new-puzzle
-   ```
+## 🎨 Customization
 
-2. **Copy template files**:
-   ```
-   cp christmas-cookies/* my-new-puzzle/
-   ```
+Each puzzle can override default settings via `config.json`:
 
-3. **Update puzzle.json** with your new content
-
-4. **Update index.html** (main landing page) to add your new puzzle card
-
-5. **Deploy** and your new puzzle will be live at:
-   ```
-   https://username.github.io/bonza-multi/my-new-puzzle/
-   ```
-
-## 🎨 Customizing Themes
-
-Each puzzle folder has its own `style.css`:
-
-- **Christmas puzzles**: Green theme (RGB 5, 99, 1)
-- **Professional puzzles**: Blue theme (#1e3a8a to #3b82f6)
-
-To create a new theme:
-1. Copy `style.css` from any folder
-2. Change the colors in the CSS file
-3. Save to your new puzzle folder
-
-## 📊 Benefits of This Structure
-
-✅ **Independent URLs**: Share specific puzzles without confusion
-✅ **Different Themes**: Each puzzle can have unique styling
-✅ **Easy Management**: Add/remove puzzles without affecting others
-✅ **Clean URLs**: Professional-looking links for sharing
-✅ **Scalable**: Add unlimited puzzles as separate folders
-
-## 🎓 Puzzle Collection
-
-### Holiday Theme (Christmas Colors)
-1. **Christmas Cookies** - 5 tempting holiday treats
-2. **Christmas Cities** - 5 US towns with unique Christmas themes
-
-### Professional Theme (Blue Colors)
-3. **MoSCoW Framework** - Product Management prioritization
-4. **Tech Millionaires** - 7 technology billionaires
-
-## 💡 Pro Tips
-
-1. **Custom Domain**: Point `puzzles.yourcompany.com` to GitHub Pages
-2. **Analytics**: Add Google Analytics to each puzzle's `index.html`
-3. **SEO**: Update meta tags in each puzzle's HTML
-4. **Branding**: Customize the landing page with your logo
-
-## 🆘 Troubleshooting
-
-**Puzzle doesn't load?**
-- Check that `puzzle.json` exists in the folder
-- Verify JSON format is valid
-
-**Styling looks wrong?**
-- Ensure `style.css` exists in puzzle folder
-- Check browser console for errors
-
-**404 Error?**
-- Verify folder names match exactly
-- GitHub Pages needs a few minutes to update
-
-## 📈 Next Steps
-
-- ✅ Deploy to GitHub Pages
-- ✅ Test all puzzle URLs
-- ✅ Share with friends and colleagues
-- ✅ Add Google Analytics (optional)
-- ✅ Setup custom domain (optional)
+```json
+{
+  "theme": {
+    "colors": {
+      "primary": "#10b981",
+      "gradientStart": "#065f46",
+      "gradientEnd": "#10b981"
+    }
+  },
+  "gameSettings": {
+    "snapDistance": 150,
+    "snapTolerance": 5
+  }
+}
+```
 
 ---
 
-**Ready to Deploy!** Upload this entire folder to GitHub and enable Pages.
-
-*Built for the 2025 season*
+**Ready to play!** Visit any puzzle folder in your browser.

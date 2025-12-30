@@ -597,6 +597,7 @@ function trySnapToPieces(piece, x, y) {
 
     var bestSnap = null;
     var bestDistance = SNAP_DISTANCE;
+    var attractedPiece = null;
 
     for (var i = 0; i < sameWordPieces.length; i++) {
         var otherPiece = sameWordPieces[i];
@@ -694,6 +695,16 @@ function trySnapToPieces(piece, x, y) {
     if (bestSnap) {
         piece.style.left = bestSnap.x + 'px';
         piece.style.top = bestSnap.y + 'px';
+
+        // Add snap animation class temporarily
+        piece.classList.add('snapping');
+        setTimeout(function() {
+            piece.classList.remove('snapping');
+        }, 300);
+
+        // Create ripple effect at snap point
+        createRippleEffect(bestSnap.x + pieceRect.width / 2, bestSnap.y + pieceRect.height / 2);
+
         console.log('  ✓ Snapped to ' + bestSnap.side.toUpperCase() + ' of "' + bestSnap.other + '" (distance: ' + bestSnap.distance.toFixed(0) + 'px)');
         return true;
     }
@@ -795,6 +806,9 @@ function markWordAsComplete(wordIndex, wordPieces) {
 
     console.log('🔒 Word locked: ' + puzzleConfig.words[wordIndex].word);
 
+    // Create celebration effect
+    createWordCompletionEffect(wordPieces);
+
     // Track word completion in Google Analytics
     if (typeof gtag !== 'undefined') {
         gtag('event', 'word_completed', {
@@ -811,6 +825,114 @@ function markWordAsComplete(wordIndex, wordPieces) {
             console.log('Audio play prevented:', err);
             // Browsers may block autoplay, but that's okay
         });
+    }
+}
+
+// ===================================
+// VISUAL EFFECTS
+// ===================================
+
+function createRippleEffect(x, y) {
+    var ripple = document.createElement('div');
+    ripple.className = 'ripple-effect';
+
+    var gameAreaRect = gameArea.getBoundingClientRect();
+    var size = 100;
+
+    ripple.style.left = (x - size / 2) + 'px';
+    ripple.style.top = (y - size / 2) + 'px';
+    ripple.style.width = size + 'px';
+    ripple.style.height = size + 'px';
+
+    gameArea.appendChild(ripple);
+
+    setTimeout(function() {
+        gameArea.removeChild(ripple);
+    }, 800);
+}
+
+function createWordCompletionEffect(wordPieces) {
+    if (wordPieces.length === 0) return;
+
+    // Get the center of the completed word
+    var totalX = 0;
+    var totalY = 0;
+
+    wordPieces.forEach(function(piece) {
+        var rect = piece.element.getBoundingClientRect();
+        var gameAreaRect = gameArea.getBoundingClientRect();
+        totalX += (rect.left - gameAreaRect.left) + rect.width / 2;
+        totalY += (rect.top - gameAreaRect.top) + rect.height / 2;
+    });
+
+    var centerX = totalX / wordPieces.length;
+    var centerY = totalY / wordPieces.length;
+
+    // Create particle burst
+    createParticleBurst(centerX, centerY, 12);
+
+    // Create confetti
+    createConfetti(centerX, centerY, 8);
+}
+
+function createParticleBurst(x, y, count) {
+    var colors = ['#3b82f6', '#2563eb', '#1d4ed8', '#60a5fa', '#93c5fd'];
+
+    for (var i = 0; i < count; i++) {
+        var particle = document.createElement('div');
+        particle.className = 'particle';
+
+        var angle = (Math.PI * 2 * i) / count;
+        var distance = 40 + Math.random() * 40;
+        var tx = Math.cos(angle) * distance;
+        var ty = Math.sin(angle) * distance;
+
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+        particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.setProperty('--tx', tx + 'px');
+        particle.style.setProperty('--ty', ty + 'px');
+
+        gameArea.appendChild(particle);
+
+        setTimeout(function(p) {
+            return function() {
+                if (p.parentNode) {
+                    gameArea.removeChild(p);
+                }
+            };
+        }(particle), 800);
+    }
+}
+
+function createConfetti(x, y, count) {
+    var colors = ['#f43f5e', '#ec4899', '#a855f7', '#3b82f6', '#10b981', '#f59e0b'];
+    var shapes = ['circle', 'square'];
+
+    for (var i = 0; i < count; i++) {
+        var confetti = document.createElement('div');
+        confetti.className = 'confetti';
+
+        var offsetX = (Math.random() - 0.5) * 100;
+        var color = colors[Math.floor(Math.random() * colors.length)];
+        var isCircle = Math.random() > 0.5;
+
+        confetti.style.left = (x + offsetX) + 'px';
+        confetti.style.top = y + 'px';
+        confetti.style.backgroundColor = color;
+        confetti.style.borderRadius = isCircle ? '50%' : '0';
+        confetti.style.animationDelay = (Math.random() * 0.3) + 's';
+        confetti.style.animationDuration = (1.5 + Math.random() * 0.5) + 's';
+
+        gameArea.appendChild(confetti);
+
+        setTimeout(function(c) {
+            return function() {
+                if (c.parentNode) {
+                    gameArea.removeChild(c);
+                }
+            };
+        }(confetti), 2500);
     }
 }
 
