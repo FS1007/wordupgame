@@ -1,0 +1,30 @@
+{
+  "title": "What are the key Agile Ceremonies?",
+  "description": "Master Agile rituals! Stack vertical word fragments to discover the essential Scrum ceremonies.",
+  "words": [
+    {
+      "word": "PLANNING",
+      "fragments": ["PLAN", "NI", "NG"],
+      "orientation": "vertical",
+      "fact": "<strong>Sprint Planning:</strong> Team meeting at the start of each sprint to define sprint goal and select backlog items. Typically 2-4 hours for a 2-week sprint."
+    },
+    {
+      "word": "DAILY",
+      "fragments": ["DAI", "LY"],
+      "orientation": "vertical",
+      "fact": "<strong>Daily Standup:</strong> 15-minute timeboxed event where team members share what they did yesterday, plan for today, and identify blockers."
+    },
+    {
+      "word": "REVIEW",
+      "fragments": ["REV", "IEW"],
+      "orientation": "vertical",
+      "fact": "<strong>Sprint Review:</strong> Team demonstrates completed work to stakeholders, gathers feedback, and discusses what to build next. Focus on product increment."
+    },
+    {
+      "word": "RETROSPECTIVE",
+      "fragments": ["RETRO", "SPEC", "TIVE"],
+      "orientation": "vertical",
+      "fact": "<strong>Sprint Retrospective:</strong> Team reflects on the sprint process, identifies what went well, what needs improvement, and creates action items for the next sprint."
+    }
+  ]
+}
