@@ -16,5 +16,7 @@
     "snapDistance": 200,
     "snapTolerance": 30,
     "completionDelay": 100
-  }
+  },
+  "category": "pm",
+  "archiveLink": "../archive-pm.html"
 }

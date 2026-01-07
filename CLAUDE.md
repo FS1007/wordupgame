@@ -37,6 +37,10 @@ python3 -m http.server 8000
 open http://localhost:8000/accounting-principles/
 ```
 
+## Testing
+- Install project dev tools: `npm install` (adds Playwright + dependencies) and `npx playwright install`.
+- Run the suite via `npx playwright test` once the local server is up; the config spins up `python3 -m http.server 8000` automatically.
+
 ## Files
 - `ARCHITECTURE.md` - Technical design & implementation details
 - `README.md` - Deployment guide & project overview
