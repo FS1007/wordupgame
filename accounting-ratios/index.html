@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,54 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-D6CE3JE34J');
+        gtag('event', 'puzzle_started', {'puzzle_name': 'Financial Ratios', 'category': 'Financial Accounting'});
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Ratios - WordUp</title>
+    <title>Financial Ratios - WordUp Accounting</title>
 
     <!-- Shared CSS with theme variables -->
     <link rel="stylesheet" href="../shared/styles.css">
+    <style>
+        /* Additional styles for dual CTA buttons */
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .button-group .btn-primary {
+            flex: 1;
+        }
+
+        .btn-secondary-cta {
+            flex: 1;
+            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .btn-secondary-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,7 +75,11 @@
                 <h3>Did you know?</h3>
                 <ul id="facts-list"></ul>
             </div>
-            <button id="new-puzzle-btn" class="btn-primary">Hope you enjoyed! Visit tomorrow for a new puzzle 🎮</button>
+            <!-- Dual CTA Buttons -->
+            <div class="button-group">
+                <button id="new-puzzle-btn" class="btn-primary">🌅 Come Back Tomorrow</button>
+                <a href="../archive-accounting.html" class="btn-secondary-cta">🎮 Play More Puzzles</a>
+            </div>
         </div>
     </div>
     <aside class="instructions" id="instructions-panel">
@@ -55,5 +101,11 @@
 
     <!-- Shared game engine -->
     <script src="../shared/core.js"></script>
+    <script>
+        // "Come Back Tomorrow" redirects to homepage
+        document.getElementById('new-puzzle-btn').addEventListener('click', function() {
+            window.location.href = '../index.html';
+        });
+    </script>
 </body>
 </html>
