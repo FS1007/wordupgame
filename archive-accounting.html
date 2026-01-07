@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6CE3JE34J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-D6CE3JE34J');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Accounting Puzzles Archive - WordUp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+        }
+
+        .archive-count {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        /* Difficulty Sections */
+        .difficulty-section {
+            margin: 50px 0;
+        }
+
+        .difficulty-title {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 5px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .puzzles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Puzzle Card */
+        .puzzle-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            border-top: 4px solid #10b981;
+        }
+
+        .puzzle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .puzzle-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .puzzle-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1e293b;
+            line-height: 1.3;
+        }
+
+        .puzzle-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+            color: #64748b;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .puzzle-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            flex-grow: 1;
+            font-size: 0.95em;
+        }
+
+        .play-btn {
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .play-btn:hover {
+            background: #059669;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .difficulty-title {
+                font-size: 1.5em;
+            }
+
+            .puzzles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .puzzle-card {
+                padding: 25px;
+            }
+
+            .puzzle-icon {
+                font-size: 2.5em;
+            }
+
+            .puzzle-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>💰 Financial Accounting</h1>
+            <p class="subtitle">Master accounting principles and financial concepts</p>
+            <span class="archive-count">4 Puzzles Available</span>
+        </header>
+
+        <!-- Advanced Section -->
+        <section class="difficulty-section">
+            <h2 class="difficulty-title">🎯 Advanced</h2>
+            <div class="puzzles-grid">
+                <!-- Financial Ratios (Latest) -->
+                <a href="accounting-ratios/" class="puzzle-card">
+                    <div class="puzzle-icon">📈🔍</div>
+                    <div class="puzzle-title">What are the Key Financial Ratios?</div>
+                    <div class="puzzle-meta">
+                        <div class="meta-item">
+                            <span>🎮</span>
+                            <span>3 words</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>⭐⭐⭐</span>
+                            <span>Complex</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🆕</span>
+                            <span>Latest</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-description">
+                        Master financial analysis! Learn Liquidity, Solvency, and Profitability ratios for evaluating business performance.
+                    </div>
+                    <div class="play-btn">Play Now</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Professional Section -->
+        <section class="difficulty-section">
+            <h2 class="difficulty-title">💼 Professional</h2>
+            <div class="puzzles-grid">
+                <!-- Financial Statements -->
+                <a href="accounting-statements/" class="puzzle-card">
+                    <div class="puzzle-icon">📄📊</div>
+                    <div class="puzzle-title">What are the Key Financial Statements?</div>
+                    <div class="puzzle-meta">
+                        <div class="meta-item">
+                            <span>🎮</span>
+                            <span>4 words</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>⭐⭐</span>
+                            <span>Mobile-Friendly</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-description">
+                        Master financial reporting! Learn Balance Sheet, Income Statement, Cash Flow, and Retained Earnings.
+                    </div>
+                    <div class="play-btn">Play Now</div>
+                </a>
+
+                <!-- GAAP Principles -->
+                <a href="accounting-principles/" class="puzzle-card">
+                    <div class="puzzle-icon">📚💼</div>
+                    <div class="puzzle-title">What are the 5 GAAP Accounting Principles?</div>
+                    <div class="puzzle-meta">
+                        <div class="meta-item">
+                            <span>🎮</span>
+                            <span>5 words</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>⭐⭐</span>
+                            <span>Mobile-Friendly</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-description">
+                        Master the 5 fundamental principles! Learn Prudence, Consistency, Sincerity, Materiality, and Continuity.
+                    </div>
+                    <div class="play-btn">Play Now</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Beginner Section -->
+        <section class="difficulty-section">
+            <h2 class="difficulty-title">📚 Beginner</h2>
+            <div class="puzzles-grid">
+                <!-- Accounting Equation -->
+                <a href="accounting-equation/" class="puzzle-card">
+                    <div class="puzzle-icon">⚖️💵</div>
+                    <div class="puzzle-title">What is the Accounting Equation?</div>
+                    <div class="puzzle-meta">
+                        <div class="meta-item">
+                            <span>🎮</span>
+                            <span>3 words</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>⭐</span>
+                            <span>Mobile-Friendly</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-description">
+                        Master the fundamental equation! Learn Assets, Liabilities, and Equity - the foundation of all accounting.
+                    </div>
+                    <div class="play-btn">Play Now</div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>🧩 WordUp - Financial Accounting Archive</p>
+            <p style="margin-top: 10px;"><a href="index.html" style="color: rgba(255,255,255,0.9)">← Back to Home</a></p>
+        </footer>
+    </div>
+</body>
+</html>
