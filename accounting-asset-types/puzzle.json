@@ -1,0 +1,30 @@
+{
+  "title": "What are the key Asset Types?",
+  "description": "Uncover how businesses classify their valuable resources and holdings.",
+  "words": [
+    {
+      "word": "CURRENT",
+      "fragments": ["CUR", "RENT"],
+      "orientation": "vertical",
+      "fact": "<strong>Current Assets:</strong> Resources expected to be converted to cash or used within one year. Examples include cash, accounts receivable, inventory, and short-term investments."
+    },
+    {
+      "word": "FIXED",
+      "fragments": ["FIX", "ED"],
+      "orientation": "vertical",
+      "fact": "<strong>Fixed Assets:</strong> Long-term tangible property used in operations. Examples include buildings, equipment, vehicles, and land. Also called Property, Plant, and Equipment (PP&E)."
+    },
+    {
+      "word": "INTANGIBLE",
+      "fragments": ["INTAN", "GI", "BLE"],
+      "orientation": "vertical",
+      "fact": "<strong>Intangible Assets:</strong> Non-physical assets with value. Examples include patents, trademarks, copyrights, goodwill, brand recognition, and intellectual property."
+    },
+    {
+      "word": "LIQUID",
+      "fragments": ["LIQ", "UID"],
+      "orientation": "vertical",
+      "fact": "<strong>Liquid Assets:</strong> Assets that can be quickly converted to cash with minimal loss of value. The most liquid assets include cash, money market funds, and marketable securities."
+    }
+  ]
+}
