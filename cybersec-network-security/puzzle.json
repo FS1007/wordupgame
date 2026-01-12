@@ -1,0 +1,42 @@
+{
+  "title": "What are essential Network Security tools?",
+  "description": "Explore the critical infrastructure that protects networks from attacks. From barriers to routing devices.",
+  "words": [
+    {
+      "word": "FIREWALL",
+      "fragments": ["FI", "REW", "ALL"],
+      "orientation": "vertical",
+      "fact": "<strong>Firewall:</strong> Network security device that monitors and controls incoming and outgoing traffic based on security rules. Acts as a barrier between trusted internal networks and untrusted external networks. Modern firewalls include next-generation features like deep packet inspection and intrusion prevention."
+    },
+    {
+      "word": "ROUTER",
+      "fragments": ["ROU", "TER"],
+      "orientation": "vertical",
+      "fact": "<strong>Router:</strong> Device that forwards data packets between computer networks, making routing decisions based on network layer information. Routers implement access control lists (ACLs) and can segment networks for security. Enterprise routers include VPN capabilities and threat detection features."
+    },
+    {
+      "word": "PROXY",
+      "fragments": ["PRO", "XY"],
+      "orientation": "vertical",
+      "fact": "<strong>Proxy:</strong> Intermediary server that sits between clients and destination servers, forwarding requests and responses. Proxies provide anonymity, content filtering, and caching. Forward proxies protect clients; reverse proxies protect servers from direct internet exposure."
+    },
+    {
+      "word": "GATEWAY",
+      "fragments": ["GAT", "EW", "AY"],
+      "orientation": "vertical",
+      "fact": "<strong>Gateway:</strong> Network node that serves as an access point to another network, often performing protocol translation. Security gateways inspect traffic, enforce policies, and provide centralized control. Common types include email gateways, web gateways, and API gateways."
+    },
+    {
+      "word": "SWITCH",
+      "fragments": ["SWI", "TCH"],
+      "orientation": "vertical",
+      "fact": "<strong>Switch:</strong> Networking device that connects devices within a network using packet switching to forward data to specific destinations. Modern switches support VLANs for network segmentation, port security to prevent unauthorized access, and can implement 802.1X authentication."
+    },
+    {
+      "word": "MODEM",
+      "fragments": ["MOD", "EM"],
+      "orientation": "vertical",
+      "fact": "<strong>Modem:</strong> Device that modulates and demodulates signals for data transmission over communication channels. Cable and DSL modems are entry points to networks and require security hardening. Modern modems include firewalls and should have default passwords changed immediately."
+    }
+  ]
+}

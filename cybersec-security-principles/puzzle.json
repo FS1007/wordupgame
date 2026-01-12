@@ -1,0 +1,42 @@
+{
+  "title": "What are key Security Principles?",
+  "description": "Discover the fundamental concepts that protect our digital world. From safeguarding data to detecting threats.",
+  "words": [
+    {
+      "word": "PRIVACY",
+      "fragments": ["PRIV", "ACY"],
+      "orientation": "vertical",
+      "fact": "<strong>Privacy:</strong> The right to control personal information and how it's collected, used, and shared. Essential for protecting individual autonomy, preventing identity theft, and maintaining confidential communications. Privacy-by-design principles are now mandated by regulations like GDPR and CCPA."
+    },
+    {
+      "word": "TRUST",
+      "fragments": ["TRU", "ST"],
+      "orientation": "vertical",
+      "fact": "<strong>Trust:</strong> Confidence in the reliability, integrity, and security of systems and entities. Built through consistent security practices, transparent policies, and proven track records. Trust models include zero-trust architecture, which verifies every access request regardless of source."
+    },
+    {
+      "word": "DEFENSE",
+      "fragments": ["DEFE", "NSE"],
+      "orientation": "vertical",
+      "fact": "<strong>Defense:</strong> Active protection against security threats through multiple layers of safeguards. Defense-in-depth strategy employs firewalls, intrusion detection, encryption, and access controls. No single point of failure ensures resilience against sophisticated attacks."
+    },
+    {
+      "word": "GUARD",
+      "fragments": ["GUA", "RD"],
+      "orientation": "vertical",
+      "fact": "<strong>Guard:</strong> Protective measures that monitor and control access to resources. Security guards include authentication systems, access control lists, and automated monitoring tools. Guards operate at physical, network, and application layers to prevent unauthorized access."
+    },
+    {
+      "word": "SHIELD",
+      "fragments": ["SHI", "ELD"],
+      "orientation": "vertical",
+      "fact": "<strong>Shield:</strong> Protective barriers that deflect threats before they reach critical systems. Examples include firewalls, antivirus software, and web application firewalls. Shields provide the first line of defense in a comprehensive security strategy."
+    },
+    {
+      "word": "DETECT",
+      "fragments": ["DET", "ECT"],
+      "orientation": "vertical",
+      "fact": "<strong>Detect:</strong> Identifying security incidents and anomalies through continuous monitoring. Detection systems use signatures, behavioral analysis, and machine learning to spot threats. Early detection is crucial—the average time to identify a breach is 207 days without proper detection tools."
+    }
+  ]
+}

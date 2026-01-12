@@ -1,0 +1,42 @@
+{
+  "title": "What are common Security Threats?",
+  "description": "Learn about the dangers lurking in cyberspace. From malicious code to criminal demands and system compromises.",
+  "words": [
+    {
+      "word": "VIRUS",
+      "fragments": ["VIR", "US"],
+      "orientation": "vertical",
+      "fact": "<strong>Virus:</strong> Malicious code that replicates by inserting copies of itself into other programs or files. Viruses require human action to spread (like opening an infected file) and can corrupt data, steal information, or damage systems. Antivirus software detects known virus signatures."
+    },
+    {
+      "word": "TROJAN",
+      "fragments": ["TRO", "JAN"],
+      "orientation": "vertical",
+      "fact": "<strong>Trojan:</strong> Malware disguised as legitimate software that tricks users into installing it. Named after the Greek Trojan Horse, it creates backdoors for attackers, steals credentials, or downloads additional malware. Unlike viruses, Trojans don't self-replicate but are equally dangerous."
+    },
+    {
+      "word": "RANSOM",
+      "fragments": ["RAN", "SOM"],
+      "orientation": "vertical",
+      "fact": "<strong>Ransom:</strong> Payment demanded by cybercriminals to restore access to encrypted data or systems. Ransomware attacks have cost organizations billions globally. Best defense: regular backups, security awareness training, and network segmentation. Never pay ransom—it funds criminal operations and doesn't guarantee data recovery."
+    },
+    {
+      "word": "BREACH",
+      "fragments": ["BRE", "ACH"],
+      "orientation": "vertical",
+      "fact": "<strong>Breach:</strong> Unauthorized access to confidential data, applications, networks, or devices. Data breaches expose sensitive information like passwords, credit cards, or personal data. The average cost of a data breach in 2023 was $4.45 million. Breaches result from vulnerabilities, misconfigurations, or social engineering."
+    },
+    {
+      "word": "ATTACK",
+      "fragments": ["ATT", "ACK"],
+      "orientation": "vertical",
+      "fact": "<strong>Attack:</strong> Deliberate attempt to compromise security by exploiting vulnerabilities. Attack types include DDoS (overwhelming systems), SQL injection (database manipulation), and zero-day exploits (unknown vulnerabilities). Attack vectors evolve constantly—organizations face an average of 1,636 attacks per week."
+    },
+    {
+      "word": "THREAT",
+      "fragments": ["THR", "EAT"],
+      "orientation": "vertical",
+      "fact": "<strong>Threat:</strong> Potential danger that could exploit vulnerabilities to cause harm. Threats include malware, insider threats, nation-state actors, and cybercriminals. Threat intelligence helps organizations understand adversaries' tactics, techniques, and procedures (TTPs) to implement effective defenses."
+    }
+  ]
+}
