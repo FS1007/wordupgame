@@ -70,5 +70,21 @@
             window.location.href = '../index.html';
         });
     </script>
+
+<script>
+console.log('=== DEBUGGING WORDUP ===');
+console.log('1. Game area:', document.getElementById('game-area'));
+console.log('2. Puzzle description:', document.getElementById('puzzle-description'));
+
+fetch('puzzle.json')
+    .then(r => r.json())
+    .then(data => console.log('3. Puzzle data loaded:', data))
+    .catch(e => console.error('4. Puzzle load error:', e));
+
+fetch('config.json')
+    .then(r => r.json())
+    .then(data => console.log('5. Config loaded:', data))
+    .catch(e => console.error('6. Config load error:', e));
+</script>
 </body>
 </html>
