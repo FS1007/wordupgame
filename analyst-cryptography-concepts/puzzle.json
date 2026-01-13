@@ -1,0 +1,12 @@
+{
+  "title": "What are core Cryptography Concepts?",
+  "description": "Explore the mathematical foundations of secure communications. From ciphers to one-way functions.",
+  "words": [
+    {"word": "CIPHER", "fragments": ["CIP", "HER"], "orientation": "vertical", "fact": "<strong>Cipher:</strong> Algorithm for encryption and decryption. Stream ciphers encrypt bit-by-bit, block ciphers process fixed-size blocks (typically 128-bit). AES is the gold standard block cipher. Modern ciphers use confusion (substitution) and diffusion (permutation) to obscure plaintext."},
+    {"word": "DIGEST", "fragments": ["DIG", "EST"], "orientation": "vertical", "fact": "<strong>Digest:</strong> Fixed-size output of a hash function (e.g., SHA-256 produces 256-bit digests). Even tiny input changes produce completely different digests—the avalanche effect. Digests verify data integrity, digital signatures, and password storage. Collision resistance is essential."},
+    {"word": "RANDOM", "fragments": ["RAN", "DOM"], "orientation": "vertical", "fact": "<strong>Random:</strong> Cryptographically secure random number generation is critical for keys, IVs, salts, and nonces. True randomness from hardware RNGs or pseudorandom from cryptographic PRNGs. Predictable randomness breaks security—see Debian OpenSSL bug (2008) that weakened millions of keys."},
+    {"word": "NONCE", "fragments": ["NON", "CE"], "orientation": "vertical", "fact": "<strong>Nonce:</strong> Number used once to prevent replay attacks. Common in challenge-response authentication, TLS handshakes, and blockchain proof-of-work. Nonces ensure each encryption is unique even with same key and plaintext. Never reuse nonces with stream ciphers like ChaCha20."},
+    {"word": "SECRET", "fragments": ["SEC", "RET"], "orientation": "vertical", "fact": "<strong>Secret:</strong> Confidential information that must be protected—private keys, passwords, API tokens. Secret management systems like HashiCorp Vault secure storage and access. Never hardcode secrets in source code. Rotate secrets regularly, especially after potential exposure."},
+    {"word": "DERIVE", "fragments": ["DER", "IVE"], "orientation": "vertical", "fact": "<strong>Derive:</strong> Key derivation functions (KDFs) generate cryptographic keys from passwords or master secrets. PBKDF2, bcrypt, and Argon2 add computational cost to thwart brute-force attacks. Derive different keys for different purposes from single master key using HKDF."}
+  ]
+}

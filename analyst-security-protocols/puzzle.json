@@ -1,0 +1,42 @@
+{
+  "title": "What are key Security Protocols?",
+  "description": "Discover the protocols that secure data transmission. From encrypted web traffic to secure communication tunnels.",
+  "words": [
+    {
+      "word": "HTTPS",
+      "fragments": ["HTT", "PS"],
+      "orientation": "vertical",
+      "fact": "<strong>HTTPS:</strong> Hypertext Transfer Protocol Secure encrypts web traffic using TLS/SSL, protecting data between browsers and servers. The padlock icon indicates HTTPS, ensuring authentication, encryption, and data integrity. Essential for e-commerce, banking, and any sensitive web transactions."
+    },
+    {
+      "word": "TUNNEL",
+      "fragments": ["TUN", "NEL"],
+      "orientation": "vertical",
+      "fact": "<strong>Tunnel:</strong> Encrypted connection that encapsulates data packets for secure transmission across untrusted networks. VPN tunnels protect remote workers, SSH tunnels secure administrative access. Tunneling protocols include IPsec, L2TP, and WireGuard."
+    },
+    {
+      "word": "SECURE",
+      "fragments": ["SEC", "URE"],
+      "orientation": "vertical",
+      "fact": "<strong>Secure:</strong> Protected against unauthorized access through encryption, authentication, and integrity checks. Secure protocols use cryptographic methods to prevent eavesdropping, tampering, and impersonation. Security is layered: transport security, application security, and end-to-end encryption."
+    },
+    {
+      "word": "LAYER",
+      "fragments": ["LAY", "ER"],
+      "orientation": "vertical",
+      "fact": "<strong>Layer:</strong> Network protocols operate at different OSI model layers—Physical, Data Link, Network, Transport, Session, Presentation, Application. TLS operates at layers 5-6, IPsec at layer 3. Understanding layers helps troubleshoot security issues and choose appropriate protections."
+    },
+    {
+      "word": "CIPHER",
+      "fragments": ["CIP", "HER"],
+      "orientation": "vertical",
+      "fact": "<strong>Cipher:</strong> Algorithm that performs encryption and decryption. Modern protocols use strong ciphers like AES-256, ChaCha20. Weak ciphers like DES, RC4 are deprecated due to vulnerabilities. Cipher suites define combinations of key exchange, authentication, encryption, and integrity algorithms."
+    },
+    {
+      "word": "PACKET",
+      "fragments": ["PAC", "KET"],
+      "orientation": "vertical",
+      "fact": "<strong>Packet:</strong> Unit of data transmitted across networks, containing headers (source, destination, protocol) and payload (actual data). Security protocols encrypt packet payloads, add authentication tags, and may hide packet metadata. Packet inspection detects malicious traffic."
+    }
+  ]
+}

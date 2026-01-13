@@ -1,0 +1,20 @@
+{
+  "theme": {
+    "name": "analyst-blue",
+    "colors": {
+      "gradientStart": "#1e40af",
+      "gradientEnd": "#3b82f6",
+      "primary": "#3b82f6",
+      "primaryDark": "#1e40af",
+      "primaryHover": "#60a5fa",
+      "completedBg": "#dbeafe",
+      "completedBorder": "#3b82f6",
+      "textDark": "#1e3a8a"
+    }
+  },
+  "gameSettings": {
+    "snapDistance": 200,
+    "snapTolerance": 30,
+    "completionDelay": 100
+  }
+}
