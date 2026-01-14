@@ -1,0 +1,60 @@
+{
+  "title": "What are the Rehabilitation Phases?",
+  "description": "Understand the progressive stages of recovery",
+  "words": [
+    {
+      "word": "ACUTE",
+      "fragments": [
+        "ACU",
+        "TE"
+      ],
+      "orientation": "vertical",
+      "fact": "The acute phase is the immediate post-injury period (0-72 hours) characterized by inflammation, pain, and tissue damage. Goals include protecting the injury, controlling pain and swelling, and maintaining mobility elsewhere. Treatment uses RICE protocol, gentle movement, and pain management. Early appropriate movement promotes healing better than complete rest."
+    },
+    {
+      "word": "SUBACUTE",
+      "fragments": [
+        "SUBAC",
+        "UTE"
+      ],
+      "orientation": "vertical",
+      "fact": "The subacute phase (3 days to 6 weeks) focuses on tissue healing and early rehabilitation. Inflammation decreases, and tissue repairs. Goals include restoring range of motion, beginning gentle strengthening, and normalizing movement patterns. Progressive loading stimulates proper tissue alignment. Avoiding overload is crucial to prevent setbacks."
+    },
+    {
+      "word": "CHRONIC",
+      "fragments": [
+        "CHRON",
+        "IC"
+      ],
+      "orientation": "vertical",
+      "fact": "The chronic phase (6+ weeks) emphasizes restoration of full function and prevention of recurrence. Tissue is healed but may lack full strength or capacity. Goals include progressive strengthening, sport/work-specific training, and building resilience. Treatment addresses any compensatory patterns that developed. Success means returning to desired activities pain-free."
+    },
+    {
+      "word": "RETURN",
+      "fragments": [
+        "RETU",
+        "RN"
+      ],
+      "orientation": "vertical",
+      "fact": "Return to activity is the final rehabilitation phase, progressively reintroducing sport or work demands. Criteria include pain-free movement, adequate strength (typically 85-90% of uninvolved side), good movement quality, and psychological readiness. Rushing this phase risks re-injury. Maintenance programs help sustain gains and prevent problems."
+    },
+    {
+      "word": "PREVENT",
+      "fragments": [
+        "PREVE",
+        "NT"
+      ],
+      "orientation": "vertical",
+      "fact": "Prevention focuses on reducing injury risk through screening, exercise programs, education, and addressing risk factors. Primary prevention targets healthy individuals; secondary prevention addresses those with prior injury. Effective programs improve strength, flexibility, balance, and movement quality. Prevention is more effective and cost-efficient than treatment."
+    },
+    {
+      "word": "MAINTAIN",
+      "fragments": [
+        "MAINTA",
+        "IN"
+      ],
+      "orientation": "vertical",
+      "fact": "Maintenance continues therapeutic exercises and healthy habits after formal therapy ends, preserving gains and preventing recurrence. Many patients need ongoing programs to manage chronic conditions or maintain fitness. Home exercise programs, periodic check-ins, and lifestyle modifications support long-term success. Maintenance is a lifelong commitment to health."
+    }
+  ]
+}

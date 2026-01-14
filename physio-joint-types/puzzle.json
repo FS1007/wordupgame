@@ -1,0 +1,60 @@
+{
+  "title": "What are the Major Joint Types?",
+  "description": "Understand the different joints that enable movement",
+  "words": [
+    {
+      "word": "HINGE",
+      "fragments": [
+        "HIN",
+        "GE"
+      ],
+      "orientation": "vertical",
+      "fact": "Hinge joints allow movement in one plane, like a door hinge, enabling flexion and extension. The elbow and knee are hinge joints. They're stable but limited in motion range. Injuries to hinge joints often require careful rehabilitation to restore full bending and straightening motion."
+    },
+    {
+      "word": "BALL",
+      "fragments": [
+        "BA",
+        "LL"
+      ],
+      "orientation": "vertical",
+      "fact": "Ball-and-socket joints offer the greatest range of motion, allowing movement in multiple directions. The shoulder and hip are ball-and-socket joints. This design permits rotation, flexion, extension, abduction, and adduction. Their mobility makes them prone to dislocation, requiring strong surrounding muscles."
+    },
+    {
+      "word": "PIVOT",
+      "fragments": [
+        "PIV",
+        "OT"
+      ],
+      "orientation": "vertical",
+      "fact": "Pivot joints allow rotation around a single axis. The atlantoaxial joint between the first and second vertebrae lets you turn your head side to side. The radioulnar joint enables forearm rotation. These joints are crucial for fine motor control and spatial awareness."
+    },
+    {
+      "word": "GLIDING",
+      "fragments": [
+        "GLID",
+        "ING"
+      ],
+      "orientation": "vertical",
+      "fact": "Gliding joints (plane joints) allow bones to slide past each other, enabling small movements. Found in the wrists, ankles, and spine, they permit limited gliding or sliding motions. Though individual movement is small, combined movements of multiple gliding joints enable significant overall motion."
+    },
+    {
+      "word": "SADDLE",
+      "fragments": [
+        "SADD",
+        "LE"
+      ],
+      "orientation": "vertical",
+      "fact": "Saddle joints have concave and convex surfaces that fit together like a rider on a saddle. The thumb's carpometacarpal joint is the primary saddle joint, enabling the thumb's unique opposability. This joint type allows flexion, extension, abduction, adduction, and limited rotation."
+    },
+    {
+      "word": "CONDYLOID",
+      "fragments": [
+        "CONDYL",
+        "OID"
+      ],
+      "orientation": "vertical",
+      "fact": "Condyloid (ellipsoid) joints allow movement in two planes without rotation. The wrist is a condyloid joint, enabling flexion, extension, abduction, and adduction. These joints provide flexibility while maintaining stability, important for activities requiring precise hand and wrist control."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "What are Common Treatment Methods?",
+  "description": "Learn various physiotherapy treatment approaches",
+  "words": [
+    {
+      "word": "MANUAL",
+      "fragments": [
+        "MANU",
+        "AL"
+      ],
+      "orientation": "vertical",
+      "fact": "Manual therapy uses hands-on techniques to diagnose and treat musculoskeletal conditions. Techniques include joint mobilization, soft tissue massage, and myofascial release. Manual therapy reduces pain, improves mobility, and enhances tissue healing. Therapists require specialized training to apply appropriate pressure and techniques safely."
+    },
+    {
+      "word": "MODALITY",
+      "fragments": [
+        "MODAL",
+        "ITY"
+      ],
+      "orientation": "vertical",
+      "fact": "Physical modalities use external energy forms for therapeutic purposes. Common modalities include ultrasound, electrical stimulation, heat, ice, and laser therapy. Each modality has specific indications, contraindications, and physiological effects. Modalities supplement exercise and manual therapy, particularly for pain management and tissue healing."
+    },
+    {
+      "word": "EXERCISE",
+      "fragments": [
+        "EXERC",
+        "ISE"
+      ],
+      "orientation": "vertical",
+      "fact": "Therapeutic exercise is the cornerstone of physiotherapy, using movement to restore function, improve fitness, and prevent disability. Exercises are prescribed based on specific goals: strengthening, stretching, balance, or endurance. Programs progress systematically as patients improve. Home exercise programs extend therapy benefits between clinical sessions."
+    },
+    {
+      "word": "TAPING",
+      "fragments": [
+        "TAP",
+        "ING"
+      ],
+      "orientation": "vertical",
+      "fact": "Therapeutic taping applies adhesive tape to support muscles and joints, reduce pain, and facilitate movement. Rigid tape immobilizes and protects injuries. Kinesiology tape allows movement while providing feedback and support. Taping techniques are evidence-based, with specific applications for various conditions and phases of healing."
+    },
+    {
+      "word": "EDUCATION",
+      "fragments": [
+        "EDUCAT",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "Patient education empowers individuals to understand their condition, treatment rationale, and self-management strategies. Education covers anatomy, injury mechanisms, pain science, proper body mechanics, and home exercises. Research shows education improves outcomes, reduces healthcare utilization, and prevents recurrence. Effective education adapts to patient learning styles and health literacy."
+    },
+    {
+      "word": "PROGRESS",
+      "fragments": [
+        "PROGR",
+        "ESS"
+      ],
+      "orientation": "vertical",
+      "fact": "Progression systematically advances exercise difficulty as patient capabilities improve. Variables include resistance, repetitions, speed, range of motion, and complexity. Appropriate progression optimizes recovery while avoiding overload or re-injury. Therapists continuously assess and adjust programs based on patient response, symptoms, and functional goals."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "What are Basic Muscle Actions?",
+  "description": "Learn how muscles work to create movement",
+  "words": [
+    {
+      "word": "CONTRACT",
+      "fragments": [
+        "CONTR",
+        "ACT"
+      ],
+      "orientation": "vertical",
+      "fact": "Muscle contraction occurs when muscle fibers shorten, generating tension to produce movement or maintain posture. Contractions can be concentric (shortening), eccentric (lengthening under tension), or isometric (static). Understanding contraction types helps therapists design effective strengthening and rehabilitation programs."
+    },
+    {
+      "word": "RELAX",
+      "fragments": [
+        "REL",
+        "AX"
+      ],
+      "orientation": "vertical",
+      "fact": "Muscle relaxation is when muscle fibers lengthen and tension decreases, allowing movement in the opposite direction. Proper relaxation is as important as contraction for smooth, coordinated movement. Inability to relax muscles can cause stiffness, pain, and movement dysfunction requiring therapeutic intervention."
+    },
+    {
+      "word": "STRETCH",
+      "fragments": [
+        "STRE",
+        "TCH"
+      ],
+      "orientation": "vertical",
+      "fact": "Stretching lengthens muscles and connective tissues, improving flexibility and range of motion. Static stretching holds positions, while dynamic stretching involves movement. Regular stretching prevents injury, reduces soreness, improves posture, and enhances athletic performance. Therapists prescribe specific stretches for rehabilitation."
+    },
+    {
+      "word": "STABILIZE",
+      "fragments": [
+        "STABIL",
+        "IZE"
+      ],
+      "orientation": "vertical",
+      "fact": "Muscle stabilization maintains joint position and body posture against external forces. Core muscles stabilize the spine, while rotator cuff muscles stabilize the shoulder. Stabilizer muscles work constantly to maintain balance and posture. Weakness in stabilizers leads to injury and compensatory movement patterns."
+    },
+    {
+      "word": "ACTIVATE",
+      "fragments": [
+        "ACTIV",
+        "ATE"
+      ],
+      "orientation": "vertical",
+      "fact": "Muscle activation is the process of recruiting muscle fibers to contract. Neural signals from the brain trigger activation. Some muscles activate unconsciously for posture, while others require conscious control. Therapy often focuses on improving activation patterns, especially after injury or surgery."
+    },
+    {
+      "word": "FATIGUE",
+      "fragments": [
+        "FATI",
+        "GUE"
+      ],
+      "orientation": "vertical",
+      "fact": "Muscle fatigue occurs when muscles can no longer maintain required force, caused by energy depletion or metabolic waste buildup. Fatigue reduces performance and increases injury risk. Understanding fatigue helps therapists pace rehabilitation, progressively build endurance, and prevent overtraining. Recovery time is essential for muscle adaptation."
+    }
+  ]
+}

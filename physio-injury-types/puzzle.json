@@ -1,0 +1,60 @@
+{
+  "title": "What are Common Injury Types?",
+  "description": "Learn about injuries physiotherapists treat",
+  "words": [
+    {
+      "word": "SPRAIN",
+      "fragments": [
+        "SPRA",
+        "IN"
+      ],
+      "orientation": "vertical",
+      "fact": "A sprain is ligament damage caused by excessive joint movement beyond normal range. Graded I-III by severity, from mild stretching to complete tear. Ankle sprains are most common. Treatment includes RICE (rest, ice, compression, elevation), followed by progressive rehabilitation to restore stability and prevent chronic instability."
+    },
+    {
+      "word": "STRAIN",
+      "fragments": [
+        "STRA",
+        "IN"
+      ],
+      "orientation": "vertical",
+      "fact": "A strain is muscle or tendon injury from overstretching or overuse. Also graded I-III, from mild to complete rupture. Hamstring and calf strains are frequent in athletes. Treatment involves rest, gentle stretching, progressive strengthening, and gradual return to activity. Proper healing prevents chronic weakness and re-injury."
+    },
+    {
+      "word": "TENDINITIS",
+      "fragments": [
+        "TENDIN",
+        "ITIS"
+      ],
+      "orientation": "vertical",
+      "fact": "Tendinitis is tendon inflammation from repetitive stress or overuse. Common sites include rotator cuff, patellar tendon, and Achilles tendon. Symptoms include pain, stiffness, and weakness. Treatment addresses inflammation, modifies aggravating activities, and gradually rebuilds tendon capacity through eccentric exercises. Chronic cases may develop tendinosis (degeneration)."
+    },
+    {
+      "word": "FRACTURE",
+      "fragments": [
+        "FRACT",
+        "URE"
+      ],
+      "orientation": "vertical",
+      "fact": "A fracture is a broken bone, ranging from hairline cracks to complete breaks with displacement. Causes include trauma, stress, or disease. Treatment depends on location and severity: immobilization, surgery, or both. Physical therapy begins after appropriate healing time, focusing on mobility, strength, and function restoration."
+    },
+    {
+      "word": "DISLOCATION",
+      "fragments": [
+        "DISLOCAT",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "Dislocation occurs when bones in a joint separate from normal alignment. Shoulders, fingers, and kneecaps commonly dislocate. Reduction (repositioning) is urgent, often followed by immobilization. Physical therapy is crucial to restore range, strengthen supporting muscles, and prevent recurrent dislocations through stability training."
+    },
+    {
+      "word": "IMPINGEMENT",
+      "fragments": [
+        "IMPING",
+        "EMENT"
+      ],
+      "orientation": "vertical",
+      "fact": "Impingement occurs when soft tissues are compressed between bones during movement. Shoulder impingement, where rotator cuff tendons compress under the acromion, is most common. Causes include bone spurs, poor posture, and muscle imbalances. Treatment includes correcting movement patterns, strengthening, and sometimes surgery for structural issues."
+    }
+  ]
+}

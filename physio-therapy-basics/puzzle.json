@@ -1,0 +1,60 @@
+{
+  "title": "What are Core Therapy Concepts?",
+  "description": "Understand fundamental physiotherapy principles",
+  "words": [
+    {
+      "word": "RANGE",
+      "fragments": [
+        "RAN",
+        "GE"
+      ],
+      "orientation": "vertical",
+      "fact": "Range of motion (ROM) is the extent of joint movement in different directions. Active ROM uses your own muscles, passive ROM is assisted by therapist or device. Limited ROM causes disability and compensatory movements. Therapists measure ROM with goniometers and design exercises to restore full, pain-free movement."
+    },
+    {
+      "word": "STRENGTH",
+      "fragments": [
+        "STREN",
+        "GTH"
+      ],
+      "orientation": "vertical",
+      "fact": "Muscular strength is the maximum force a muscle can generate. Strength training uses progressive resistance to build muscle capacity. Physical therapists assess strength on a 0-5 scale and design programs to restore function. Adequate strength is essential for daily activities, preventing falls, and protecting joints from injury."
+    },
+    {
+      "word": "BALANCE",
+      "fragments": [
+        "BALAN",
+        "CE"
+      ],
+      "orientation": "vertical",
+      "fact": "Balance is the ability to maintain center of gravity over your base of support, whether static (standing still) or dynamic (moving). Balance requires integration of visual, vestibular, and proprioceptive systems. Poor balance increases fall risk. Therapy includes exercises to challenge and improve balance systems."
+    },
+    {
+      "word": "POSTURE",
+      "fragments": [
+        "POST",
+        "URE"
+      ],
+      "orientation": "vertical",
+      "fact": "Posture is body alignment and positioning of limbs relative to one another. Good posture minimizes stress on muscles, ligaments, and joints. Poor posture causes pain, reduces efficiency, and increases injury risk. Therapists assess posture, identify imbalances, and teach proper body mechanics for daily activities."
+    },
+    {
+      "word": "GAIT",
+      "fragments": [
+        "GA",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "Gait is the pattern of walking or running, involving coordinated movements of limbs, trunk, and pelvis. Normal gait has two phases: stance (foot on ground) and swing (foot moving forward). Gait analysis identifies abnormalities causing pain or inefficiency. Therapy corrects gait deviations to improve function and prevent injury."
+    },
+    {
+      "word": "MOBILITY",
+      "fragments": [
+        "MOBIL",
+        "ITY"
+      ],
+      "orientation": "vertical",
+      "fact": "Mobility is the ability to move freely and easily, combining range of motion, strength, and coordination. Functional mobility includes walking, climbing stairs, and transferring. Limited mobility affects independence and quality of life. Therapists assess mobility, remove barriers, and progress activities toward full functional independence."
+    }
+  ]
+}

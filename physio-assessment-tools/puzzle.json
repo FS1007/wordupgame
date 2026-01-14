@@ -1,0 +1,60 @@
+{
+  "title": "What are Key Assessment Tools?",
+  "description": "Understand methods therapists use to evaluate patients",
+  "words": [
+    {
+      "word": "PALPATION",
+      "fragments": [
+        "PALPA",
+        "TION"
+      ],
+      "orientation": "vertical",
+      "fact": "Palpation is touching and feeling body structures to assess temperature, tenderness, swelling, muscle tone, and tissue texture. Skilled palpation identifies trigger points, joint alignment, and tissue restrictions. This hands-on assessment guides treatment planning and monitors changes over time. Palpation requires knowledge of anatomy and practice to develop sensitivity."
+    },
+    {
+      "word": "GONIOMETER",
+      "fragments": [
+        "GONIOM",
+        "ETER"
+      ],
+      "orientation": "vertical",
+      "fact": "A goniometer measures joint range of motion in degrees, providing objective data about movement limitations. This protractor-like tool has two arms that align with bones. Therapists record measurements to track progress, document disability, and determine treatment effectiveness. Reliable goniometry requires standardized techniques and positioning."
+    },
+    {
+      "word": "STRENGTH",
+      "fragments": [
+        "STRENG",
+        "TH"
+      ],
+      "orientation": "vertical",
+      "fact": "Strength testing assesses maximum muscle force using manual muscle testing (0-5 scale) or dynamometry. Manual testing involves therapist resistance against patient effort. Handheld dynamometers provide objective force measurements. Strength assessment identifies weakness, guides exercise prescription, and documents recovery. Testing must account for pain, fatigue, and effort."
+    },
+    {
+      "word": "FUNCTIONAL",
+      "fragments": [
+        "FUNCT",
+        "IONAL"
+      ],
+      "orientation": "vertical",
+      "fact": "Functional assessment evaluates ability to perform daily activities like walking, climbing stairs, dressing, and working. Tests simulate real-world tasks to identify limitations and safety concerns. Functional measures are patient-centered and meaningful for goal setting. Examples include Timed Up and Go test, Six-Minute Walk test, and disability questionnaires."
+    },
+    {
+      "word": "POSTURE",
+      "fragments": [
+        "POST",
+        "URE"
+      ],
+      "orientation": "vertical",
+      "fact": "Postural assessment examines body alignment in standing, sitting, and lying positions. Therapists observe from front, side, and back views, noting asymmetries and deviations from ideal alignment. Poor posture indicates muscle imbalances and predicts injury risk. Assessment guides corrective exercises and ergonomic modifications."
+    },
+    {
+      "word": "SPECIAL",
+      "fragments": [
+        "SPEC",
+        "IAL"
+      ],
+      "orientation": "vertical",
+      "fact": "Special tests are clinical examination procedures designed to identify specific injuries or conditions. Each test stresses particular structures to provoke symptoms or demonstrate instability. Examples include Lachman test for ACL tears, Neer test for shoulder impingement, and Straight Leg Raise for nerve tension. Tests guide diagnosis and treatment."
+    }
+  ]
+}

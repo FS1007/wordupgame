@@ -1,0 +1,60 @@
+{
+  "title": "What are the Basic Movement Types?",
+  "description": "Learn the fundamental ways our body moves",
+  "words": [
+    {
+      "word": "FLEXION",
+      "fragments": [
+        "FLEX",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "Flexion is bending a joint to decrease the angle between bones, like bending your elbow or knee. It's one of the most common movements in daily activities, from picking up objects to climbing stairs. Understanding flexion helps therapists assess range of motion and design exercises for recovery."
+    },
+    {
+      "word": "EXTENSION",
+      "fragments": [
+        "EXTEN",
+        "SION"
+      ],
+      "orientation": "vertical",
+      "fact": "Extension is straightening a joint to increase the angle between bones, opposite of flexion. Examples include straightening your leg or arm. Extension movements are crucial for posture, walking, and reaching. Physical therapists work to restore full extension after injuries or surgery."
+    },
+    {
+      "word": "ROTATION",
+      "fragments": [
+        "ROTA",
+        "TION"
+      ],
+      "orientation": "vertical",
+      "fact": "Rotation is turning movement around a central axis, like turning your head side to side or rotating your spine. Internal rotation turns inward, external turns outward. Rotation is essential for complex movements and is often limited after injuries, requiring specific therapeutic exercises."
+    },
+    {
+      "word": "ABDUCTION",
+      "fragments": [
+        "ABDUC",
+        "TION"
+      ],
+      "orientation": "vertical",
+      "fact": "Abduction moves a limb away from the body's midline, like spreading your arms or legs sideways. This movement is important for reaching, balance, and daily activities. Shoulder abduction allows you to lift objects overhead, while hip abduction stabilizes walking and prevents falls."
+    },
+    {
+      "word": "ADDUCTION",
+      "fragments": [
+        "ADDUC",
+        "TION"
+      ],
+      "orientation": "vertical",
+      "fact": "Adduction brings a limb toward the body's midline, opposite of abduction. Examples include bringing your arm back to your side or crossing your legs. Strong adductors provide stability and power for movements like walking, running, and maintaining posture."
+    },
+    {
+      "word": "PRONATION",
+      "fragments": [
+        "PRONA",
+        "TION"
+      ],
+      "orientation": "vertical",
+      "fact": "Pronation rotates the forearm so the palm faces down, or the foot rolls inward when walking. In the forearm, pronation allows you to turn doorknobs and type. In the foot, controlled pronation absorbs shock during walking. Excessive pronation can cause injury and requires therapeutic intervention."
+    }
+  ]
+}
