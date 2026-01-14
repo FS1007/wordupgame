@@ -1,0 +1,60 @@
+{
+  "title": "What are Financial Statements?",
+  "description": "Learn the key reports that communicate a company's financial position and performance",
+  "words": [
+    {
+      "word": "INCOME",
+      "fragments": [
+        "INC",
+        "OME"
+      ],
+      "orientation": "vertical",
+      "fact": "The income statement (or profit and loss statement) reports a company's revenues, expenses, and net income over a specific period. It shows how revenues are transformed into net income and provides insights into a company's profitability and operational efficiency."
+    },
+    {
+      "word": "BALANCE",
+      "fragments": [
+        "BAL",
+        "ANCE"
+      ],
+      "orientation": "vertical",
+      "fact": "The balance sheet is a snapshot of a company's financial position at a specific point in time. It lists assets, liabilities, and equity, and must always balance according to the accounting equation: Assets = Liabilities + Equity."
+    },
+    {
+      "word": "CASHFLOW",
+      "fragments": [
+        "CASH",
+        "FLOW"
+      ],
+      "orientation": "vertical",
+      "fact": "The cash flow statement shows the movement of cash in and out of a business during a period. It's divided into operating, investing, and financing activities, and reveals how a company generates and uses cash, which is crucial for assessing liquidity and financial health."
+    },
+    {
+      "word": "RETAINED",
+      "fragments": [
+        "RETA",
+        "INED"
+      ],
+      "orientation": "vertical",
+      "fact": "Retained earnings represent the cumulative net income that has been kept in the company rather than distributed to shareholders as dividends. The statement of retained earnings reconciles the beginning and ending retained earnings balances by showing net income and dividends paid."
+    },
+    {
+      "word": "REVENUE",
+      "fragments": [
+        "REVEN",
+        "UE"
+      ],
+      "orientation": "vertical",
+      "fact": "Revenue is the income generated from normal business operations and includes the sale of goods and services. It's the top line of the income statement and is recognized when earned, regardless of when cash is received (accrual basis accounting)."
+    },
+    {
+      "word": "EXPENSE",
+      "fragments": [
+        "EXPE",
+        "NSE"
+      ],
+      "orientation": "vertical",
+      "fact": "Expenses are the costs incurred in generating revenue. They include cost of goods sold, salaries, rent, utilities, and depreciation. Expenses are matched with revenues in the same period (matching principle) to determine net income."
+    }
+  ]
+}

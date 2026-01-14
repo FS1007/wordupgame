@@ -1,30 +1,60 @@
 {
-  "title": "What are the key Asset Types?",
-  "description": "Uncover how businesses classify their valuable resources and holdings.",
+  "title": "What are Different Types of Assets?",
+  "description": "Understand the classification and characteristics of various business assets",
   "words": [
     {
       "word": "CURRENT",
-      "fragments": ["CUR", "RENT"],
+      "fragments": [
+        "CURR",
+        "ENT"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Current Assets:</strong> Resources expected to be converted to cash or used within one year. Examples include cash, accounts receivable, inventory, and short-term investments."
+      "fact": "Current assets are assets expected to be converted to cash, sold, or consumed within one year or the operating cycle. They include cash, accounts receivable, inventory, and prepaid expenses. Current assets are listed in order of liquidity on the balance sheet."
     },
     {
       "word": "FIXED",
-      "fragments": ["FIX", "ED"],
+      "fragments": [
+        "FIX",
+        "ED"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Fixed Assets:</strong> Long-term tangible property used in operations. Examples include buildings, equipment, vehicles, and land. Also called Property, Plant, and Equipment (PP&E)."
+      "fact": "Fixed assets (or non-current assets) are long-term tangible assets used in business operations for more than one year. They include property, plant, equipment, and land. Fixed assets are not intended for resale and are depreciated over their useful lives (except land)."
+    },
+    {
+      "word": "TANGIBLE",
+      "fragments": [
+        "TANGI",
+        "BLE"
+      ],
+      "orientation": "vertical",
+      "fact": "Tangible assets are physical assets that can be seen and touched. They include buildings, equipment, inventory, and cash. Tangible assets are typically easier to value than intangible assets because they have physical substance and can be observed directly."
     },
     {
       "word": "INTANGIBLE",
-      "fragments": ["INTAN", "GI", "BLE"],
+      "fragments": [
+        "INTANG",
+        "IBLE"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Intangible Assets:</strong> Non-physical assets with value. Examples include patents, trademarks, copyrights, goodwill, brand recognition, and intellectual property."
+      "fact": "Intangible assets are non-physical assets that provide economic benefits. They include patents, trademarks, copyrights, goodwill, and brand value. Intangible assets are amortized over their useful lives and can be significant sources of competitive advantage."
     },
     {
-      "word": "LIQUID",
-      "fragments": ["LIQ", "UID"],
+      "word": "INVENTORY",
+      "fragments": [
+        "INVENT",
+        "ORY"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Liquid Assets:</strong> Assets that can be quickly converted to cash with minimal loss of value. The most liquid assets include cash, money market funds, and marketable securities."
+      "fact": "Inventory consists of goods held for sale in the ordinary course of business, goods in production, and materials used in production. It's classified as a current asset and valued using methods like FIFO, LIFO, or weighted average cost."
+    },
+    {
+      "word": "RECEIVABLE",
+      "fragments": [
+        "RECEIV",
+        "ABLE"
+      ],
+      "orientation": "vertical",
+      "fact": "Accounts receivable represents money owed to a company by customers for goods or services delivered on credit. It's a current asset that reflects the company's credit sales. Companies must estimate uncollectible accounts (bad debts) and establish an allowance for doubtful accounts."
     }
   ]
 }

@@ -1,24 +1,60 @@
 {
-  "title": "Financial Accounting - Beginner",
-  "description": "📚 What is the Accounting Equation? 📊",
+  "title": "What is the Accounting Equation?",
+  "description": "Understand the fundamental equation that forms the basis of double-entry bookkeeping",
   "words": [
     {
       "word": "ASSETS",
-      "fragments": ["ASS", "ETS"],
-      "orientation": "horizontal",
-      "fact": "Assets are resources owned by a business that have economic value. Examples include cash, inventory, equipment, and accounts receivable."
+      "fragments": [
+        "ASS",
+        "ETS"
+      ],
+      "orientation": "vertical",
+      "fact": "Assets are resources controlled by a company as a result of past events, from which future economic benefits are expected to flow. Assets include cash, inventory, equipment, buildings, and accounts receivable. They represent what a company owns and can be current (short-term) or non-current (long-term)."
     },
     {
       "word": "LIABILITY",
-      "fragments": ["LIA", "BIL", "ITY"],
+      "fragments": [
+        "LIABIL",
+        "ITY"
+      ],
       "orientation": "vertical",
-      "fact": "A liability is an obligation the business owes to others. Examples include loans, accounts payable, and accrued expenses."
+      "fact": "Liabilities are present obligations of a company arising from past events, the settlement of which is expected to result in an outflow of resources. Liabilities represent what a company owes to creditors and include accounts payable, loans, bonds, and accrued expenses."
     },
     {
       "word": "EQUITY",
-      "fragments": ["EQU", "ITY"],
-      "orientation": "horizontal",
-      "fact": "Equity represents the owner's stake in the business. The accounting equation is: Assets = Liabilities + Equity."
+      "fragments": [
+        "EQUI",
+        "TY"
+      ],
+      "orientation": "vertical",
+      "fact": "Equity represents the residual interest in the assets of a company after deducting liabilities. Also called shareholders' equity or owner's equity, it includes contributed capital (from issuing shares) and retained earnings (accumulated profits not distributed as dividends)."
+    },
+    {
+      "word": "DEBIT",
+      "fragments": [
+        "DEB",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "A debit is an accounting entry that increases asset or expense accounts, or decreases liability, revenue, or equity accounts. In double-entry bookkeeping, debits are recorded on the left side of a ledger account. Every transaction must have at least one debit and one credit."
+    },
+    {
+      "word": "CREDIT",
+      "fragments": [
+        "CRED",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "A credit is an accounting entry that increases liability, revenue, or equity accounts, or decreases asset or expense accounts. Credits are recorded on the right side of a ledger account. The total debits must always equal total credits in every transaction."
+    },
+    {
+      "word": "BALANCE",
+      "fragments": [
+        "BAL",
+        "ANCE"
+      ],
+      "orientation": "vertical",
+      "fact": "The accounting equation must always balance: Assets = Liabilities + Equity. This fundamental principle ensures that every transaction is recorded in a way that maintains this equality. The balance sheet derives its name from this requirement to balance."
     }
   ]
 }

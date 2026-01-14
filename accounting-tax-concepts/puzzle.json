@@ -1,0 +1,60 @@
+{
+  "title": "What are Tax Accounting Concepts?",
+  "description": "Learn key concepts in tax accounting and compliance",
+  "words": [
+    {
+      "word": "DEDUCTIBLE",
+      "fragments": [
+        "DEDUCT",
+        "IBLE"
+      ],
+      "orientation": "vertical",
+      "fact": "Deductible expenses reduce taxable income. Business expenses must be ordinary and necessary to be deductible. Common deductions include salaries, rent, utilities, and depreciation. Tax laws specify which expenses are deductible and under what conditions."
+    },
+    {
+      "word": "TAXABLE",
+      "fragments": [
+        "TAXAB",
+        "LE"
+      ],
+      "orientation": "vertical",
+      "fact": "Taxable income is the portion of income subject to tax after applying deductions and exemptions. It differs from accounting income due to timing differences (temporary) and permanent differences between tax and accounting rules. Companies must calculate both book and taxable income."
+    },
+    {
+      "word": "DEFERRED",
+      "fragments": [
+        "DEFER",
+        "RED"
+      ],
+      "orientation": "vertical",
+      "fact": "Deferred tax assets and liabilities arise from temporary differences between tax and book accounting. Deferred tax assets represent future tax deductions, while deferred tax liabilities represent future tax payments. They're recognized on the balance sheet."
+    },
+    {
+      "word": "CREDIT",
+      "fragments": [
+        "CRED",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "Tax credits directly reduce tax liability dollar-for-dollar, making them more valuable than deductions. Examples include research and development credits, foreign tax credits, and energy credits. Unlike deductions, credits aren't affected by the taxpayer's marginal tax rate."
+    },
+    {
+      "word": "WITHHOLD",
+      "fragments": [
+        "WITH",
+        "HOLD"
+      ],
+      "orientation": "vertical",
+      "fact": "Withholding requires employers to deduct taxes from employee wages and remit them to tax authorities. It includes income tax, Social Security, and Medicare taxes. Withholding ensures regular tax collection and helps employees avoid large year-end tax bills."
+    },
+    {
+      "word": "FILING",
+      "fragments": [
+        "FIL",
+        "ING"
+      ],
+      "orientation": "vertical",
+      "fact": "Tax filing is the process of submitting tax returns to report income, calculate tax liability, and claim refunds. Deadlines vary by entity type and jurisdiction. Late filing can result in penalties and interest charges. Extensions may be available."
+    }
+  ]
+}

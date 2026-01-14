@@ -1,30 +1,60 @@
 {
-  "title": "What are the key Cost Types?",
-  "description": "Uncover how businesses categorize their expenses. Some stay constant, others change with production.",
+  "title": "What are Different Types of Costs?",
+  "description": "Learn how costs are classified and analyzed in accounting",
   "words": [
     {
       "word": "FIXED",
-      "fragments": ["FIX", "ED"],
+      "fragments": [
+        "FIX",
+        "ED"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Fixed Costs:</strong> Expenses that remain constant regardless of production volume. Examples include rent, salaries, insurance, and depreciation."
+      "fact": "Fixed costs remain constant in total regardless of changes in activity level within a relevant range. Examples include rent, insurance, and salaries. While total fixed costs don't change with volume, fixed cost per unit decreases as volume increases."
     },
     {
       "word": "VARIABLE",
-      "fragments": ["VARI", "AB", "LE"],
+      "fragments": [
+        "VARI",
+        "ABLE"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Variable Costs:</strong> Expenses that change in proportion to production activity. Examples include raw materials, direct labor, and packaging."
+      "fact": "Variable costs change in direct proportion to changes in activity level. Examples include direct materials, direct labor, and sales commissions. Total variable costs increase with production volume, but variable cost per unit remains constant."
     },
     {
       "word": "DIRECT",
-      "fragments": ["DIR", "ECT"],
+      "fragments": [
+        "DIR",
+        "ECT"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Direct Costs:</strong> Expenses directly traceable to a specific product or service. Examples include materials used in manufacturing and wages of production workers."
+      "fact": "Direct costs can be easily traced to a specific cost object (product, department, or project). Direct materials and direct labor are prime examples. These costs are directly attributable to producing a specific product or service."
     },
     {
       "word": "INDIRECT",
-      "fragments": ["INDI", "RE", "CT"],
+      "fragments": [
+        "INDIR",
+        "ECT"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Indirect Costs:</strong> Expenses that cannot be directly traced to a specific product. Also called overhead. Examples include utilities, maintenance, and administrative salaries."
+      "fact": "Indirect costs (or overhead) cannot be easily traced to a specific cost object. They include utilities, depreciation, and supervisory salaries. These costs are allocated to products using cost drivers or allocation bases like machine hours or direct labor hours."
+    },
+    {
+      "word": "OVERHEAD",
+      "fragments": [
+        "OVERH",
+        "EAD"
+      ],
+      "orientation": "vertical",
+      "fact": "Overhead consists of all manufacturing costs except direct materials and direct labor. It includes indirect materials, indirect labor, utilities, depreciation on factory equipment, and factory rent. Overhead is allocated to products using predetermined overhead rates."
+    },
+    {
+      "word": "SUNK",
+      "fragments": [
+        "SU",
+        "NK"
+      ],
+      "orientation": "vertical",
+      "fact": "Sunk costs are past costs that cannot be changed by any present or future decision. They should be ignored in decision-making because they're irrelevant to future choices. Examples include costs of equipment already purchased or research already completed."
     }
   ]
 }

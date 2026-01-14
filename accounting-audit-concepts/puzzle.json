@@ -1,0 +1,60 @@
+{
+  "title": "What are Fundamental Audit Concepts?",
+  "description": "Understand the principles and processes of financial statement auditing",
+  "words": [
+    {
+      "word": "ASSURANCE",
+      "fragments": [
+        "ASSUR",
+        "ANCE"
+      ],
+      "orientation": "vertical",
+      "fact": "Assurance is the primary objective of an audit - to provide users with confidence that financial statements are free from material misstatement. Auditors provide reasonable (not absolute) assurance due to inherent limitations like sampling and the nature of evidence."
+    },
+    {
+      "word": "MATERIAL",
+      "fragments": [
+        "MATER",
+        "IAL"
+      ],
+      "orientation": "vertical",
+      "fact": "Materiality is the threshold above which missing or incorrect information could influence economic decisions of users. Auditors assess materiality when planning procedures and evaluating misstatements. What's material varies by company size and nature."
+    },
+    {
+      "word": "EVIDENCE",
+      "fragments": [
+        "EVID",
+        "ENCE"
+      ],
+      "orientation": "vertical",
+      "fact": "Audit evidence is information auditors gather to support their opinion on financial statements. Evidence must be sufficient (quantity) and appropriate (quality). Sources include inspection, observation, inquiry, confirmation, recalculation, and analytical procedures."
+    },
+    {
+      "word": "INTERNAL",
+      "fragments": [
+        "INTERN",
+        "AL"
+      ],
+      "orientation": "vertical",
+      "fact": "Internal controls are processes designed to provide reasonable assurance about achieving objectives in financial reporting, operations, and compliance. Auditors evaluate internal control effectiveness to determine the nature, timing, and extent of substantive testing needed."
+    },
+    {
+      "word": "RISK",
+      "fragments": [
+        "RI",
+        "SK"
+      ],
+      "orientation": "vertical",
+      "fact": "Audit risk is the risk that auditors express an inappropriate opinion when financial statements are materially misstated. It comprises inherent risk, control risk, and detection risk. Auditors design procedures to reduce audit risk to acceptably low levels."
+    },
+    {
+      "word": "OPINION",
+      "fragments": [
+        "OPIN",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "The audit opinion is the auditor's conclusion about whether financial statements are presented fairly in accordance with accounting standards. Opinions can be unqualified (clean), qualified, adverse, or a disclaimer, depending on findings and scope limitations."
+    }
+  ]
+}

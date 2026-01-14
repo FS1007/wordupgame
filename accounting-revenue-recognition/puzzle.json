@@ -1,0 +1,60 @@
+{
+  "title": "What is Revenue Recognition?",
+  "description": "Understand when and how to recognize revenue in financial statements",
+  "words": [
+    {
+      "word": "EARNED",
+      "fragments": [
+        "EARN",
+        "ED"
+      ],
+      "orientation": "vertical",
+      "fact": "Revenue is earned when a company has substantially completed what it must do to be entitled to the benefits represented by the revenues. This typically occurs when goods are delivered or services are performed, regardless of when payment is received."
+    },
+    {
+      "word": "REALIZED",
+      "fragments": [
+        "REAL",
+        "IZED"
+      ],
+      "orientation": "vertical",
+      "fact": "Revenue is realized when cash or claims to cash (accounts receivable) are received in exchange for goods or services. The realization principle states that revenue should be recognized only when it's both earned and realized or realizable."
+    },
+    {
+      "word": "ACCRUAL",
+      "fragments": [
+        "ACCR",
+        "UAL"
+      ],
+      "orientation": "vertical",
+      "fact": "Under accrual accounting, revenue is recognized when earned, not when cash is received. This matches revenues with the periods in which they're earned, providing a more accurate picture of financial performance than cash-basis accounting."
+    },
+    {
+      "word": "DEFERRED",
+      "fragments": [
+        "DEFER",
+        "RED"
+      ],
+      "orientation": "vertical",
+      "fact": "Deferred revenue (or unearned revenue) represents cash received before services are performed or goods are delivered. It's recorded as a liability because the company owes services or goods to the customer. Revenue is recognized as the obligation is fulfilled."
+    },
+    {
+      "word": "CONTRACT",
+      "fragments": [
+        "CONTR",
+        "ACT"
+      ],
+      "orientation": "vertical",
+      "fact": "Under modern revenue recognition standards (ASC 606/IFRS 15), companies must identify contracts with customers and determine transaction prices. Revenue is recognized as performance obligations in the contract are satisfied, which may occur over time or at a point in time."
+    },
+    {
+      "word": "TRANSFER",
+      "fragments": [
+        "TRANS",
+        "FER"
+      ],
+      "orientation": "vertical",
+      "fact": "Revenue is recognized when control of goods or services transfers to the customer. This replaces the older 'risks and rewards' model. Control transfer can occur at a point in time (like product delivery) or over time (like consulting services)."
+    }
+  ]
+}

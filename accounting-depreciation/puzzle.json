@@ -1,0 +1,60 @@
+{
+  "title": "What are Depreciation Methods?",
+  "description": "Learn how companies allocate the cost of fixed assets over time",
+  "words": [
+    {
+      "word": "STRAIGHT",
+      "fragments": [
+        "STRAIG",
+        "HT"
+      ],
+      "orientation": "vertical",
+      "fact": "Straight-line depreciation allocates an equal amount of depreciation expense each year over an asset's useful life. Annual depreciation equals (Cost - Salvage Value) \u00f7 Useful Life. It's the simplest and most common method, providing consistent expense recognition."
+    },
+    {
+      "word": "DECLINING",
+      "fragments": [
+        "DECLIN",
+        "ING"
+      ],
+      "orientation": "vertical",
+      "fact": "Declining balance (or accelerated) depreciation methods allocate higher depreciation in early years and lower amounts later. Double-declining balance is common. These methods match higher expenses with periods of higher asset productivity and revenue generation."
+    },
+    {
+      "word": "UNITS",
+      "fragments": [
+        "UNI",
+        "TS"
+      ],
+      "orientation": "vertical",
+      "fact": "Units of production depreciation bases expense on actual asset usage rather than time. Depreciation per unit equals (Cost - Salvage Value) \u00f7 Total Expected Units. Annual expense equals units produced \u00d7 depreciation per unit. This matches expense with actual asset consumption."
+    },
+    {
+      "word": "SALVAGE",
+      "fragments": [
+        "SALV",
+        "AGE"
+      ],
+      "orientation": "vertical",
+      "fact": "Salvage value (or residual value) is the estimated amount a company expects to receive when disposing of an asset at the end of its useful life. It's subtracted from the asset's cost to determine the depreciable base."
+    },
+    {
+      "word": "USEFUL",
+      "fragments": [
+        "USE",
+        "FUL"
+      ],
+      "orientation": "vertical",
+      "fact": "Useful life is the estimated period over which an asset will provide economic benefits. It's based on expected usage, physical wear and tear, technical obsolescence, and legal limits. Different assets have different useful lives, requiring professional judgment to estimate."
+    },
+    {
+      "word": "IMPAIR",
+      "fragments": [
+        "IMPA",
+        "IR"
+      ],
+      "orientation": "vertical",
+      "fact": "Impairment occurs when an asset's carrying value exceeds its recoverable amount. Assets must be tested for impairment when indicators suggest value has decreased. If impaired, the asset is written down to fair value, with the loss recognized as an expense."
+    }
+  ]
+}

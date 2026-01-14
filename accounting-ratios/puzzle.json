@@ -1,24 +1,60 @@
 {
-  "title": "Financial Accounting - Advanced",
-  "description": "🎯 What are the Key Financial Ratios? 📊",
+  "title": "What are Key Financial Ratios?",
+  "description": "Master the ratios used to analyze financial performance and health",
   "words": [
     {
       "word": "LIQUIDITY",
-      "fragments": ["LIQ", "UID", "ITY"],
-      "orientation": "horizontal",
-      "fact": "Liquidity ratios measure a company's ability to pay short-term obligations. Examples include current ratio and quick ratio."
+      "fragments": [
+        "LIQUID",
+        "ITY"
+      ],
+      "orientation": "vertical",
+      "fact": "Liquidity ratios measure a company's ability to meet short-term obligations. The current ratio (current assets \u00f7 current liabilities) and quick ratio are common liquidity measures. Higher ratios generally indicate better short-term financial health."
     },
     {
-      "word": "SOLVENCY",
-      "fragments": ["SOL", "VEN", "CY"],
+      "word": "LEVERAGE",
+      "fragments": [
+        "LEVER",
+        "AGE"
+      ],
       "orientation": "vertical",
-      "fact": "Solvency ratios measure long-term financial stability and ability to meet long-term obligations. Examples include debt-to-equity and interest coverage ratios."
+      "fact": "Leverage ratios (or solvency ratios) measure the extent to which a company uses debt financing. The debt-to-equity ratio and debt ratio reveal financial risk and capital structure. Higher leverage increases both potential returns and financial risk."
     },
     {
-      "word": "PROFITABILITY",
-      "fragments": ["PROF", "IT", "ABI", "LI", "TY"],
+      "word": "PROFIT",
+      "fragments": [
+        "PROF",
+        "IT"
+      ],
       "orientation": "vertical",
-      "fact": "Profitability ratios measure how efficiently a company generates profit. Examples include gross margin, operating margin, ROE, and ROA."
+      "fact": "Profitability ratios measure how efficiently a company generates profit from its resources. Common ratios include gross profit margin, net profit margin, return on assets (ROA), and return on equity (ROE). These ratios help assess operational efficiency and overall performance."
+    },
+    {
+      "word": "TURNOVER",
+      "fragments": [
+        "TURN",
+        "OVER"
+      ],
+      "orientation": "vertical",
+      "fact": "Turnover ratios (or activity ratios) measure how efficiently a company uses its assets. Inventory turnover, accounts receivable turnover, and asset turnover show how quickly assets are converted to sales or cash. Higher turnover generally indicates better efficiency."
+    },
+    {
+      "word": "MARGIN",
+      "fragments": [
+        "MARG",
+        "IN"
+      ],
+      "orientation": "vertical",
+      "fact": "Margin ratios express profit as a percentage of sales. Gross margin shows profitability after cost of goods sold, operating margin after operating expenses, and net margin after all expenses. Margins reveal pricing power and cost control effectiveness."
+    },
+    {
+      "word": "RETURN",
+      "fragments": [
+        "RET",
+        "URN"
+      ],
+      "orientation": "vertical",
+      "fact": "Return ratios measure the profitability of investments. Return on Assets (ROA) shows how efficiently assets generate profit, while Return on Equity (ROE) measures returns to shareholders. These ratios are key metrics for evaluating management performance and comparing companies."
     }
   ]
 }

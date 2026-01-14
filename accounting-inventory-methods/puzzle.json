@@ -1,0 +1,60 @@
+{
+  "title": "What are Inventory Valuation Methods?",
+  "description": "Understand different approaches to valuing and accounting for inventory",
+  "words": [
+    {
+      "word": "FIFO",
+      "fragments": [
+        "FI",
+        "FO"
+      ],
+      "orientation": "vertical",
+      "fact": "First-In, First-Out (FIFO) assumes the oldest inventory items are sold first. During inflation, FIFO results in lower cost of goods sold, higher net income, and higher ending inventory values. It often better matches physical flow of goods, especially for perishables."
+    },
+    {
+      "word": "LIFO",
+      "fragments": [
+        "LI",
+        "FO"
+      ],
+      "orientation": "vertical",
+      "fact": "Last-In, First-Out (LIFO) assumes the newest inventory items are sold first. During inflation, LIFO results in higher cost of goods sold, lower net income, and lower ending inventory values. It provides tax benefits but is not allowed under IFRS."
+    },
+    {
+      "word": "AVERAGE",
+      "fragments": [
+        "AVER",
+        "AGE"
+      ],
+      "orientation": "vertical",
+      "fact": "Weighted average cost method calculates an average cost per unit and applies it to both cost of goods sold and ending inventory. It smooths out price fluctuations and is simpler to apply than FIFO or LIFO. Results fall between FIFO and LIFO."
+    },
+    {
+      "word": "PERIODIC",
+      "fragments": [
+        "PERIOD",
+        "IC"
+      ],
+      "orientation": "vertical",
+      "fact": "Under the periodic inventory system, companies only determine inventory quantities and costs at the end of accounting periods through physical counts. Cost of goods sold is calculated as: Beginning Inventory + Purchases - Ending Inventory."
+    },
+    {
+      "word": "PERPETUAL",
+      "fragments": [
+        "PERPETU",
+        "AL"
+      ],
+      "orientation": "vertical",
+      "fact": "Perpetual inventory systems maintain continuous records of inventory quantities and costs. Each purchase and sale updates inventory records in real-time. Modern technology makes perpetual systems practical, providing better inventory control and more timely information."
+    },
+    {
+      "word": "LOWER",
+      "fragments": [
+        "LOW",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "Under the Lower of Cost or Market (LCM) rule, inventory is valued at the lower of its historical cost or current market value. This conservative approach ensures inventory isn't overstated when market values decline, following the principle of conservatism."
+    }
+  ]
+}
