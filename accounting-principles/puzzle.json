@@ -1,36 +1,60 @@
 {
-  "title": "Financial Accounting",
-  "description": "💰 What are the 5 GAAP Accounting Principles? 📊",
+  "title": "What are GAAP Principles?",
+  "description": "Learn the fundamental accounting principles that guide financial reporting",
   "words": [
     {
-      "word": "PRUDENCE",
-      "fragments": ["PRU", "DENCE"],
-      "orientation": "horizontal",
-      "fact": "Prudence requires accountants to be cautious and conservative when making estimates. Assets and revenues should not be overstated, while liabilities and expenses should not be understated."
+      "word": "RELEVANCE",
+      "fragments": [
+        "RELEV",
+        "ANCE"
+      ],
+      "orientation": "vertical",
+      "fact": "Relevance is a key qualitative characteristic of useful financial information. Information is relevant when it can influence the economic decisions of users by helping them evaluate past, present, or future events. Relevant information has predictive value, confirmatory value, or both."
+    },
+    {
+      "word": "RELIABILITY",
+      "fragments": [
+        "RELIAB",
+        "ILITY"
+      ],
+      "orientation": "vertical",
+      "fact": "Reliability means financial information is free from material error and bias, and faithfully represents what it purports to represent. Reliable information can be depended upon by users to make informed decisions. It requires completeness, neutrality, and freedom from error."
     },
     {
       "word": "CONSISTENCY",
-      "fragments": ["CON", "SIS", "TENCY"],
+      "fragments": [
+        "CONSIST",
+        "ENCY"
+      ],
       "orientation": "vertical",
-      "fact": "Consistency requires using the same accounting methods from period to period. This allows stakeholders to compare financial statements across different time periods."
-    },
-    {
-      "word": "SINCERITY",
-      "fragments": ["SIN", "CERITY"],
-      "orientation": "horizontal",
-      "fact": "Sincerity demands that accountants provide an accurate and honest representation of the company's financial position. All information must be truthful and transparent."
+      "fact": "Consistency requires companies to use the same accounting methods from period to period. This allows users to compare financial statements across different time periods and identify trends. Changes in accounting methods must be disclosed and justified."
     },
     {
       "word": "MATERIALITY",
-      "fragments": ["MATE", "RIAL", "ITY"],
+      "fragments": [
+        "MATERIAL",
+        "ITY"
+      ],
       "orientation": "vertical",
-      "fact": "Materiality means information should be disclosed if it could influence economic decisions of users. Immaterial items can be treated in a simpler, more cost-effective way."
+      "fact": "Materiality refers to the significance of financial information. Information is material if its omission or misstatement could influence the economic decisions of users. The concept helps accountants determine what information must be disclosed in financial statements."
     },
     {
-      "word": "CONTINUITY",
-      "fragments": ["CONTI", "NUITY"],
-      "orientation": "horizontal",
-      "fact": "Continuity assumes that the business will continue operating in the foreseeable future. This allows assets to be valued at cost rather than liquidation value."
+      "word": "CONSERVATISM",
+      "fragments": [
+        "CONSERV",
+        "ATISM"
+      ],
+      "orientation": "vertical",
+      "fact": "Conservatism (or prudence) principle states that when faced with uncertainty, accountants should exercise caution and not overstate assets or income. This means recognizing expenses and liabilities as soon as possible, but only recognizing revenues when they are assured."
+    },
+    {
+      "word": "DISCLOSURE",
+      "fragments": [
+        "DISCL",
+        "OSURE"
+      ],
+      "orientation": "vertical",
+      "fact": "The disclosure principle requires that financial statements include all information necessary for users to make informed decisions. This includes notes to financial statements explaining accounting policies, contingent liabilities, and other relevant information not apparent from the statements themselves."
     }
   ]
 }
