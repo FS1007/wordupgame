@@ -1,0 +1,60 @@
+{
+  "title": "What are Product Growth Strategies?",
+  "description": "Master the techniques used to drive user acquisition and engagement",
+  "words": [
+    {
+      "word": "VIRAL",
+      "fragments": [
+        "VIR",
+        "AL"
+      ],
+      "orientation": "vertical",
+      "fact": "Viral growth occurs when existing users bring in new users through sharing or network effects. The viral coefficient measures how many new users each user generates. Products become viral by creating incentives to share, making sharing easy, and delivering value that's enhanced when friends join. Viral growth is powerful but hard to engineer."
+    },
+    {
+      "word": "REFERRAL",
+      "fragments": [
+        "REFER",
+        "RAL"
+      ],
+      "orientation": "vertical",
+      "fact": "Referral programs incentivize users to recommend the product to others. Successful referrals offer value to both referrer and referee, are easy to share, and track attribution clearly. The best referral programs feel natural to how people already talk about the product. Double-sided incentives often work better than one-sided rewards."
+    },
+    {
+      "word": "ONBOARD",
+      "fragments": [
+        "ONBO",
+        "ARD"
+      ],
+      "orientation": "vertical",
+      "fact": "Onboarding is the process of helping new users understand and extract value from a product quickly. Effective onboarding reduces time-to-value, increases activation rates, and improves retention. It should focus on core value, minimize friction, and adapt to different user needs. Great onboarding feels helpful, not overwhelming."
+    },
+    {
+      "word": "RETAIN",
+      "fragments": [
+        "RETA",
+        "IN"
+      ],
+      "orientation": "vertical",
+      "fact": "Retention measures how many users continue using a product over time. It's often more valuable than acquisition since retained users generate more lifetime value and cost less than new users. Improving retention requires understanding why users leave, delivering ongoing value, and building habits. Retention cohorts reveal how product changes impact long-term engagement."
+    },
+    {
+      "word": "HABIT",
+      "fragments": [
+        "HAB",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "Habit formation creates frequent, automatic product usage. The Hook Model describes how products build habits through triggers, actions, rewards, and investment. Habitual usage drives retention and engagement. Product managers should identify natural usage triggers and design rewarding experiences that encourage users to return frequently."
+    },
+    {
+      "word": "NETWORK",
+      "fragments": [
+        "NETW",
+        "ORK"
+      ],
+      "orientation": "vertical",
+      "fact": "Network effects occur when a product becomes more valuable as more people use it. This creates powerful competitive advantages and growth dynamics. Common types include direct network effects (communication tools), two-sided markets (marketplaces), and data network effects (products that improve with usage). Building and maintaining network effects requires reaching critical mass and preventing fragmentation."
+    }
+  ]
+}

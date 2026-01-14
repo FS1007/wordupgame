@@ -1,0 +1,60 @@
+{
+  "title": "What are Decision Framework Terms?",
+  "description": "Understand the concepts used to make informed product decisions",
+  "words": [
+    {
+      "word": "OPTION",
+      "fragments": [
+        "OPT",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "Options are alternative courses of action available when making decisions. Good decision-making starts with generating multiple options before choosing. Options should be meaningfully different, feasible, and address the core problem. Product managers often create option frameworks comparing approaches on key dimensions like cost, time, risk, and potential impact."
+    },
+    {
+      "word": "CHOICE",
+      "fragments": [
+        "CHOI",
+        "CE"
+      ],
+      "orientation": "vertical",
+      "fact": "Choice is the act of selecting between available options. Effective choice-making requires clear criteria, understanding trade-offs, and accepting that perfect information rarely exists. Decision frameworks like weighted scoring, decision matrices, and cost-benefit analysis help structure choices. Good product managers make timely choices with available information rather than waiting for certainty."
+    },
+    {
+      "word": "DECIDE",
+      "fragments": [
+        "DEC",
+        "IDE"
+      ],
+      "orientation": "vertical",
+      "fact": "To decide means to reach a conclusion and commit to action. Product decisions range from strategic (market positioning) to tactical (feature details). Effective decision-making involves defining the decision clearly, gathering relevant information, considering alternatives, evaluating trade-offs, and making a timely choice. Documenting decisions and rationale helps teams learn and maintain alignment."
+    },
+    {
+      "word": "OUTCOME",
+      "fragments": [
+        "OUTC",
+        "OME"
+      ],
+      "orientation": "vertical",
+      "fact": "An outcome is the result of a decision or action. Outcome-oriented thinking focuses on the effects achieved rather than outputs produced. Product teams should define desired outcomes (increased engagement, reduced friction) before determining solutions. Measuring outcomes validates decisions, informs iterations, and demonstrates impact to stakeholders."
+    },
+    {
+      "word": "RESULT",
+      "fragments": [
+        "RES",
+        "ULT"
+      ],
+      "orientation": "vertical",
+      "fact": "Results are the tangible effects of actions and decisions, measured through metrics and observations. Analyzing results helps teams learn what works, what doesn't, and why. Results should be compared against predictions to calibrate decision-making. Learning from results\u2014both successes and failures\u2014continuously improves product judgment and team performance."
+    },
+    {
+      "word": "FACTOR",
+      "fragments": [
+        "FACT",
+        "OR"
+      ],
+      "orientation": "vertical",
+      "fact": "Factors are variables that influence decisions and outcomes. Decision factors might include user needs, business goals, technical constraints, competitive pressure, and resource availability. Identifying relevant factors, understanding their relationships, and weighting their importance helps structure decision-making. Different factors matter more depending on context, requiring judgment and experience."
+    }
+  ]
+}

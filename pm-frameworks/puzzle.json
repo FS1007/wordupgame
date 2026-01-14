@@ -1,0 +1,42 @@
+{
+  "title": "What are Core PM Frameworks?",
+  "description": "Discover the essential methodologies used in product management",
+  "words": [
+    {
+      "word": "AGILE",
+      "fragments": ["AG", "ILE"],
+      "orientation": "vertical",
+      "fact": "Agile is an iterative approach to project management and product development that emphasizes flexibility, collaboration, and customer feedback. Teams work in short cycles called sprints to continuously deliver value. Agile methodologies prioritize responding to change over following a fixed plan, making it ideal for dynamic product environments."
+    },
+    {
+      "word": "SCRUM",
+      "fragments": ["SCR", "UM"],
+      "orientation": "vertical",
+      "fact": "Scrum is a popular Agile framework that organizes work into time-boxed iterations called sprints, typically lasting 1-4 weeks. The framework includes defined roles (Product Owner, Scrum Master, Development Team) and ceremonies (Sprint Planning, Daily Standup, Sprint Review, Retrospective). Scrum emphasizes transparency, inspection, and adaptation."
+    },
+    {
+      "word": "KANBAN",
+      "fragments": ["KAN", "BAN"],
+      "orientation": "vertical",
+      "fact": "Kanban is a visual workflow management method that helps teams optimize their processes and improve efficiency. Work items are represented as cards on a board with columns representing different stages. Key principles include visualizing work, limiting work-in-progress (WIP), and focusing on continuous flow rather than fixed iterations."
+    },
+    {
+      "word": "SPRINT",
+      "fragments": ["SPR", "INT"],
+      "orientation": "vertical",
+      "fact": "A sprint is a time-boxed period during which specific work must be completed and made ready for review. In Scrum, sprints typically last 1-4 weeks and end with a potentially shippable product increment. Each sprint begins with planning and ends with a review and retrospective to continuously improve team performance."
+    },
+    {
+      "word": "BACKLOG",
+      "fragments": ["BACK", "LOG"],
+      "orientation": "vertical",
+      "fact": "The product backlog is a prioritized list of features, enhancements, and fixes that need to be developed. It serves as the single source of truth for what the team will build. The Product Owner maintains and prioritizes the backlog based on business value, customer needs, and strategic goals. Backlog refinement is an ongoing process."
+    },
+    {
+      "word": "ROADMAP",
+      "fragments": ["ROAD", "MAP"],
+      "orientation": "vertical",
+      "fact": "A product roadmap is a strategic document that communicates the vision, direction, and progress of a product over time. It outlines high-level goals, key features, and timelines while remaining flexible enough to adapt to changing priorities. Roadmaps align stakeholders and guide development teams toward shared objectives."
+    }
+  ]
+}

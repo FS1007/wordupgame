@@ -1,30 +1,60 @@
 {
-  "title": "What are the Product Lifecycle Stages?",
-  "description": "Discover the journey every product takes from launch to sunset.",
+  "title": "What are Product Lifecycle Stages?",
+  "description": "Understand how products evolve from concept to retirement",
   "words": [
     {
-      "word": "INTRODUCTION",
-      "fragments": ["INTRO", "DUC", "TION"],
+      "word": "CONCEPT",
+      "fragments": [
+        "CONC",
+        "EPT"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Introduction Stage:</strong> Product launch phase with high costs, low sales, and heavy marketing investment. Focus is on building awareness and establishing market presence."
+      "fact": "The concept stage is where product ideas are generated and initially evaluated. Teams assess market need, competitive landscape, technical feasibility, and business opportunity. This stage involves rapid learning through customer research and prototyping. Most concepts don't progress, making it crucial to fail fast on bad ideas and invest in promising ones."
+    },
+    {
+      "word": "DEVELOP",
+      "fragments": [
+        "DEVEL",
+        "OP"
+      ],
+      "orientation": "vertical",
+      "fact": "Development is when the product is built based on validated concepts. This involves detailed design, engineering, testing, and iteration. Product managers balance speed with quality, manage scope, and ensure the team builds the right thing. Development should maintain close customer contact to validate assumptions and catch issues early."
+    },
+    {
+      "word": "LAUNCH",
+      "fragments": [
+        "LAUN",
+        "CH"
+      ],
+      "orientation": "vertical",
+      "fact": "Launch introduces the product to the market. Successful launches coordinate product readiness, go-to-market strategy, marketing campaigns, sales enablement, and customer support. The first customers provide critical feedback. Product managers must be ready to respond quickly to issues and opportunities revealed after launch."
     },
     {
       "word": "GROWTH",
-      "fragments": ["GRO", "WTH"],
+      "fragments": [
+        "GRO",
+        "WTH"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Growth Stage:</strong> Rapid sales increase, growing profits, and market expansion. Competition increases as others enter the market. Focus on differentiation and market share."
+      "fact": "The growth stage focuses on expanding the user base and revenue. This involves optimizing marketing channels, improving conversion funnels, adding features for broader appeal, and scaling operations. Product managers balance growth initiatives with maintaining product quality and core value proposition."
     },
     {
-      "word": "MATURITY",
-      "fragments": ["MATU", "RITY"],
+      "word": "MATURE",
+      "fragments": [
+        "MAT",
+        "URE"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Maturity Stage:</strong> Sales peak and plateau, market saturation occurs, and competition intensifies. Focus shifts to efficiency, cost reduction, and customer retention."
+      "fact": "Mature products have established market position and stable user bases. Growth slows, competition intensifies, and margins face pressure. Product strategy shifts toward efficiency, incremental improvements, and defending market share. Mature products fund innovation in newer offerings while still serving core customers effectively."
     },
     {
       "word": "DECLINE",
-      "fragments": ["DECLI", "NE"],
+      "fragments": [
+        "DECL",
+        "INE"
+      ],
       "orientation": "vertical",
-      "fact": "<strong>Decline Stage:</strong> Sales and profits fall as customer preferences change or better alternatives emerge. Companies must decide whether to harvest, maintain, or discontinue the product."
+      "fact": "Decline occurs when products lose relevance due to new technologies, changing needs, or superior alternatives. Product managers must decide whether to revitalize, maintain, or retire products. Resources should shift to growing products, but decline must be managed carefully to protect customer relationships and brand reputation."
     }
   ]
 }

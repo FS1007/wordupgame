@@ -1,0 +1,60 @@
+{
+  "title": "Who are Product Stakeholders?",
+  "description": "Learn the key people who influence and are impacted by product decisions",
+  "words": [
+    {
+      "word": "EXECUTIVE",
+      "fragments": [
+        "EXEC",
+        "UTIVE"
+      ],
+      "orientation": "vertical",
+      "fact": "Executives are senior leaders who set company strategy and allocate resources. They care about business outcomes, market position, and ROI. Product managers must communicate how products drive business goals and present clear, data-backed recommendations. Executives appreciate concise updates focused on metrics, risks, and key decisions."
+    },
+    {
+      "word": "ENGINEER",
+      "fragments": [
+        "ENGIN",
+        "EER"
+      ],
+      "orientation": "vertical",
+      "fact": "Engineers build the product and understand technical constraints and possibilities. They need clear requirements, context for decisions, and involvement in solution design. Strong PM-engineer relationships balance business needs with technical reality, leveraging engineering expertise in planning while maintaining product vision."
+    },
+    {
+      "word": "DESIGNER",
+      "fragments": [
+        "DESIGN",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "Designers create user experiences and visual interfaces. They need to understand user needs, business constraints, and success metrics. Product managers collaborate with designers throughout the process, from research to final execution. The best products emerge when PM and design work as partners, combining user empathy with business strategy."
+    },
+    {
+      "word": "SALES",
+      "fragments": [
+        "SAL",
+        "ES"
+      ],
+      "orientation": "vertical",
+      "fact": "Sales teams sell the product to customers and prospects. They need to understand the product deeply, know its competitive advantages, and have materials to support selling. Product managers should regularly communicate with sales about upcoming features, gather customer feedback, and ensure sales can articulate product value effectively."
+    },
+    {
+      "word": "SUPPORT",
+      "fragments": [
+        "SUPP",
+        "ORT"
+      ],
+      "orientation": "vertical",
+      "fact": "Customer support teams interact with users daily and see problems firsthand. They're invaluable sources of user feedback and pain points. Product managers should establish regular communication with support, review support tickets for patterns, and involve support in beta testing and feature launches."
+    },
+    {
+      "word": "CUSTOMER",
+      "fragments": [
+        "CUST",
+        "OMER"
+      ],
+      "orientation": "vertical",
+      "fact": "Customers are the ultimate stakeholders - they use the product and determine its success. Product managers must maintain direct customer contact through interviews, testing, and feedback sessions. While customers aren't always right about solutions, they're the authority on their problems, needs, and willingness to pay."
+    }
+  ]
+}

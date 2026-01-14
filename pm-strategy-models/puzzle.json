@@ -1,0 +1,60 @@
+{
+  "title": "What are Product Strategy Frameworks?",
+  "description": "Learn the models used to develop competitive product strategies",
+  "words": [
+    {
+      "word": "VISION",
+      "fragments": [
+        "VIS",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "A product vision is an inspiring long-term goal that guides decisions and aligns teams. It describes the change the product will create in the world. Effective visions are ambitious yet achievable, clear enough to guide decisions, and compelling enough to motivate teams. Vision connects daily work to meaningful impact."
+    },
+    {
+      "word": "MISSION",
+      "fragments": [
+        "MISS",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "The mission statement defines the product's fundamental purpose and who it serves. It answers why the product exists and what problem it solves. While vision describes the destination, mission describes the journey. Strong missions provide focus, help prioritize opportunities, and create alignment across diverse stakeholders."
+    },
+    {
+      "word": "OBJECTIVE",
+      "fragments": [
+        "OBJECT",
+        "IVE"
+      ],
+      "orientation": "vertical",
+      "fact": "Objectives are specific, measurable goals that advance the product vision. They provide clear targets for teams and enable tracking progress. Good objectives are ambitious but achievable, time-bound, and clearly connected to strategy. The OKR framework (Objectives and Key Results) helps teams set and track objectives effectively."
+    },
+    {
+      "word": "ROADMAP",
+      "fragments": [
+        "ROAD",
+        "MAP"
+      ],
+      "orientation": "vertical",
+      "fact": "A roadmap communicates the product's direction and planned initiatives over time. It shows how the product will evolve to achieve strategic objectives. Effective roadmaps balance commitment and flexibility, focusing on outcomes rather than features. They align stakeholders while remaining adaptable as learning happens."
+    },
+    {
+      "word": "POSITION",
+      "fragments": [
+        "POSIT",
+        "ION"
+      ],
+      "orientation": "vertical",
+      "fact": "Product positioning defines how the product fits in the market and differs from alternatives. It clarifies the target customer, key benefits, and competitive advantages. Strong positioning makes marketing effective and sales easier by clearly articulating why customers should choose this product. Positioning evolves as markets and products mature."
+    },
+    {
+      "word": "MOAT",
+      "fragments": [
+        "MO",
+        "AT"
+      ],
+      "orientation": "vertical",
+      "fact": "A competitive moat is a sustainable advantage that protects a product from competition. Moats include network effects, switching costs, brand strength, proprietary technology, or economies of scale. Product managers should identify and strengthen moats while recognizing that most advantages are temporary without continuous innovation."
+    }
+  ]
+}

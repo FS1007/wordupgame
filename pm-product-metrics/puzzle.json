@@ -1,0 +1,60 @@
+{
+  "title": "What are Key Product Metrics?",
+  "description": "Learn the essential measurements that track product success and health",
+  "words": [
+    {
+      "word": "CHURN",
+      "fragments": [
+        "CHU",
+        "RN"
+      ],
+      "orientation": "vertical",
+      "fact": "Churn rate measures the percentage of customers who stop using a product over a given period. It's calculated by dividing lost customers by total customers at the start of the period. High churn indicates problems with product value, user experience, or customer satisfaction. Reducing churn is often more cost-effective than acquiring new users."
+    },
+    {
+      "word": "GROWTH",
+      "fragments": [
+        "GRO",
+        "WTH"
+      ],
+      "orientation": "vertical",
+      "fact": "Growth metrics track how quickly a product's user base, revenue, or engagement is expanding. Common growth metrics include monthly active users (MAU), revenue growth rate, and user acquisition rate. Sustainable growth balances acquisition, activation, retention, and monetization across the user journey."
+    },
+    {
+      "word": "ACTIVE",
+      "fragments": [
+        "ACT",
+        "IVE"
+      ],
+      "orientation": "vertical",
+      "fact": "Active users are those who perform meaningful actions within a product during a specific timeframe. Daily Active Users (DAU) and Monthly Active Users (MAU) are common metrics. The DAU/MAU ratio indicates user engagement and stickiness. Defining what constitutes 'active' is crucial and should align with core product value."
+    },
+    {
+      "word": "COHORT",
+      "fragments": [
+        "COH",
+        "ORT"
+      ],
+      "orientation": "vertical",
+      "fact": "Cohort analysis groups users who share common characteristics or experiences during a specific time period. This allows tracking how behavior changes over time for different user segments. Cohort analysis is particularly valuable for understanding retention patterns, feature adoption, and the long-term impact of product changes."
+    },
+    {
+      "word": "FUNNEL",
+      "fragments": [
+        "FUNN",
+        "EL"
+      ],
+      "orientation": "vertical",
+      "fact": "A conversion funnel visualizes the steps users take toward a desired action, showing drop-off rates at each stage. Analyzing funnels helps identify friction points and optimization opportunities. Common funnels include signup flows, onboarding sequences, and purchase processes. Improving funnel conversion directly impacts business outcomes."
+    },
+    {
+      "word": "METRIC",
+      "fragments": [
+        "METR",
+        "IC"
+      ],
+      "orientation": "vertical",
+      "fact": "A metric is a quantifiable measure used to track product performance and progress toward goals. Good metrics are actionable, accessible, auditable, and aligned with business objectives. The key is selecting metrics that drive decision-making rather than vanity metrics that look good but don't inform action."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "What are Prioritization Methods?",
+  "description": "Master the frameworks used to prioritize features and make trade-off decisions",
+  "words": [
+    {
+      "word": "RICE",
+      "fragments": ["RI", "CE"],
+      "orientation": "vertical",
+      "fact": "RICE is a prioritization framework that scores features based on four factors: Reach (how many people), Impact (how much effect), Confidence (how certain), and Effort (time required). The score is calculated as (Reach × Impact × Confidence) / Effort. This data-driven approach helps product teams make objective prioritization decisions."
+    },
+    {
+      "word": "KANO",
+      "fragments": ["KA", "NO"],
+      "orientation": "vertical",
+      "fact": "The Kano Model categorizes features into five types based on customer satisfaction: Basic (must-haves), Performance (more is better), Excitement (delighters), Indifferent (don't care), and Reverse (satisfaction decreases). This framework helps teams understand which features will truly delight customers versus those that are simply expected."
+    },
+    {
+      "word": "IMPACT",
+      "fragments": ["IMPA", "CT"],
+      "orientation": "vertical",
+      "fact": "Impact measures the degree of positive effect a feature will have on the desired outcome, typically rated on a scale (e.g., 0.25 for minimal to 3 for massive). High-impact features significantly move key metrics like conversion, retention, or revenue. Estimating impact requires understanding user needs and business goals."
+    },
+    {
+      "word": "VALUE",
+      "fragments": ["VAL", "UE"],
+      "orientation": "vertical",
+      "fact": "Value represents the benefit a feature provides to users or the business. It can be measured in various ways: revenue generated, cost saved, problems solved, or user satisfaction gained. Value-based prioritization ensures teams focus on work that delivers the greatest return on investment and aligns with strategic objectives."
+    },
+    {
+      "word": "EFFORT",
+      "fragments": ["EFF", "ORT"],
+      "orientation": "vertical",
+      "fact": "Effort estimation measures the resources (time, people, complexity) required to complete a feature. It's often expressed in story points, person-hours, or t-shirt sizes (S/M/L/XL). Accurate effort estimates help teams balance quick wins with longer-term investments and communicate realistic timelines to stakeholders."
+    },
+    {
+      "word": "URGENT",
+      "fragments": ["URG", "ENT"],
+      "orientation": "vertical",
+      "fact": "The Urgent vs Important matrix, popularized by Eisenhower, helps distinguish between tasks requiring immediate attention and those contributing to long-term goals. Urgent items demand quick action but may not be strategically important. Effective product managers balance addressing urgent issues while maintaining focus on important strategic initiatives."
+    }
+  ]
+}

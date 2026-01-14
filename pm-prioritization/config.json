@@ -1,0 +1,26 @@
+{
+  "theme": {
+    "name": "purple",
+    "colors": {
+      "gradientStart": "#7c3aed",
+      "gradientEnd": "#8b5cf6",
+      "primary": "#8b5cf6",
+      "primaryDark": "#7c3aed",
+      "primaryHover": "#6d28d9",
+      "pieceBackground": "white",
+      "completedBackground": "#ede9fe",
+      "completedBorder": "#8b5cf6",
+      "textDark": "#5b21b6"
+    }
+  },
+  "gameSettings": {
+    "snapDistance": 150,
+    "snapTolerance": 5,
+    "completionDelay": 350,
+    "cellSize": {
+      "desktop": 50,
+      "tablet": 40,
+      "mobile": 35
+    }
+  }
+}

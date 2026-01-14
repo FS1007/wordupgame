@@ -1,0 +1,42 @@
+{
+  "title": "What are Feature Planning Concepts?",
+  "description": "Master the terminology used to plan and deliver product features",
+  "words": [
+    {
+      "word": "EPIC",
+      "fragments": ["EP", "IC"],
+      "orientation": "vertical",
+      "fact": "An epic is a large body of work that can be broken down into smaller user stories. Epics typically span multiple sprints and represent significant functionality or initiatives. They help organize related work, communicate progress to stakeholders, and maintain focus on strategic themes while allowing flexibility in implementation details."
+    },
+    {
+      "word": "FEATURE",
+      "fragments": ["FEAT", "URE"],
+      "orientation": "vertical",
+      "fact": "A feature is a distinct capability or function that provides value to users. Features are the building blocks of products, each solving specific user problems or enabling particular workflows. Good feature planning considers user needs, technical feasibility, business value, and how features work together as a cohesive whole."
+    },
+    {
+      "word": "RELEASE",
+      "fragments": ["RELE", "ASE"],
+      "orientation": "vertical",
+      "fact": "A release is a collection of features and improvements delivered to users at a specific time. Release planning involves deciding what to include, when to ship, and how to communicate changes. Modern products often use continuous delivery, but major releases still provide natural milestones for coordinating teams, marketing, and support."
+    },
+    {
+      "word": "VERSION",
+      "fragments": ["VERS", "ION"],
+      "orientation": "vertical",
+      "fact": "A version is a specific iteration of a product, typically numbered to track changes over time. Semantic versioning (e.g., 2.1.3) indicates the significance of changes: major versions introduce breaking changes, minor versions add functionality, and patches fix bugs. Version management helps teams and users understand what's changed and maintain compatibility."
+    },
+    {
+      "word": "DEPLOY",
+      "fragments": ["DEPL", "OY"],
+      "orientation": "vertical",
+      "fact": "Deployment is the process of releasing code changes to production environments where users can access them. Modern deployment practices include automated testing, staged rollouts, feature flags, and rollback capabilities. Continuous deployment enables rapid iteration while maintaining stability through robust testing and monitoring."
+    },
+    {
+      "word": "LAUNCH",
+      "fragments": ["LAUN", "CH"],
+      "orientation": "vertical",
+      "fact": "A launch is the public introduction of a new product or major feature. Successful launches coordinate product readiness, marketing, sales, support, and user education. Launch strategies vary from quiet releases to test with early adopters, to major announcements targeting widespread attention. The best launches align execution across all teams touching the customer experience."
+    }
+  ]
+}
