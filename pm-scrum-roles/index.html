@@ -23,6 +23,7 @@
             display: flex;
             gap: 15px;
             margin-top: 20px;
+            align-items: stretch;
         }
 
         .button-group .btn-primary {
@@ -44,6 +45,11 @@
             text-decoration: none;
             display: block;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            white-space: nowrap;
         }
 
         .btn-secondary-cta:hover {
@@ -66,6 +72,7 @@
     <main>
         <div id="game-area"></div>
     </main>
+    
     <div id="victory-modal" class="modal">
         <div class="modal-content">
             <button id="close-victory" class="close-btn">×</button>
@@ -75,10 +82,9 @@
                 <h3>Did you know?</h3>
                 <ul id="facts-list"></ul>
             </div>
-            <!-- Dual CTA Buttons -->
             <div class="button-group">
-                <button id="new-puzzle-btn" class="btn-primary">🌅 Come Back Tomorrow</button>
-                <a href="../archive-pm.html" class="btn-secondary-cta">🎮 Play More Puzzles</a>
+                <button id="come-back-btn" class="btn-primary">Come back tomorrow</button>
+                <a id="play-more-btn" class="btn-secondary-cta" href="../archive-pm.html">🎮 Play more</a>
             </div>
         </div>
     </div>
@@ -101,11 +107,5 @@
 
     <!-- Shared game engine -->
     <script src="../shared/core.js"></script>
-    <script>
-        // "Come Back Tomorrow" redirects to homepage
-        document.getElementById('new-puzzle-btn').addEventListener('click', function() {
-            window.location.href = '../index.html';
-        });
-    </script>
-</body>
+    </body>
 </html>

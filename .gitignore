@@ -1,1 +1,32 @@
 .playwright-mcp/
+
+# IDE + editor helpers
+.vscode/
+.idea/
+
+# macOS Finder database
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Environment overrides
+.env
+*.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Node modules
+node_modules/
+
+# Caches / temp
+.cache/
+.sass-cache/
+
+*.tmp
+*.swp
+*~

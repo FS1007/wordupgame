@@ -33,6 +33,7 @@
         <p id="puzzle-description">Loading puzzle...</p>
     </header>
     <main><div id="game-area"></div></main>
+    
     <div id="victory-modal" class="modal">
         <div class="modal-content">
             <button id="close-victory" class="close-btn">×</button>
@@ -43,8 +44,8 @@
                 <ul id="facts-list"></ul>
             </div>
             <div class="button-group">
-                <button id="new-puzzle-btn" class="btn-primary">🌅 Come Back Tomorrow</button>
-                <a href="../archive-accounting.html" class="btn-secondary-cta">🎮 Play More Puzzles</a>
+                <button id="come-back-btn" class="btn-primary">Come back tomorrow</button>
+                <a id="play-more-btn" class="btn-secondary-cta" href="../archive-accounting.html">🎮 Play more</a>
             </div>
         </div>
     </div>
@@ -65,10 +66,5 @@
         <source src="../shared/sounds/success.mp3" type="audio/mpeg">
     </audio>
     <script src="../shared/core.js"></script>
-    <script>
-        document.getElementById('new-puzzle-btn').addEventListener('click', function() {
-            document.getElementById('victory-modal').classList.remove('show');
-        });
-    </script>
-</body>
+    </body>
 </html>

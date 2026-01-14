@@ -13,7 +13,6 @@
       "textDark": "#065f46"
     }
   },
-
   "gameSettings": {
     "snapDistance": 200,
     "snapTolerance": 30,
@@ -23,5 +22,7 @@
       "tablet": 40,
       "mobile": 35
     }
-  }
+  },
+  "category": "accounting",
+  "archiveLink": "../archive-accounting.html"
 }

@@ -77,8 +77,38 @@ var DEFAULT_CONFIG = {
             tablet: 40,
             mobile: 35
         }
-    }
+    },
+    category: 'pm'
 };
+
+var CATEGORY_ARCHIVE_MAP = {
+    pm: '../archive-pm.html',
+    product: '../archive-pm.html',
+    accounting: '../archive-accounting.html',
+    finance: '../archive-accounting.html'
+};
+
+function getQueryParameter(name) {
+    if (typeof window === 'undefined' || !window.location || !window.location.search) {
+        return null;
+    }
+
+    try {
+        var params = new URLSearchParams(window.location.search);
+        var value = params.get(name);
+        if (!value) {
+            return null;
+        }
+        return value.toString().trim().toLowerCase();
+    } catch (error) {
+        console.warn('⚠️ Unable to parse query string:', error);
+        return null;
+    }
+}
+
+function getCategoryOverride() {
+    return getQueryParameter('category');
+}
 
 // ===================================
 // GAME STATE
@@ -101,6 +131,8 @@ var gameArea = null;
 var puzzleDescription = null;
 var victoryModal = null;
 var factsList = null;
+var comeBackBtn = null;
+var playMoreBtn = null;
 var successSound = null;
 
 // ===================================
@@ -203,6 +235,22 @@ function mergeConfig(defaults, overrides) {
     return result;
 }
 
+function resolveArchiveLink(config, ignoreConfiguredLink) {
+    var categoryKey = (config.category || 'pm').toLowerCase();
+    if (!ignoreConfiguredLink && config.archiveLink) {
+        return config.archiveLink;
+    }
+    if (CATEGORY_ARCHIVE_MAP[categoryKey]) {
+        return CATEGORY_ARCHIVE_MAP[categoryKey];
+    }
+    return CATEGORY_ARCHIVE_MAP['pm'];
+}
+
+function refreshArchiveLink() {
+    if (!playMoreBtn || !puzzleConfig) return;
+    playMoreBtn.href = puzzleConfig.archiveLink;
+}
+
 // ===================================
 // INITIALIZATION
 // ===================================
@@ -215,6 +263,8 @@ async function init() {
     puzzleDescription = document.getElementById('puzzle-description');
     victoryModal = document.getElementById('victory-modal');
     factsList = document.getElementById('facts-list');
+    comeBackBtn = document.getElementById('come-back-btn');
+    playMoreBtn = document.getElementById('play-more-btn');
     successSound = document.getElementById('success-sound');
 
     // Force browser to complete layout
@@ -284,10 +334,18 @@ async function loadConfig() {
             words: puzzleData.words
         });
         gameSettings = puzzleConfig.gameSettings;
+        var categoryOverride = getCategoryOverride();
+        if (categoryOverride) {
+            puzzleConfig.category = categoryOverride;
+        }
+        var ignoreConfiguredLink = Boolean(categoryOverride);
+        puzzleConfig.archiveLink = resolveArchiveLink(puzzleConfig, ignoreConfiguredLink);
+        refreshArchiveLink();
 
         console.log('📊 Puzzle loaded: ' + puzzleConfig.title);
         console.log('📝 Words in puzzle: ' + puzzleConfig.words.length);
         console.log('🎨 Theme: ' + puzzleConfig.theme.name);
+        console.log('🏷️ Category: ' + puzzleConfig.category);
 
         // Update UI with puzzle info
         puzzleDescription.textContent = puzzleConfig.description;
@@ -539,6 +597,29 @@ function setupEventListeners() {
                 gtag('event', 'victory_modal_closed', {
                     'puzzle_name': document.title,
                     'close_method': 'button'
+                });
+            }
+        });
+    }
+
+    if (comeBackBtn) {
+        comeBackBtn.addEventListener('click', function() {
+            console.log('🗓️ Come back tomorrow clicked');
+            victoryModal.classList.remove('show');
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'come_back_tomorrow_clicked', {
+                    'puzzle_name': document.title
+                });
+            }
+        });
+    }
+
+    if (playMoreBtn) {
+        playMoreBtn.addEventListener('click', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'play_more_clicked', {
+                    'puzzle_name': document.title,
+                    'category': puzzleConfig.category
                 });
             }
         });

@@ -47,6 +47,8 @@ See [`DEPLOYMENT-GUIDE.md`](./DEPLOYMENT-GUIDE.md) for GitHub Pages setup instru
 
 ## 🔧 Local Development
 
+**No build step required!** This is a static HTML/CSS/JS game.
+
 ```bash
 # Start local server (required for fetch API)
 python3 -m http.server 8000
@@ -54,6 +56,26 @@ python3 -m http.server 8000
 # Visit puzzle
 open http://localhost:8000/accounting-principles/
 ```
+
+Alternative servers (any static server works):
+- PHP: `php -S localhost:8000`
+- Node: `npx serve`
+- VS Code: Live Server extension
+
+## 🧪 Optional Automated Testing
+
+Automated tests using Playwright are **optional** - they're not required for development or deployment.
+
+```bash
+# Install test dependencies (optional)
+npm install
+npx playwright install
+
+# Run tests
+npm test
+```
+
+Tests auto-start a local server, so no manual setup needed. Skip this entirely if you don't have Node.js installed.
 
 ## 📚 Documentation
 
