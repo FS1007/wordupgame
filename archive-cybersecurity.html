@@ -13,7 +13,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Puzzles - WordUp</title>
+    <title>Cybersecurity Word Games - WordUp</title>
     
     <!-- Mixpanel Tracking -->
     <script type="text/javascript">
@@ -23,194 +23,581 @@
             record_sessions_percent: 100,
         });
     </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             min-height: 100vh;
             color: white;
-            padding: 40px 20px;
+            padding: 30px 20px 60px;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        /* Header */
         .header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
         .header h1 {
-            font-size: 3em;
-            margin-bottom: 15px;
+            font-size: 2.8em;
+            margin-bottom: 12px;
             background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             font-weight: 800;
+            letter-spacing: -0.02em;
         }
         .header p {
-            font-size: 1.2em;
-            color: #fca5a5;
+            font-size: 1.1em;
+            color: #94a3b8;
             margin-bottom: 20px;
+            font-weight: 400;
         }
         .back-link {
             display: inline-block;
-            color: #fca5a5;
+            color: #64748b;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
+            font-size: 0.95em;
         }
-        .back-link:hover { color: #fecaca; }
+        .back-link:hover { color: #94a3b8; }
+        
+        /* Progress Overview */
+        .progress-overview {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.6) 100%);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .progress-stat {
+            text-align: center;
+        }
+        .progress-number {
+            font-size: 2.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        .progress-label {
+            font-size: 0.9em;
+            color: #64748b;
+            font-weight: 600;
+        }
+        
+        /* Level Navigation Tabs */
+        .level-tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 35px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .level-tabs::-webkit-scrollbar {
+            height: 4px;
+        }
+        .level-tabs::-webkit-scrollbar-track {
+            background: rgba(148, 163, 184, 0.1);
+            border-radius: 2px;
+        }
+        .level-tabs::-webkit-scrollbar-thumb {
+            background: rgba(148, 163, 184, 0.3);
+            border-radius: 2px;
+        }
+        .level-tab {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .level-tab:hover {
+            background: rgba(30, 41, 59, 0.6);
+            border-color: rgba(148, 163, 184, 0.2);
+            transform: translateY(-2px);
+        }
+        .level-tab.active {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
+            border-color: rgba(148, 163, 184, 0.3);
+        }
+        .level-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .level-dot.cadet { background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 0 12px rgba(16, 185, 129, 0.4); }
+        .level-dot.analyst { background: linear-gradient(135deg, #3b82f6, #2563eb); box-shadow: 0 0 12px rgba(59, 130, 246, 0.4); }
+        .level-dot.specialist { background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 0 12px rgba(245, 158, 11, 0.4); }
+        .level-dot.engineer { background: linear-gradient(135deg, #f97316, #ea580c); box-shadow: 0 0 12px rgba(249, 115, 22, 0.4); }
+        .level-dot.architect { background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 0 12px rgba(239, 68, 68, 0.4); }
+        .level-dot.guardian { background: linear-gradient(135deg, #8b5cf6, #7c3aed); box-shadow: 0 0 12px rgba(139, 92, 246, 0.4); }
+        .level-dot.locked { background: #374151; box-shadow: none; }
+        .level-tab-name {
+            font-weight: 600;
+            font-size: 0.95em;
+            color: #e2e8f0;
+        }
+        .level-tab.locked .level-tab-name {
+            color: #64748b;
+        }
+        .level-tab-count {
+            font-size: 0.85em;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        /* Level Content Section */
+        .level-section {
+            display: none;
+        }
+        .level-section.active {
+            display: block;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Level Header */
+        .level-header {
+            margin-bottom: 30px;
+        }
+        .level-title-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        .level-icon {
+            font-size: 2em;
+            line-height: 1;
+        }
+        .level-title {
+            font-size: 2em;
+            font-weight: 800;
+            color: #f1f5f9;
+            letter-spacing: -0.01em;
+        }
+        .level-description {
+            font-size: 1.05em;
+            color: #94a3b8;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-left: 58px;
+        }
+        
+        /* Puzzles Grid */
         .puzzles-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
+            gap: 20px;
         }
         .puzzle-card {
-            background: linear-gradient(145deg, #7f1d1d 0%, #450a0a 100%);
-            border-radius: 16px;
-            padding: 30px;
-            border: 1px solid rgba(239, 68, 68, 0.3);
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 14px;
+            padding: 24px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
             transition: all 0.3s ease;
             position: relative;
+            overflow: hidden;
         }
         .puzzle-card::before {
             content: '';
             position: absolute;
-            top: 0;
             left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #dc2626, #f97316);
-            border-radius: 16px 16px 0 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
         }
+        .puzzle-card.cadet::before { background: linear-gradient(180deg, #10b981, #059669); }
+        .puzzle-card.analyst::before { background: linear-gradient(180deg, #3b82f6, #2563eb); }
+        .puzzle-card.specialist::before { background: linear-gradient(180deg, #f59e0b, #d97706); }
+        .puzzle-card.engineer::before { background: linear-gradient(180deg, #f97316, #ea580c); }
+        .puzzle-card.architect::before { background: linear-gradient(180deg, #ef4444, #dc2626); }
+        .puzzle-card.guardian::before { background: linear-gradient(180deg, #8b5cf6, #7c3aed); }
+        
         .puzzle-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(239, 68, 68, 0.6);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3px);
+            border-color: rgba(148, 163, 184, 0.2);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
         .puzzle-badge {
             display: inline-block;
-            background: linear-gradient(135deg, #dc2626, #f97316);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.75em;
+            background: rgba(59, 130, 246, 0.15);
+            color: #93c5fd;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.7em;
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .puzzle-badge.popular {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+            border-color: rgba(245, 158, 11, 0.2);
         }
         .puzzle-card h3 {
-            font-size: 1.4em;
-            margin-bottom: 12px;
-            color: #fef2f2;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #f1f5f9;
+            font-weight: 700;
+            letter-spacing: -0.01em;
         }
-        .puzzle-meta {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+        .puzzle-description {
+            color: #94a3b8;
             font-size: 0.9em;
-            color: #fca5a5;
+            line-height: 1.5;
+            margin-bottom: 18px;
+            font-weight: 400;
         }
         .puzzle-link {
             display: block;
-            background: linear-gradient(135deg, #dc2626, #f97316);
+            background: linear-gradient(135deg, #dc2626 0%, #f97316 100%);
             color: white;
             text-align: center;
-            padding: 12px;
+            padding: 11px;
             border-radius: 10px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
+            font-size: 0.95em;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
         }
         .puzzle-link:hover {
+            background: linear-gradient(135deg, #ef4444 0%, #fb923c 100%);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
         }
+        
+        /* Locked Level */
+        .level-section.locked {
+            opacity: 0.6;
+        }
+        .coming-soon {
+            text-align: center;
+            padding: 60px 30px;
+            color: #64748b;
+            font-size: 1em;
+            font-weight: 500;
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 16px;
+            border: 1px solid rgba(100, 116, 139, 0.1);
+        }
+        .coming-soon-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+        
+        /* Mobile Responsive */
         @media (max-width: 768px) {
+            body { padding: 20px 15px 50px; }
             .header h1 { font-size: 2.2em; }
-            .puzzles-grid { grid-template-columns: 1fr; }
+            .header p { font-size: 1em; }
+            .progress-overview {
+                padding: 20px;
+                flex-direction: column;
+            }
+            .progress-stat {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .progress-number { font-size: 2em; margin-bottom: 0; }
+            .level-tabs { gap: 8px; }
+            .level-tab { padding: 10px 16px; }
+            .level-title-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+            .level-icon { font-size: 1.8em; }
+            .level-title { font-size: 1.6em; }
+            .level-description { margin-left: 0; font-size: 1em; }
+            .puzzles-grid { grid-template-columns: 1fr; gap: 16px; }
+            .puzzle-card { padding: 20px; }
+            .coming-soon { padding: 40px 20px; }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.9em; }
+            .progress-number { font-size: 1.8em; }
+            .level-title { font-size: 1.4em; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🔒 Cybersecurity Puzzles</h1>
-            <p>Master security concepts through interactive word puzzles</p>
+            <h1>🔒 Cybersecurity Word Games</h1>
+            <p>Discover security concepts through interactive word puzzles</p>
             <a href="index.html" class="back-link">← Back to Home</a>
         </div>
 
-        <div class="puzzles-grid">
-            <div class="puzzle-card">
-                <span class="puzzle-badge">NEW</span>
-                <h3>🛡️ Security Principles</h3>
-                <div class="puzzle-meta">
-                    <span>🎯 6 Words</span>
-                    <span>📱 Vertical</span>
-                    <span>⏱️ 8-12 min</span>
+        <!-- Progress Overview -->
+        <div class="progress-overview">
+            <div class="progress-stat">
+                <div class="progress-number">11</div>
+                <div class="progress-label">Total Puzzles</div>
+            </div>
+            <div class="progress-stat">
+                <div class="progress-number">2</div>
+                <div class="progress-label">Levels Unlocked</div>
+            </div>
+            <div class="progress-stat">
+                <div class="progress-number">6</div>
+                <div class="progress-label">Difficulty Levels</div>
+            </div>
+        </div>
+
+        <!-- Level Navigation Tabs -->
+        <div class="level-tabs">
+            <div class="level-tab active" data-level="easy">
+                <div class="level-dot cadet"></div>
+                <span class="level-tab-name">Easy</span>
+                <span class="level-tab-count">• 5</span>
+            </div>
+            <div class="level-tab" data-level="medium">
+                <div class="level-dot analyst"></div>
+                <span class="level-tab-name">Medium</span>
+                <span class="level-tab-count">• 6</span>
+            </div>
+            <div class="level-tab locked" data-level="hard">
+                <div class="level-dot specialist locked"></div>
+                <span class="level-tab-name">Hard</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+            <div class="level-tab locked" data-level="expert">
+                <div class="level-dot engineer locked"></div>
+                <span class="level-tab-name">Expert</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+            <div class="level-tab locked" data-level="master">
+                <div class="level-dot architect locked"></div>
+                <span class="level-tab-name">Master</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+            <div class="level-tab locked" data-level="elite">
+                <div class="level-dot guardian locked"></div>
+                <span class="level-tab-name">Elite</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+        </div>
+
+        <!-- LEVEL 1: EASY -->
+        <div class="level-section active" id="level-easy">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🟢</span>
+                    <h2 class="level-title">Easy</h2>
                 </div>
-                <a href="cybersec-security-principles/" class="puzzle-link">Play Now</a>
+                <p class="level-description">Perfect for beginners - Learn foundational security concepts</p>
             </div>
 
-            <div class="puzzle-card">
-                <span class="puzzle-badge">NEW</span>
-                <h3>🌐 Network Security</h3>
-                <div class="puzzle-meta">
-                    <span>🎯 6 Words</span>
-                    <span>📱 Vertical</span>
-                    <span>⏱️ 8-12 min</span>
+            <div class="puzzles-grid">
+                <div class="puzzle-card cadet">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🛡️ Security Principles</h3>
+                    <p class="puzzle-description">Learn the foundational concepts that protect our digital world</p>
+                    <a href="cybersec-security-principles/" class="puzzle-link">Play Now</a>
                 </div>
-                <a href="cybersec-network-security/" class="puzzle-link">Play Now</a>
+
+                <div class="puzzle-card cadet">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🌐 Network Security</h3>
+                    <p class="puzzle-description">Explore the infrastructure devices that safeguard networks</p>
+                    <a href="cybersec-network-security/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card cadet">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>⚠️ Security Threats</h3>
+                    <p class="puzzle-description">Identify common cyber dangers and their impact on systems</p>
+                    <a href="cybersec-security-threats/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card cadet">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🔑 Access Control</h3>
+                    <p class="puzzle-description">Master the fundamentals of permission and identity management</p>
+                    <a href="cybersec-access-control/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card cadet">
+                    <span class="puzzle-badge popular">POPULAR</span>
+                    <h3>🔐 Encryption</h3>
+                    <p class="puzzle-description">Uncover the science of securing data through codes and keys</p>
+                    <a href="cybersec-encryption/" class="puzzle-link">Play Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEVEL 2: MEDIUM -->
+        <div class="level-section" id="level-medium">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🔵</span>
+                    <h2 class="level-title">Medium</h2>
+                </div>
+                <p class="level-description">For those with basic knowledge - Understand deeper concepts and professional practices</p>
             </div>
 
-            <div class="puzzle-card">
-                <span class="puzzle-badge">NEW</span>
-                <h3>⚠️ Security Threats</h3>
-                <div class="puzzle-meta">
-                    <span>🎯 6 Words</span>
-                    <span>📱 Vertical</span>
-                    <span>⏱️ 8-12 min</span>
+            <div class="puzzles-grid">
+                <div class="puzzle-card analyst">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🔐 Security Protocols</h3>
+                    <p class="puzzle-description">Discover the protocols that secure data transmission across networks</p>
+                    <a href="analyst-security-protocols/" class="puzzle-link">Play Now</a>
                 </div>
-                <a href="cybersec-security-threats/" class="puzzle-link">Play Now</a>
-            </div>
 
-            <div class="puzzle-card">
-                <span class="puzzle-badge">NEW</span>
-                <h3>🔑 Access Control</h3>
-                <div class="puzzle-meta">
-                    <span>🎯 6 Words</span>
-                    <span>📱 Vertical</span>
-                    <span>⏱️ 8-12 min</span>
+                <div class="puzzle-card analyst">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🚨 Incident Response</h3>
+                    <p class="puzzle-description">Master the critical steps in handling security incidents</p>
+                    <a href="analyst-incident-response/" class="puzzle-link">Play Now</a>
                 </div>
-                <a href="cybersec-access-control/" class="puzzle-link">Play Now</a>
-            </div>
 
-            <div class="puzzle-card">
-                <span class="puzzle-badge">NEW</span>
-                <h3>🔐 Encryption</h3>
-                <div class="puzzle-meta">
-                    <span>🎯 6 Words</span>
-                    <span>📱 Vertical</span>
-                    <span>⏱️ 8-12 min</span>
+                <div class="puzzle-card analyst">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🔑 Cryptography Concepts</h3>
+                    <p class="puzzle-description">Explore the mathematical foundations of secure communications</p>
+                    <a href="analyst-cryptography-concepts/" class="puzzle-link">Play Now</a>
                 </div>
-                <a href="cybersec-encryption/" class="puzzle-link">Play Now</a>
-            </div>
 
-            <div class="puzzle-card">
-                <span class="puzzle-badge">POPULAR</span>
-                <h3>🔐 Authentication Methods</h3>
-                <div class="puzzle-meta">
-                    <span>🎯 4 Words</span>
-                    <span>📱 Vertical</span>
-                    <span>⏱️ 5-8 min</span>
+                <div class="puzzle-card analyst">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🎯 Authentication Factors</h3>
+                    <p class="puzzle-description">Understand the different ways systems verify identity</p>
+                    <a href="analyst-authentication-factors/" class="puzzle-link">Play Now</a>
                 </div>
-                <a href="cybersec-authentication/" class="puzzle-link">Play Now</a>
+
+                <div class="puzzle-card analyst">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🛡️ Defense-in-Depth Layers</h3>
+                    <p class="puzzle-description">Learn the multiple layers of security protection</p>
+                    <a href="analyst-security-layers/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card analyst">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>📋 Compliance Domains</h3>
+                    <p class="puzzle-description">Explore key areas of regulatory compliance</p>
+                    <a href="analyst-compliance-standards/" class="puzzle-link">Play Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEVEL 3: HARD -->
+        <div class="level-section locked" id="level-hard">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🟡</span>
+                    <h2 class="level-title">Hard</h2>
+                </div>
+                <p class="level-description">Advanced security concepts and specialized domain expertise</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Medium level to unlock</div>
+            </div>
+        </div>
+
+        <!-- LEVEL 4: EXPERT -->
+        <div class="level-section locked" id="level-expert">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🟠</span>
+                    <h2 class="level-title">Expert</h2>
+                </div>
+                <p class="level-description">Build and implement security systems - Hands-on technical implementation</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Hard level to unlock</div>
+            </div>
+        </div>
+
+        <!-- LEVEL 5: MASTER -->
+        <div class="level-section locked" id="level-master">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🔴</span>
+                    <h2 class="level-title">Master</h2>
+                </div>
+                <p class="level-description">Design enterprise security systems and strategic frameworks</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Expert level to unlock</div>
+            </div>
+        </div>
+
+        <!-- LEVEL 6: ELITE -->
+        <div class="level-section locked" id="level-elite">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">⚫</span>
+                    <h2 class="level-title">Elite</h2>
+                </div>
+                <p class="level-description">Ultimate security expertise and elite challenges</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Master level to unlock</div>
             </div>
         </div>
     </div>
+
+    <script>
+        // Level tab navigation
+        const tabs = document.querySelectorAll('.level-tab:not(.locked)');
+        const sections = document.querySelectorAll('.level-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const level = tab.dataset.level;
+                
+                // Update active tab
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                // Update active section
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === `level-${level}`) {
+                        section.classList.add('active');
+                    }
+                });
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
