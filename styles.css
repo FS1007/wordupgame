@@ -1,0 +1,573 @@
+/* =========================================
+   WORDUP GAME - SHARED STYLES
+   Universal styles for all puzzle categories
+   ========================================= */
+
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#puzzle-description {
+    font-size: 1.1em;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* ===== MAIN GAME AREA ===== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#game-area {
+    width: 100%;
+    max-width: 800px;
+    min-height: 500px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+/* ===== MODAL STYLES ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    padding: 40px;
+    border-radius: 24px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content h2 {
+    font-size: 2em;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #f1f5f9;
+}
+
+.victory-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+/* ===== CLOSE BUTTON ===== */
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #e2e8f0;
+    font-size: 28px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+/* ===== FACTS CONTAINER ===== */
+#facts-container {
+    background: rgba(59, 130, 246, 0.1);
+    border-left: 4px solid #3b82f6;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+#facts-container h3 {
+    font-size: 1.3em;
+    margin-bottom: 16px;
+    color: #93c5fd;
+}
+
+#facts-list {
+    list-style: none;
+    padding: 0;
+}
+
+#facts-list li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border-left: 3px solid #60a5fa;
+    line-height: 1.6;
+    color: #e2e8f0;
+}
+
+#facts-list li strong {
+    color: #93c5fd;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* ===== BUTTON GROUP ===== */
+.button-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* ===== PRIMARY BUTTON ===== */
+.btn-primary {
+    flex: 1;
+    min-width: 200px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.05em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(59, 130, 246, 0.5);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* ===== SECONDARY BUTTON / CTA ===== */
+.btn-secondary,
+.btn-secondary-cta {
+    flex: 1;
+    min-width: 200px;
+    padding: 16px 32px;
+    background: rgba(148, 163, 184, 0.1);
+    color: #cbd5e1;
+    border: 2px solid rgba(148, 163, 184, 0.3);
+    border-radius: 12px;
+    font-size: 1.05em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-secondary:hover,
+.btn-secondary-cta:hover {
+    background: rgba(148, 163, 184, 0.2);
+    border-color: rgba(148, 163, 184, 0.5);
+    color: #f1f5f9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(148, 163, 184, 0.3);
+}
+
+.btn-secondary:active,
+.btn-secondary-cta:active {
+    transform: translateY(0);
+}
+
+/* ===== INSTRUCTIONS PANEL ===== */
+.instructions {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 360px;
+    height: 100vh;
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    transition: right 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
+}
+
+.instructions.show {
+    right: 0;
+}
+
+.instructions h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f1f5f9;
+}
+
+.instructions ol {
+    padding-left: 20px;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.instructions li {
+    margin-bottom: 12px;
+}
+
+/* ===== HELP BUTTON ===== */
+.help-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-btn:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 24px rgba(59, 130, 246, 0.5);
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 12px 20px;
+    background: rgba(148, 163, 184, 0.1);
+    color: #cbd5e1;
+    border: 2px solid rgba(148, 163, 184, 0.3);
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 998;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-btn:hover {
+    background: rgba(148, 163, 184, 0.2);
+    border-color: rgba(148, 163, 184, 0.5);
+    color: #f1f5f9;
+    transform: translateX(-4px);
+}
+
+/* ===== GAME PIECES (WORD FRAGMENTS) ===== */
+.word-piece {
+    position: absolute;
+    padding: 12px 20px;
+    background: linear-gradient(145deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: move;
+    user-select: none;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    transition: all 0.2s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.word-piece:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+    z-index: 10;
+}
+
+.word-piece.dragging {
+    opacity: 0.7;
+    cursor: grabbing;
+    z-index: 999;
+}
+
+.word-piece.completed {
+    background: linear-gradient(145deg, #10b981 0%, #059669 100%);
+    cursor: default;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    pointer-events: none;
+}
+
+/* ===== LOADING STATE ===== */
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+    font-size: 1.2em;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    #puzzle-description {
+        font-size: 1em;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    .modal-content h2 {
+        font-size: 1.6em;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-secondary-cta {
+        min-width: 100%;
+        padding: 14px 24px;
+        font-size: 1em;
+    }
+
+    .instructions {
+        width: 100%;
+        right: -100%;
+    }
+
+    .help-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+
+    .back-btn {
+        top: 15px;
+        left: 15px;
+        padding: 10px 16px;
+        font-size: 0.9em;
+    }
+
+    #facts-container {
+        padding: 20px;
+    }
+
+    #facts-list li {
+        padding: 14px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #game-area {
+        min-height: 400px;
+        padding: 15px;
+    }
+
+    .modal-content {
+        padding: 25px 15px;
+        border-radius: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.4em;
+    }
+
+    .victory-message {
+        font-size: 1em;
+    }
+
+    #facts-container h3 {
+        font-size: 1.1em;
+    }
+
+    .word-piece {
+        padding: 10px 16px;
+        font-size: 1em;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-secondary-cta:focus,
+.help-btn:focus,
+.back-btn:focus,
+.close-btn:focus {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+
+.mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.5);
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .help-btn,
+    .back-btn,
+    .instructions {
+        display: none;
+    }
+}
