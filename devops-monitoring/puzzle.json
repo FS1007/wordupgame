@@ -1,0 +1,60 @@
+{
+  "title": "What are Monitoring Concepts?",
+  "description": "Learn how to track system health and application performance",
+  "words": [
+    {
+      "word": "METRIC",
+      "fragments": [
+        "METR",
+        "IC"
+      ],
+      "orientation": "vertical",
+      "fact": "Metrics are numerical measurements of system behavior over time, like CPU usage, request rate, or error count. They enable teams to track performance, identify trends, and set alerts. Key metrics include latency, throughput, error rates, and saturation - the foundation of observability."
+    },
+    {
+      "word": "ALERT",
+      "fragments": [
+        "ALER",
+        "T"
+      ],
+      "orientation": "vertical",
+      "fact": "Alerts notify teams when metrics exceed thresholds or anomalies occur. Effective alerting balances sensitivity (catching real issues) with specificity (avoiding false alarms). Alerts trigger incident response, enabling teams to address problems before they impact users. Alert fatigue from too many alerts reduces effectiveness."
+    },
+    {
+      "word": "LOG",
+      "fragments": [
+        "LO",
+        "G"
+      ],
+      "orientation": "vertical",
+      "fact": "Logs are timestamped records of events in systems and applications. They provide detailed context for debugging, auditing, and understanding system behavior. Centralized logging aggregates logs from distributed systems, making it possible to trace requests across services and investigate issues."
+    },
+    {
+      "word": "TRACE",
+      "fragments": [
+        "TRA",
+        "CE"
+      ],
+      "orientation": "vertical",
+      "fact": "Distributed tracing tracks requests as they flow through microservices, showing the path and timing of each service call. Traces reveal bottlenecks, failures, and dependencies in complex systems. Tools like Jaeger and Zipkin visualize traces, helping teams optimize performance and debug distributed systems."
+    },
+    {
+      "word": "DASHBOARD",
+      "fragments": [
+        "DASHBO",
+        "ARD"
+      ],
+      "orientation": "vertical",
+      "fact": "Dashboards visualize metrics, logs, and system status in real-time. They provide at-a-glance views of system health, enabling quick problem detection. Effective dashboards show high-level health metrics with drill-down capability for investigation. Different dashboards serve different audiences: operations, development, and business."
+    },
+    {
+      "word": "UPTIME",
+      "fragments": [
+        "UPTI",
+        "ME"
+      ],
+      "orientation": "vertical",
+      "fact": "Uptime is the percentage of time a system is operational and available. High uptime (99.9% or better) is critical for production services. Teams measure uptime with Service Level Indicators (SLIs) and commit to Service Level Objectives (SLOs). Downtime affects user experience and business revenue."
+    }
+  ]
+}

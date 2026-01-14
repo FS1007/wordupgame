@@ -1,0 +1,60 @@
+{
+  "title": "What are Container Concepts?",
+  "description": "Learn the fundamentals of containerization and application packaging",
+  "words": [
+    {
+      "word": "IMAGE",
+      "fragments": [
+        "IMA",
+        "GE"
+      ],
+      "orientation": "vertical",
+      "fact": "A container image is a lightweight, standalone package containing everything needed to run an application: code, runtime, libraries, and dependencies. Images are built from Dockerfiles and stored in registries. They ensure applications run consistently across different environments from development to production."
+    },
+    {
+      "word": "CONTAINER",
+      "fragments": [
+        "CONTAIN",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "A container is a running instance of an image. Containers provide isolated environments for applications, sharing the host OS kernel but maintaining separate processes, filesystems, and networks. They start quickly, use fewer resources than VMs, and enable consistent deployment across platforms."
+    },
+    {
+      "word": "DOCKER",
+      "fragments": [
+        "DOCK",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "Docker is the most popular container platform, providing tools to build, share, and run containers. It standardized containerization, making it accessible to developers. Docker simplified application packaging, deployment, and scaling, becoming foundational to modern DevOps and cloud-native development."
+    },
+    {
+      "word": "REGISTRY",
+      "fragments": [
+        "REGIST",
+        "RY"
+      ],
+      "orientation": "vertical",
+      "fact": "A container registry is a repository for storing and distributing container images. Docker Hub, Amazon ECR, and Google Container Registry are popular registries. Registries enable teams to share images, version them, scan for vulnerabilities, and pull images for deployment across environments."
+    },
+    {
+      "word": "LAYER",
+      "fragments": [
+        "LAY",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "Container images are built in layers, each representing a set of filesystem changes. Layers are cached and reused across images, reducing storage and speeding up builds. Understanding layers helps optimize image size, build times, and deployment speed in CI/CD pipelines."
+    },
+    {
+      "word": "VOLUME",
+      "fragments": [
+        "VOLU",
+        "ME"
+      ],
+      "orientation": "vertical",
+      "fact": "Volumes provide persistent storage for containers. Since containers are ephemeral, volumes preserve data across container restarts and recreations. They enable stateful applications in containers, share data between containers, and separate application logic from data storage."
+    }
+  ]
+}

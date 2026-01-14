@@ -1,0 +1,60 @@
+{
+  "title": "What are CI/CD Fundamentals?",
+  "description": "Learn the core concepts of Continuous Integration and Continuous Delivery",
+  "words": [
+    {
+      "word": "BUILD",
+      "fragments": [
+        "BUI",
+        "LD"
+      ],
+      "orientation": "vertical",
+      "fact": "A build is the process of converting source code into executable software. Automated builds compile code, run tests, and package applications. Modern CI/CD pipelines trigger builds automatically on every code commit, ensuring code is always in a deployable state and catching integration issues early."
+    },
+    {
+      "word": "TEST",
+      "fragments": [
+        "TE",
+        "ST"
+      ],
+      "orientation": "vertical",
+      "fact": "Automated testing validates code functionality, performance, and security. CI/CD pipelines run unit tests, integration tests, and end-to-end tests automatically. Testing in pipelines catches bugs before production, reduces manual QA effort, and gives teams confidence to deploy frequently."
+    },
+    {
+      "word": "DEPLOY",
+      "fragments": [
+        "DEPL",
+        "OY"
+      ],
+      "orientation": "vertical",
+      "fact": "Deployment is the process of releasing code to production environments. Continuous Deployment automates this process, pushing every passing build to production. Automated deployments reduce human error, enable faster releases, and allow teams to ship features and fixes within minutes of code commit."
+    },
+    {
+      "word": "PIPELINE",
+      "fragments": [
+        "PIPE",
+        "LINE"
+      ],
+      "orientation": "vertical",
+      "fact": "A CI/CD pipeline is an automated workflow that takes code from commit to production. Pipelines include stages like build, test, security scanning, and deployment. They enforce quality gates, provide visibility into the release process, and enable teams to ship code faster with confidence."
+    },
+    {
+      "word": "COMMIT",
+      "fragments": [
+        "COMM",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "A commit is a saved change to the codebase in version control. In CI/CD, every commit triggers automated builds and tests. Frequent, small commits enable faster feedback, easier debugging, and smoother integration. Commits are the trigger point for the entire CI/CD process."
+    },
+    {
+      "word": "ARTIFACT",
+      "fragments": [
+        "ARTI",
+        "FACT"
+      ],
+      "orientation": "vertical",
+      "fact": "Build artifacts are the compiled outputs of the build process, like executables, containers, or packages. Artifacts are stored in repositories and deployed to environments. They ensure consistency across deployments, enable rollbacks, and provide a traceable record of what was released."
+    }
+  ]
+}

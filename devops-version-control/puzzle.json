@@ -1,0 +1,60 @@
+{
+  "title": "What are Version Control Concepts?",
+  "description": "Understand the fundamentals of managing code changes and collaboration",
+  "words": [
+    {
+      "word": "COMMIT",
+      "fragments": [
+        "COMM",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "A commit saves changes to the repository with a message describing what changed. Commits create a history of code evolution, enable rollback to previous states, and provide accountability. Good commit messages and atomic commits make codebases easier to understand and maintain."
+    },
+    {
+      "word": "BRANCH",
+      "fragments": [
+        "BRAN",
+        "CH"
+      ],
+      "orientation": "vertical",
+      "fact": "A branch is an independent line of development in version control. Developers create branches to work on features or fixes without affecting the main codebase. Branches enable parallel development, isolated testing, and controlled integration through merge or pull requests."
+    },
+    {
+      "word": "MERGE",
+      "fragments": [
+        "MER",
+        "GE"
+      ],
+      "orientation": "vertical",
+      "fact": "Merging combines changes from different branches into one. Merge conflicts occur when the same code is modified in different branches and must be resolved manually. Automated merges in CI/CD workflows integrate code continuously, keeping the main branch up-to-date and deployable."
+    },
+    {
+      "word": "CLONE",
+      "fragments": [
+        "CLO",
+        "NE"
+      ],
+      "orientation": "vertical",
+      "fact": "Cloning creates a local copy of a remote repository on your machine. Developers clone repositories to work on code locally, make changes, and push updates back. Cloning gives each developer a full copy of the project history and enables distributed development."
+    },
+    {
+      "word": "PUSH",
+      "fragments": [
+        "PU",
+        "SH"
+      ],
+      "orientation": "vertical",
+      "fact": "Push uploads local commits to a remote repository, sharing changes with the team. Pushing triggers CI/CD pipelines in modern workflows. Teams push frequently to keep remote repositories current, enable collaboration, and trigger automated testing and deployment processes."
+    },
+    {
+      "word": "PULL",
+      "fragments": [
+        "PU",
+        "LL"
+      ],
+      "orientation": "vertical",
+      "fact": "Pull downloads changes from a remote repository to your local machine, keeping your code synchronized with the team. Pull requests (PRs) are proposals to merge code changes, enabling code review and discussion before integration. PRs are central to collaborative development and quality control."
+    }
+  ]
+}

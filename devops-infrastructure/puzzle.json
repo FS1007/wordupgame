@@ -1,0 +1,60 @@
+{
+  "title": "What are Infrastructure Fundamentals?",
+  "description": "Understand the core components of modern infrastructure management",
+  "words": [
+    {
+      "word": "SERVER",
+      "fragments": [
+        "SERV",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "Servers are computers that provide services, resources, or data to other computers (clients). In DevOps, servers can be physical machines, virtual machines, or containers. Modern infrastructure increasingly uses cloud-based servers that can be provisioned and scaled automatically."
+    },
+    {
+      "word": "CLOUD",
+      "fragments": [
+        "CLO",
+        "UD"
+      ],
+      "orientation": "vertical",
+      "fact": "Cloud computing provides on-demand access to computing resources over the internet. Major providers include AWS, Azure, and Google Cloud. Cloud platforms offer scalability, pay-as-you-go pricing, and global reach, enabling DevOps teams to deploy and scale applications rapidly without managing physical hardware."
+    },
+    {
+      "word": "NETWORK",
+      "fragments": [
+        "NETW",
+        "ORK"
+      ],
+      "orientation": "vertical",
+      "fact": "Networks connect systems and enable communication between services, applications, and users. DevOps engineers configure networks, firewalls, load balancers, and DNS. Understanding networking is crucial for deploying distributed applications, ensuring security, and optimizing performance."
+    },
+    {
+      "word": "STORAGE",
+      "fragments": [
+        "STOR",
+        "AGE"
+      ],
+      "orientation": "vertical",
+      "fact": "Storage systems persist data for applications and services. Options include block storage (EBS), object storage (S3), and file storage. DevOps teams choose storage types based on performance needs, durability requirements, and cost. Proper storage configuration affects application reliability and performance."
+    },
+    {
+      "word": "COMPUTE",
+      "fragments": [
+        "COMP",
+        "UTE"
+      ],
+      "orientation": "vertical",
+      "fact": "Compute resources provide the processing power to run applications. This includes virtual machines, containers, and serverless functions. DevOps teams provision compute resources based on workload needs, implementing auto-scaling to handle traffic changes and optimizing costs by right-sizing resources."
+    },
+    {
+      "word": "REGION",
+      "fragments": [
+        "REGI",
+        "ON"
+      ],
+      "orientation": "vertical",
+      "fact": "Cloud regions are geographic locations where cloud providers operate data centers. Regions contain multiple availability zones for redundancy. Choosing regions affects latency, compliance, and disaster recovery. Multi-region deployments provide high availability and disaster recovery capabilities."
+    }
+  ]
+}

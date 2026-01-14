@@ -1,0 +1,60 @@
+{
+  "title": "What are Automation Concepts?",
+  "description": "Understand tools and practices for automating DevOps workflows",
+  "words": [
+    {
+      "word": "SCRIPT",
+      "fragments": [
+        "SCRI",
+        "PT"
+      ],
+      "orientation": "vertical",
+      "fact": "Scripts are programs that automate repetitive tasks. DevOps engineers write scripts for deployments, backups, monitoring, and system configuration. Shell scripts, Python, and PowerShell are common choices. Good scripts are idempotent (safe to run multiple times), well-documented, and version-controlled."
+    },
+    {
+      "word": "ANSIBLE",
+      "fragments": [
+        "ANSI",
+        "BLE"
+      ],
+      "orientation": "vertical",
+      "fact": "Ansible is an automation tool for configuration management, application deployment, and orchestration. It uses simple YAML playbooks and doesn't require agents on managed systems. Ansible's simplicity and agentless architecture make it popular for automating infrastructure and ensuring consistent server configurations."
+    },
+    {
+      "word": "JENKINS",
+      "fragments": [
+        "JENK",
+        "INS"
+      ],
+      "orientation": "vertical",
+      "fact": "Jenkins is an open-source automation server for CI/CD pipelines. It supports building, testing, and deploying applications with thousands of plugins. Jenkins pioneered continuous integration and remains widely used despite newer alternatives. It's highly customizable but requires maintenance and configuration."
+    },
+    {
+      "word": "WORKFLOW",
+      "fragments": [
+        "WORKFL",
+        "OW"
+      ],
+      "orientation": "vertical",
+      "fact": "A workflow is a sequence of automated tasks that accomplish a goal, like deploying code or provisioning infrastructure. Workflows are defined in YAML or code and executed by automation tools. Good workflows are reliable, observable, and have proper error handling and rollback capabilities."
+    },
+    {
+      "word": "TRIGGER",
+      "fragments": [
+        "TRIGG",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "Triggers initiate automated workflows based on events like code commits, schedule, or manual action. Common triggers include Git webhooks, cron schedules, and API calls. Properly configured triggers ensure automation runs when needed without unnecessary executions, optimizing resource usage."
+    },
+    {
+      "word": "PLUGIN",
+      "fragments": [
+        "PLUG",
+        "IN"
+      ],
+      "orientation": "vertical",
+      "fact": "Plugins extend the functionality of automation tools. Jenkins has thousands of plugins for integrations, build tools, and notifications. While plugins add capabilities, too many can create maintenance burden and compatibility issues. Teams should carefully select and maintain plugins."
+    }
+  ]
+}

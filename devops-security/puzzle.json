@@ -1,0 +1,60 @@
+{
+  "title": "What are DevSecOps Concepts?",
+  "description": "Understand security practices integrated into DevOps workflows",
+  "words": [
+    {
+      "word": "SCAN",
+      "fragments": [
+        "SC",
+        "AN"
+      ],
+      "orientation": "vertical",
+      "fact": "Security scanning automatically detects vulnerabilities in code, dependencies, containers, and infrastructure. Scans run in CI/CD pipelines, catching issues before production. Types include SAST (static analysis), DAST (dynamic analysis), and container scanning. Automated scanning shifts security left, finding problems early."
+    },
+    {
+      "word": "VAULT",
+      "fragments": [
+        "VAU",
+        "LT"
+      ],
+      "orientation": "vertical",
+      "fact": "HashiCorp Vault and similar tools securely store secrets like passwords, API keys, and certificates. They provide encryption, access control, and audit logs. Vaults prevent hardcoding secrets in code or config files. They're essential for secure credential management in automated deployments."
+    },
+    {
+      "word": "POLICY",
+      "fragments": [
+        "POLI",
+        "CY"
+      ],
+      "orientation": "vertical",
+      "fact": "Security policies define rules and controls for systems and applications. Policies can be enforced automatically using tools like Open Policy Agent. They govern access, configurations, and compliance. Policy as Code enables version control, testing, and automated enforcement of security standards."
+    },
+    {
+      "word": "ENCRYPT",
+      "fragments": [
+        "ENCR",
+        "YPT"
+      ],
+      "orientation": "vertical",
+      "fact": "Encryption protects data by converting it into unreadable format without the decryption key. DevOps teams encrypt data at rest (stored) and in transit (transmitted). Encryption is crucial for compliance, protecting sensitive data, and maintaining customer trust. Modern systems encrypt by default."
+    },
+    {
+      "word": "AUDIT",
+      "fragments": [
+        "AUD",
+        "IT"
+      ],
+      "orientation": "vertical",
+      "fact": "Audit logs track who did what and when in systems. They're essential for security investigations, compliance, and accountability. DevOps tools should log changes to infrastructure, deployments, and access. Centralized audit logging enables security teams to detect and respond to suspicious activity."
+    },
+    {
+      "word": "PATCH",
+      "fragments": [
+        "PAT",
+        "CH"
+      ],
+      "orientation": "vertical",
+      "fact": "Patches are updates that fix security vulnerabilities or bugs. Regular patching is critical for security. Automated patch management updates systems and containers with latest security fixes. DevOps teams balance patching speed (for security) with stability (avoiding breaking changes). Unpatched systems are primary attack vectors."
+    }
+  ]
+}

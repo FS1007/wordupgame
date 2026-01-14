@@ -1,0 +1,60 @@
+{
+  "title": "What are Kubernetes Fundamentals?",
+  "description": "Learn the core concepts of container orchestration with Kubernetes",
+  "words": [
+    {
+      "word": "POD",
+      "fragments": [
+        "PO",
+        "D"
+      ],
+      "orientation": "vertical",
+      "fact": "A Pod is the smallest deployable unit in Kubernetes, containing one or more containers. Pods share storage and network resources. They're ephemeral - Kubernetes creates and destroys them as needed. Understanding Pods is fundamental to working with Kubernetes, as all other resources build upon them."
+    },
+    {
+      "word": "NODE",
+      "fragments": [
+        "NO",
+        "DE"
+      ],
+      "orientation": "vertical",
+      "fact": "Nodes are worker machines (physical or virtual) that run containerized applications. Each node runs a container runtime, kubelet (agent), and kube-proxy. The Kubernetes control plane schedules Pods onto nodes based on resource availability and constraints. Nodes can be added or removed to scale clusters."
+    },
+    {
+      "word": "CLUSTER",
+      "fragments": [
+        "CLUST",
+        "ER"
+      ],
+      "orientation": "vertical",
+      "fact": "A Kubernetes cluster is a set of nodes running containerized applications. Clusters include a control plane (managing the cluster) and worker nodes (running workloads). Clusters provide high availability, load balancing, and self-healing. They're the foundation for deploying and managing containerized applications at scale."
+    },
+    {
+      "word": "SERVICE",
+      "fragments": [
+        "SERV",
+        "ICE"
+      ],
+      "orientation": "vertical",
+      "fact": "A Service provides stable networking for Pods. Since Pods are ephemeral with changing IPs, Services create consistent endpoints for accessing applications. Services enable load balancing across Pods and discovery within the cluster. They're essential for reliable communication between microservices."
+    },
+    {
+      "word": "DEPLOY",
+      "fragments": [
+        "DEPL",
+        "OY"
+      ],
+      "orientation": "vertical",
+      "fact": "A Deployment manages Pod creation and updates. It ensures the desired number of Pods are running, handles rolling updates, and enables rollbacks. Deployments are declarative - you specify the desired state, and Kubernetes makes it happen. They're the standard way to run stateless applications in Kubernetes."
+    },
+    {
+      "word": "NAMESPACE",
+      "fragments": [
+        "NAMESP",
+        "ACE"
+      ],
+      "orientation": "vertical",
+      "fact": "Namespaces provide virtual clusters within a physical cluster, isolating resources for different teams, projects, or environments. They enable resource quotas, access control, and organization. Common namespaces include dev, staging, and production. Namespaces help teams share clusters while maintaining separation."
+    }
+  ]
+}

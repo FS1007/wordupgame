@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6CE3JE34J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-D6CE3JE34J');
+        gtag('event', 'page_view', {'page_title': 'DevOps Archive', 'page_location': window.location.href});
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Word Games - WordUp</title>
+    
+    <!-- Mixpanel Tracking -->
+    <script type="text/javascript">
+        (function(e,c){if(!c.__SV){var l,h;window.mixpanel=c;c._i=[];c.init=function(q,r,f){function t(d,a){var g=a.split(".");2==g.length&&(d=d[g[0]],a=g[1]);d[a]=function(){d.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";b.people=b.people||[];b.toString=function(d){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);d||(a+=" (stub)");return a};b.people.toString=function(){return b.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");for(h=0;h<l.length;h++)t(b,l[h]);var n="set set_once union unset remove delete".split(" ");b.get_group=function(){function d(p){a[p]=function(){b.push([g,[p].concat(Array.prototype.slice.call(arguments,0))])}}for(var a={},g=["get_group"].concat(Array.prototype.slice.call(arguments,0)),m=0;m<n.length;m++)d(n[m]);return a};c._i.push([q,r,f])};c.__SV=1.2;var k=e.createElement("script");k.type="text/javascript";k.async=!0;k.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=e.getElementsByTagName("script")[0];e.parentNode.insertBefore(k,e)}})(document,window.mixpanel||[]);
+        mixpanel.init('4bd06b77bf050a6e4cb61909b82576ff', {
+            autocapture: true,
+            record_sessions_percent: 100,
+        });
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 30px 20px 60px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .header p {
+            font-size: 1.1em;
+            color: #bfdbfe;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .back-link {
+            display: inline-block;
+            color: #93c5fd;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 0.95em;
+        }
+        .back-link:hover { color: #bfdbfe; }
+        
+        /* Progress Overview */
+        .progress-overview {
+            background: linear-gradient(145deg, rgba(30, 64, 175, 0.4) 0%, rgba(30, 58, 138, 0.4) 100%);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .progress-stat {
+            text-align: center;
+        }
+        .progress-number {
+            font-size: 2.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        .progress-label {
+            font-size: 0.9em;
+            color: #93c5fd;
+            font-weight: 600;
+        }
+        
+        /* Level Navigation Tabs */
+        .level-tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 35px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .level-tab {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: rgba(30, 64, 175, 0.3);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        .level-tab:hover {
+            background: rgba(30, 64, 175, 0.5);
+            transform: translateY(-2px);
+        }
+        .level-tab.active {
+            background: linear-gradient(145deg, rgba(30, 64, 175, 0.6) 0%, rgba(30, 58, 138, 0.6) 100%);
+            border-color: rgba(96, 165, 250, 0.4);
+        }
+        .level-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #60a5fa, #93c5fd);
+            box-shadow: 0 0 12px rgba(96, 165, 250, 0.5);
+        }
+        .level-dot.locked {
+            background: #1e40af;
+            box-shadow: none;
+        }
+        .level-tab-name {
+            font-weight: 600;
+            font-size: 0.95em;
+            color: #dbeafe;
+        }
+        .level-tab.locked .level-tab-name {
+            color: #93c5fd;
+        }
+        .level-tab-count {
+            font-size: 0.85em;
+            color: #93c5fd;
+            font-weight: 500;
+        }
+        
+        /* Level Section */
+        .level-section {
+            display: none;
+        }
+        .level-section.active {
+            display: block;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Level Header */
+        .level-header {
+            margin-bottom: 30px;
+        }
+        .level-title-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        .level-icon {
+            font-size: 2em;
+        }
+        .level-title {
+            font-size: 2em;
+            font-weight: 800;
+            color: #eff6ff;
+        }
+        .level-description {
+            font-size: 1.05em;
+            color: #bfdbfe;
+            margin-left: 58px;
+        }
+        
+        /* Puzzles Grid */
+        .puzzles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .puzzle-card {
+            background: linear-gradient(145deg, #1e40af 0%, #1e3a8a 100%);
+            border-radius: 14px;
+            padding: 24px;
+            border: 1px solid rgba(96, 165, 250, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .puzzle-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #60a5fa, #93c5fd);
+        }
+        .puzzle-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(96, 165, 250, 0.4);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        .puzzle-badge {
+            display: inline-block;
+            background: rgba(96, 165, 250, 0.2);
+            color: #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.7em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(96, 165, 250, 0.3);
+        }
+        .puzzle-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #eff6ff;
+            font-weight: 700;
+        }
+        .puzzle-description {
+            color: #bfdbfe;
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+        .puzzle-link {
+            display: block;
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+            padding: 11px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        }
+        .puzzle-link:hover {
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+        }
+        
+        /* Coming Soon */
+        .coming-soon {
+            text-align: center;
+            padding: 60px 30px;
+            color: #93c5fd;
+            background: rgba(30, 58, 138, 0.3);
+            border-radius: 16px;
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+        .coming-soon-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body { padding: 20px 15px 50px; }
+            .header h1 { font-size: 2.2em; }
+            .progress-overview {
+                padding: 20px;
+                flex-direction: column;
+            }
+            .progress-stat {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .puzzles-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚙️ DevOps Word Games</h1>
+            <p>Master DevOps concepts through interactive word puzzles</p>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+
+        <!-- Progress Overview -->
+        <div class="progress-overview">
+            <div class="progress-stat">
+                <div class="progress-number">8</div>
+                <div class="progress-label">Total Puzzles</div>
+            </div>
+            <div class="progress-stat">
+                <div class="progress-number">2</div>
+                <div class="progress-label">Levels Unlocked</div>
+            </div>
+            <div class="progress-stat">
+                <div class="progress-number">6</div>
+                <div class="progress-label">Difficulty Levels</div>
+            </div>
+        </div>
+
+        <!-- Level Navigation Tabs -->
+        <div class="level-tabs">
+            <div class="level-tab active" data-level="easy">
+                <div class="level-dot"></div>
+                <span class="level-tab-name">Easy</span>
+                <span class="level-tab-count">• 4</span>
+            </div>
+            <div class="level-tab" data-level="medium">
+                <div class="level-dot"></div>
+                <span class="level-tab-name">Medium</span>
+                <span class="level-tab-count">• 4</span>
+            </div>
+            <div class="level-tab locked" data-level="hard">
+                <div class="level-dot locked"></div>
+                <span class="level-tab-name">Hard</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+            <div class="level-tab locked" data-level="expert">
+                <div class="level-dot locked"></div>
+                <span class="level-tab-name">Expert</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+            <div class="level-tab locked" data-level="master">
+                <div class="level-dot locked"></div>
+                <span class="level-tab-name">Master</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+            <div class="level-tab locked" data-level="elite">
+                <div class="level-dot locked"></div>
+                <span class="level-tab-name">Elite</span>
+                <span class="level-tab-count">• 🔒</span>
+            </div>
+        </div>
+
+        <!-- LEVEL 1: EASY -->
+        <div class="level-section active" id="level-easy">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🟢</span>
+                    <h2 class="level-title">Easy</h2>
+                </div>
+                <p class="level-description">Perfect for beginners - Learn foundational DevOps concepts</p>
+            </div>
+
+            <div class="puzzles-grid">
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🔄 CI/CD Basics</h3>
+                    <p class="puzzle-description">Learn the core concepts of Continuous Integration and Delivery</p>
+                    <a href="devops-cicd-basics/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>📝 Version Control</h3>
+                    <p class="puzzle-description">Understand the fundamentals of managing code changes</p>
+                    <a href="devops-version-control/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>📦 Containers</h3>
+                    <p class="puzzle-description">Learn containerization and application packaging basics</p>
+                    <a href="devops-containers/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🏗️ Infrastructure Basics</h3>
+                    <p class="puzzle-description">Understand core components of infrastructure management</p>
+                    <a href="devops-infrastructure/" class="puzzle-link">Play Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEVEL 2: MEDIUM -->
+        <div class="level-section" id="level-medium">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🔵</span>
+                    <h2 class="level-title">Medium</h2>
+                </div>
+                <p class="level-description">For those with basic knowledge - Understand deeper DevOps practices</p>
+            </div>
+
+            <div class="puzzles-grid">
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>📊 Monitoring & Observability</h3>
+                    <p class="puzzle-description">Learn how to track system health and performance</p>
+                    <a href="devops-monitoring/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🤖 Automation Tools</h3>
+                    <p class="puzzle-description">Understand tools and practices for automating workflows</p>
+                    <a href="devops-automation/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>☸️ Kubernetes Basics</h3>
+                    <p class="puzzle-description">Learn the core concepts of container orchestration</p>
+                    <a href="devops-kubernetes/" class="puzzle-link">Play Now</a>
+                </div>
+
+                <div class="puzzle-card">
+                    <span class="puzzle-badge">NEW</span>
+                    <h3>🔐 DevOps Security</h3>
+                    <p class="puzzle-description">Understand security practices in DevOps workflows</p>
+                    <a href="devops-security/" class="puzzle-link">Play Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEVEL 3-6: LOCKED -->
+        <div class="level-section locked" id="level-hard">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🟡</span>
+                    <h2 class="level-title">Hard</h2>
+                </div>
+                <p class="level-description">Advanced DevOps concepts and specialized expertise</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Medium level to unlock</div>
+            </div>
+        </div>
+
+        <div class="level-section locked" id="level-expert">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🟠</span>
+                    <h2 class="level-title">Expert</h2>
+                </div>
+                <p class="level-description">Build and implement DevOps systems</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Hard level to unlock</div>
+            </div>
+        </div>
+
+        <div class="level-section locked" id="level-master">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">🔴</span>
+                    <h2 class="level-title">Master</h2>
+                </div>
+                <p class="level-description">Design enterprise DevOps systems and frameworks</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Expert level to unlock</div>
+            </div>
+        </div>
+
+        <div class="level-section locked" id="level-elite">
+            <div class="level-header">
+                <div class="level-title-row">
+                    <span class="level-icon">⚫</span>
+                    <h2 class="level-title">Elite</h2>
+                </div>
+                <p class="level-description">Ultimate DevOps expertise and elite challenges</p>
+            </div>
+            <div class="coming-soon">
+                <div class="coming-soon-icon">🚀</div>
+                <div>Coming Soon - Complete Master level to unlock</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Level tab navigation
+        const tabs = document.querySelectorAll('.level-tab:not(.locked)');
+        const sections = document.querySelectorAll('.level-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const level = tab.dataset.level;
+                
+                // Update active tab
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                // Update active section
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === `level-${level}`) {
+                        section.classList.add('active');
+                    }
+                });
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
