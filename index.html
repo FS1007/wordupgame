@@ -1,355 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6CE3JE34J"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-378739910"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-D6CE3JE34J');
-        gtag('event', 'homepage_viewed', {'page': 'daily'});
+        gtag('config', 'G-378739910');
     </script>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WordUp - Daily Educational Puzzle</title>
+    <title>WordUp - Daily Educational Puzzles</title>
+    
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        :root {
-            --bg-top: #0f172a;
-            --bg-bottom: #1d1f29;
-            --card-bg: rgba(15, 23, 42, 0.85);
-            --panel-bg: rgba(15, 23, 42, 0.65);
-            --border: rgba(255, 255, 255, 0.25);
-            --text: #f8fafc;
-            --muted: rgba(248, 250, 252, 0.7);
-            --accent: #38bdf8;
-            --accent-strong: #06b6d4;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             min-height: 100vh;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
-            color: var(--text);
-        }
-
-        main.page {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px 60px;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        header.hero {
-            text-align: center;
-        }
-
-        header.hero .daily-badge {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 0.9rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            padding: 6px 16px;
-            border-radius: 999px;
-            background: rgba(56, 189, 248, 0.1);
-            color: #a5f3fc;
-            margin-bottom: 12px;
-        }
-
-        header.hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            letter-spacing: 0.02em;
-        }
-
-        header.hero .tagline {
-            font-size: 1.25rem;
-            color: var(--muted);
-            font-weight: 300;
-        }
-
-        .today-game {
-            background: var(--card-bg);
-            border-radius: 28px;
-            padding: 40px;
-            border: 1px solid var(--border);
-            box-shadow:
-                0 30px 75px rgba(15, 23, 42, 0.45),
-                inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-        }
-
-        .today-meta {
-            max-width: 820px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .today-label {
-            font-size: 0.9rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
-
-        .today-title {
-            font-size: 2.6rem;
-            margin: 0;
-        }
-
-        .today-description {
-            font-size: 1.1rem;
-            color: var(--muted);
-            line-height: 1.6;
-        }
-
-        .category-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .category-badge {
-            padding: 8px 18px;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-        }
-
-        .category-badge.pm {
-            background: rgba(59, 130, 246, 0.2);
-            color: #bfdbfe;
-        }
-
-        .category-badge.finance {
-            background: rgba(16, 185, 129, 0.2);
-            color: #bbf7d0;
-        }
-
-        .today-cta {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .today-cta .btn-primary {
-            background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-            border: none;
-            border-radius: 999px;
             color: white;
-            padding: 18px 48px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 15px 40px rgba(14, 165, 233, 0.35);
         }
-
-        .today-cta .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 45px rgba(14, 165, 233, 0.35);
+        .container { max-width: 1400px; margin: 0 auto; padding: 30px 20px 40px; }
+        header { text-align: center; margin-bottom: 35px; padding: 20px 20px 10px; }
+        .logo { font-size: 3.5em; margin-bottom: 8px; line-height: 1; }
+        h1 {
+            font-size: 3em; margin-bottom: 8px;
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; font-weight: 800; letter-spacing: -0.02em;
         }
-
-        .today-footnote {
-            text-align: center;
-            color: var(--muted);
-            font-size: 0.95rem;
-            margin-top: 14px;
+        .tagline { font-size: 1.1em; color: #94a3b8; font-weight: 400; margin-bottom: 12px; }
+        .daily-badge {
+            display: inline-block; background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            color: white; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 0.85em;
+            animation: pulse 2s ease-in-out infinite;
         }
-
-        .category-selector {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 24px;
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        .section-title { font-size: 1.6em; margin-bottom: 25px; text-align: center; color: #f1f5f9; font-weight: 700; letter-spacing: -0.01em; }
+        .puzzles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .puzzle-card {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%); border-radius: 20px; padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative; overflow: hidden;
         }
-
-        .category-pill {
-            border-radius: 999px;
-            padding: 10px 24px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            background: transparent;
-            color: var(--text);
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            font-size: 0.95rem;
+        .puzzle-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, var(--card-gradient-start), var(--card-gradient-end));
+        }
+        .puzzle-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .puzzle-card.pm-theme { --card-gradient-start: #3b82f6; --card-gradient-end: #8b5cf6; }
+        .puzzle-card.accounting-theme { --card-gradient-start: #10b981; --card-gradient-end: #06b6d4; }
+        .puzzle-card.cybersec-theme { --card-gradient-start: #dc2626; --card-gradient-end: #f97316; }
+        
+        /* Clickable Category Badge */
+        .category-badge {
+            display: inline-block; padding: 5px 14px; border-radius: 10px; font-size: 0.75em;
+            font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.8px;
+            text-decoration: none; transition: all 0.3s ease;
             cursor: pointer;
-            transition: background 0.3s ease, border-color 0.3s ease;
         }
-
-        .category-pill.active {
-            background: rgba(14, 165, 233, 0.18);
-            border-color: rgba(14, 165, 233, 0.8);
-            color: #e0f2fe;
+        .category-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.1);
         }
-
-        .category-detail {
-            margin-top: 20px;
-            text-align: center;
-            color: var(--muted);
-            font-size: 1rem;
-            line-height: 1.5;
-            max-width: 720px;
-            margin-left: auto;
-            margin-right: auto;
+        .pm-badge { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); color: white; }
+        .accounting-badge { background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); color: white; }
+        .cybersec-badge { background: linear-gradient(135deg, #dc2626 0%, #f97316 100%); color: white; }
+        
+        .puzzle-icon { font-size: 1.8em; margin-bottom: 14px; display: block; line-height: 1; letter-spacing: 0.05em; }
+        .puzzle-title { font-size: 1.5em; font-weight: 700; margin-bottom: 12px; color: #f1f5f9; line-height: 1.25; letter-spacing: -0.01em; }
+        .puzzle-description { font-size: 0.95em; color: #cbd5e1; line-height: 1.5; margin-bottom: 20px; font-weight: 400; }
+        .puzzle-meta { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 6px; font-size: 0.85em; color: #94a3b8; font-weight: 500; }
+        .meta-icon { font-size: 1.1em; }
+        .btn {
+            width: 100%; padding: 14px 28px; border-radius: 12px; font-size: 1.05em; font-weight: 600;
+            text-decoration: none; text-align: center; transition: all 0.3s ease;
+            border: none; cursor: pointer; display: block; letter-spacing: -0.01em;
         }
-
-        .category-actions {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-top: 18px;
+        .btn-primary {
+            background: linear-gradient(135deg, var(--card-gradient-start), var(--card-gradient-end));
+            color: white; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
         }
-
-        .category-link {
-            color: var(--accent);
-            border-bottom: 1px solid rgba(56, 189, 248, 0.4);
-            text-decoration: none;
-            font-weight: 600;
-            padding-bottom: 2px;
-        }
-
-        .category-link:hover {
-            color: var(--accent-strong);
-            border-color: rgba(14, 165, 233, 0.8);
-        }
-
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(59, 130, 246, 0.4); }
+        footer { text-align: center; padding: 30px 20px; color: #64748b; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px; }
+        footer p { margin: 6px 0; font-size: 0.9em; font-weight: 400; }
         @media (max-width: 768px) {
-            .today-game {
-                padding: 30px;
-            }
-
-            header.hero h1 {
-                font-size: 2.6rem;
-            }
-
-            .today-title {
-                font-size: 2.1rem;
-            }
-
-            .today-cta .btn-primary {
-                width: 100%;
-                padding: 16px;
-            }
+            .container { padding: 20px 15px 30px; }
+            header { padding: 15px 15px 5px; margin-bottom: 25px; }
+            .logo { font-size: 2.8em; }
+            h1 { font-size: 2.2em; }
+            .tagline { font-size: 1em; }
+            .section-title { font-size: 1.4em; margin-bottom: 20px; }
+            .puzzles-grid { grid-template-columns: 1fr; gap: 25px; margin-bottom: 40px; }
+            .puzzle-card { padding: 25px; }
+            .puzzle-icon { font-size: 1.6em; }
+            .puzzle-title { font-size: 1.3em; }
+            .puzzle-description { font-size: 0.9em; }
+            .btn { padding: 13px 24px; font-size: 1em; }
+        }
+        @media (max-width: 480px) {
+            .logo { font-size: 2.5em; }
+            h1 { font-size: 1.9em; }
+            .puzzle-card { padding: 22px; }
+            .puzzle-icon { font-size: 1.5em; }
+            .puzzle-title { font-size: 1.2em; }
         }
     </style>
 </head>
 <body>
-    <main class="page">
-        <header class="hero">
-            <div class="daily-badge">Today's Game</div>
+    <div class="container">
+        <header>
+            <div class="logo">🧩</div>
             <h1>WordUp</h1>
-            <p class="tagline">A single educational puzzle across Product Management and Finance/Accounting.</p>
+            <p class="tagline">Daily Educational Puzzles - Learn Through Play</p>
+            <span class="daily-badge">🔥 New Puzzles Daily</span>
         </header>
-
-        <section class="today-game">
-            <div class="today-meta">
-                <p class="today-label">Daily Focus</p>
-                <h2 class="today-title">Scrum Roles</h2>
-                <p class="today-description">
-                    Today's puzzle explores the three essential Scrum roles a cross-functional team relies on.
-                    Challenge yourself with mix-and-match letter fragments while brushing up on both PM strategy and finance-friendly collaboration.
-                </p>
-                <div class="category-badges">
-                    <span class="category-badge pm">Product Management</span>
-                    <span class="category-badge finance">Finance & Accounting</span>
+        <main>
+            <h2 class="section-title">Today's Puzzles</h2>
+            <div class="puzzles-grid">
+                <div class="puzzle-card pm-theme">
+                    <a href="archive-pm.html" class="category-badge pm-badge">🎯 Product Management</a>
+                    <span class="puzzle-icon">📈 🔄</span>
+                    <h3 class="puzzle-title">Product Lifecycle Stages</h3>
+                    <p class="puzzle-description">
+                        Discover the journey every product takes from launch to sunset. Think market entry, rapid expansion, peak saturation.
+                    </p>
+                    <div class="puzzle-meta">
+                        <div class="meta-item"><span class="meta-icon">🎯</span><span>4 Words</span></div>
+                        <div class="meta-item"><span class="meta-icon">📱</span><span>Vertical</span></div>
+                        <div class="meta-item"><span class="meta-icon">⏱️</span><span>6-10 min</span></div>
+                    </div>
+                    <a href="pm-product-lifecycle/" class="btn btn-primary">Play Now</a>
                 </div>
-                <div class="category-selector" id="category-selector">
-                    <button class="category-pill active" data-category="pm">Product Management</button>
-                    <button class="category-pill" data-category="finance">Finance & Accounting</button>
+                <div class="puzzle-card accounting-theme">
+                    <a href="archive-accounting.html" class="category-badge accounting-badge">💰 Finance & Accounting</a>
+                    <span class="puzzle-icon">🏦 📊</span>
+                    <h3 class="puzzle-title">Key Asset Types</h3>
+                    <p class="puzzle-description">
+                        Uncover how businesses classify their valuable resources. Some convert quickly to cash, others are long-term, some intangible.
+                    </p>
+                    <div class="puzzle-meta">
+                        <div class="meta-item"><span class="meta-icon">🎯</span><span>4 Words</span></div>
+                        <div class="meta-item"><span class="meta-icon">📱</span><span>Vertical</span></div>
+                        <div class="meta-item"><span class="meta-icon">⏱️</span><span>5-9 min</span></div>
+                    </div>
+                    <a href="accounting-asset-types/" class="btn btn-primary">Play Now</a>
                 </div>
-                <p class="category-detail" id="category-detail"></p>
-                <div class="today-cta">
-                    <a id="play-today-btn" class="btn-primary" href="pm-scrum-roles/?category=pm">Play today's puzzle</a>
+                <div class="puzzle-card cybersec-theme">
+                    <a href="archive-cybersecurity.html" class="category-badge cybersec-badge">🔒 Cybersecurity</a>
+                    <span class="puzzle-icon">🔐 🛡️</span>
+                    <h3 class="puzzle-title">Authentication Methods</h3>
+                    <p class="puzzle-description">
+                        Discover how systems verify your identity. From traditional secrets to biometric scans and digital certificates.
+                    </p>
+                    <div class="puzzle-meta">
+                        <div class="meta-item"><span class="meta-icon">🎯</span><span>4 Words</span></div>
+                        <div class="meta-item"><span class="meta-icon">📱</span><span>Vertical</span></div>
+                        <div class="meta-item"><span class="meta-icon">⏱️</span><span>5-8 min</span></div>
+                    </div>
+                    <a href="cybersec-authentication/" class="btn btn-primary">Play Now</a>
                 </div>
-                <div class="category-actions">
-                    <a id="category-archive-link" class="category-link" href="archive-pm.html">Browse Product Management archive</a>
-                </div>
-                <p class="today-footnote">One curated game, multiple lenses — scale this landing to more categories tomorrow.</p>
             </div>
-        </section>
-    </main>
-    <script>
-        (function() {
-            var categories = {
-                pm: {
-                    label: 'Product Management',
-                    description: 'Use the Product Management lens to sharpen collaboration, roadmapping, and stakeholder rituals while solving Scrum roles.',
-                    archive: 'archive-pm.html'
-                },
-                finance: {
-                    label: 'Finance & Accounting',
-                    description: 'Switch to a finance lens by focusing on reporting, controls, and how Scrum roles keep value delivery accountable.',
-                    archive: 'archive-accounting.html'
-                }
-            };
-
-            var selector = document.getElementById('category-selector');
-            var detail = document.getElementById('category-detail');
-            var playLink = document.getElementById('play-today-btn');
-            var archiveLink = document.getElementById('category-archive-link');
-            var pills = selector ? selector.querySelectorAll('.category-pill') : [];
-            var activeCategory = 'pm';
-
-            function refreshView(categoryKey) {
-                var meta = categories[categoryKey];
-                if (!meta) return;
-                activeCategory = categoryKey;
-
-                if (detail) {
-                    detail.textContent = meta.description;
-                }
-                if (playLink) {
-                    playLink.href = 'pm-scrum-roles/?category=' + categoryKey;
-                }
-                if (archiveLink) {
-                    archiveLink.href = meta.archive;
-                    archiveLink.textContent = 'Browse ' + meta.label + ' archive';
-                }
-                Array.prototype.forEach.call(pills, function(pill) {
-                    if (pill.dataset.category === categoryKey) {
-                        pill.classList.add('active');
-                    } else {
-                        pill.classList.remove('active');
-                    }
-                });
-            }
-
-            if (selector) {
-                selector.addEventListener('click', function(event) {
-                    var clicked = event.target;
-                    if (!clicked.classList.contains('category-pill')) {
-                        clicked = clicked.closest('.category-pill');
-                    }
-                    if (!clicked || !clicked.dataset || !clicked.dataset.category) return;
-                    var selectedKey = clicked.dataset.category;
-                    if (!categories[selectedKey]) return;
-                    refreshView(selectedKey);
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'category_selected', {
-                            'category': selectedKey,
-                            'location': 'homepage'
-                        });
-                    }
-                });
-            }
-
-            refreshView(activeCategory);
-        })();
-    </script>
+        </main>
+        <footer>
+            <p>🧩 <strong>WordUp</strong> - Making Learning Fun Through Puzzles</p>
+            <p>New puzzles added daily • Play anywhere, anytime</p>
+        </footer>
+    </div>
 </body>
 </html>

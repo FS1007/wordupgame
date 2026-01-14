@@ -1,0 +1,30 @@
+{
+  "title": "What are the key Cost Types?",
+  "description": "Uncover how businesses categorize their expenses. Some stay constant, others change with production.",
+  "words": [
+    {
+      "word": "FIXED",
+      "fragments": ["FIX", "ED"],
+      "orientation": "vertical",
+      "fact": "<strong>Fixed Costs:</strong> Expenses that remain constant regardless of production volume. Examples include rent, salaries, insurance, and depreciation."
+    },
+    {
+      "word": "VARIABLE",
+      "fragments": ["VARI", "AB", "LE"],
+      "orientation": "vertical",
+      "fact": "<strong>Variable Costs:</strong> Expenses that change in proportion to production activity. Examples include raw materials, direct labor, and packaging."
+    },
+    {
+      "word": "DIRECT",
+      "fragments": ["DIR", "ECT"],
+      "orientation": "vertical",
+      "fact": "<strong>Direct Costs:</strong> Expenses directly traceable to a specific product or service. Examples include materials used in manufacturing and wages of production workers."
+    },
+    {
+      "word": "INDIRECT",
+      "fragments": ["INDI", "RE", "CT"],
+      "orientation": "vertical",
+      "fact": "<strong>Indirect Costs:</strong> Expenses that cannot be directly traced to a specific product. Also called overhead. Examples include utilities, maintenance, and administrative salaries."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "What are Authentication Factors?",
+  "description": "Understand the different ways systems verify identity. From what you know to where you are.",
+  "words": [
+    {"word": "KNOWN", "fragments": ["KNO", "WN"], "orientation": "vertical", "fact": "<strong>Known:</strong> Something you know—passwords, PINs, security questions. Knowledge factors are most common but vulnerable to phishing, shoulder surfing, and credential stuffing. Use strong, unique passwords (15+ characters) with password managers. Never reuse passwords across sites."},
+    {"word": "OWNED", "fragments": ["OWN", "ED"], "orientation": "vertical", "fact": "<strong>Owned:</strong> Something you have—security tokens, smart cards, mobile devices, YubiKeys. Possession factors add security layer beyond knowledge. TOTP tokens (Google Authenticator) generate time-based codes. Hardware tokens resist phishing better than SMS codes."},
+    {"word": "UNIQUE", "fragments": ["UNI", "QUE"], "orientation": "vertical", "fact": "<strong>Unique:</strong> Something you are—biometrics like fingerprints, facial recognition, iris scans, voice patterns. Inherence factors are difficult to steal or share but cannot be reset if compromised. Apple Touch ID, Windows Hello use biometric authentication."},
+    {"word": "LOCATION", "fragments": ["LOCA", "TION"], "orientation": "vertical", "fact": "<strong>Location:</strong> Where you are—GPS coordinates, network location, geofencing. Context-aware authentication adapts security based on location risk. Travel to unusual countries triggers additional verification. VPNs can mask true location, complicating location-based controls."},
+    {"word": "BEHAVIOR", "fragments": ["BEHA", "VIOR"], "orientation": "vertical", "fact": "<strong>Behavior:</strong> How you interact—typing rhythm, mouse movements, usage patterns. Behavioral biometrics continuously authenticate during sessions. Deviations from normal behavior trigger step-up authentication. Machine learning models detect account takeovers through behavioral anomalies."},
+    {"word": "PATTERN", "fragments": ["PATT", "ERN"], "orientation": "vertical", "fact": "<strong>Pattern:</strong> Visual patterns like Android unlock patterns or gesture-based authentication. Pattern locks combine knowledge (pattern memorization) with motor skills. More secure than 4-digit PINs but vulnerable to smudge attacks where finger oils reveal patterns on screens."}
+  ]
+}

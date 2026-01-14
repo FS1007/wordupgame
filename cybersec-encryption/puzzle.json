@@ -1,0 +1,42 @@
+{
+  "title": "What are Encryption fundamentals?",
+  "description": "Uncover the science of securing data through codes and keys. From ancient ciphers to modern cryptography.",
+  "words": [
+    {
+      "word": "CIPHER",
+      "fragments": ["CIP", "HER"],
+      "orientation": "vertical",
+      "fact": "<strong>Cipher:</strong> Algorithm for performing encryption and decryption of data. Historical ciphers like Caesar and Vigenère used simple substitution, while modern ciphers like AES use complex mathematical operations. Stream ciphers encrypt data bit-by-bit; block ciphers process fixed-size blocks (typically 128 bits)."
+    },
+    {
+      "word": "ENCODE",
+      "fragments": ["ENC", "ODE"],
+      "orientation": "vertical",
+      "fact": "<strong>Encode:</strong> Converting data from one format to another for transmission or storage. Encoding (like Base64) is NOT encryption—it's reversible without keys and provides no security. Encoding is used for data compatibility, while encryption protects confidentiality. Common encodings include UTF-8, ASCII, and URL encoding."
+    },
+    {
+      "word": "SECURE",
+      "fragments": ["SEC", "URE"],
+      "orientation": "vertical",
+      "fact": "<strong>Secure:</strong> Protected against unauthorized access, use, disclosure, disruption, or destruction. Secure communications use protocols like TLS/SSL with strong encryption. Security strength depends on key length, algorithm choice, and proper implementation. Secure systems follow cryptographic best practices and regular updates."
+    },
+    {
+      "word": "PUBLIC",
+      "fragments": ["PUB", "LIC"],
+      "orientation": "vertical",
+      "fact": "<strong>Public Key:</strong> Cryptographic key that can be freely shared for encrypting messages or verifying signatures. Part of asymmetric cryptography—public keys encrypt, private keys decrypt. RSA and ECC are common public-key algorithms. Public key infrastructure (PKI) manages digital certificates and establishes trust."
+    },
+    {
+      "word": "HIDDEN",
+      "fragments": ["HID", "DEN"],
+      "orientation": "vertical",
+      "fact": "<strong>Hidden:</strong> Concealed from view or made unreadable to protect confidentiality. Steganography hides messages within other data (like images). Encrypted data appears random and hidden to unauthorized parties. Hidden services on Tor network use encryption and routing to obscure identity and location."
+    },
+    {
+      "word": "CODED",
+      "fragments": ["COD", "ED"],
+      "orientation": "vertical",
+      "fact": "<strong>Coded:</strong> Information transformed using a system of symbols, letters, or algorithms. Coded messages require a codebook or key for decryption. Military and intelligence agencies use codes for secure communications. Modern cryptography codes data mathematically—breaking strong codes without keys requires computational power beyond current capabilities."
+    }
+  ]
+}

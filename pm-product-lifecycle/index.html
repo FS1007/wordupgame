@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-378739910"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-378739910');
+        gtag('event', 'puzzle_started', {'puzzle_name': 'Product Lifecycle', 'category': 'Product Management'});
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Lifecycle - WordUp</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+    <style>
+        .button-group { display: flex; gap: 15px; margin-top: 20px; }
+        .button-group .btn-primary { flex: 1; }
+        .btn-secondary-cta {
+            flex: 1; background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+            color: white; border: none; padding: 15px 40px; font-size: 1.2em;
+            font-weight: 600; border-radius: 50px; cursor: pointer;
+            transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+            text-decoration: none; display: block; text-align: center;
+        }
+        .btn-secondary-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4); }
+        @media (max-width: 768px) { .button-group { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧩 WordUp</h1>
+        <p id="puzzle-description">Loading puzzle...</p>
+    </header>
+    <main><div id="game-area"></div></main>
+    <div id="victory-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-victory" class="close-btn">×</button>
+            <h2>🎉 Congratulations!</h2>
+            <p class="victory-message">You've completed the puzzle!</p>
+            <div id="facts-container">
+                <h3>Did you know?</h3>
+                <ul id="facts-list"></ul>
+            </div>
+            <div class="button-group">
+                <button id="new-puzzle-btn" class="btn-primary">🌅 Come Back Tomorrow</button>
+                <a href="../archive-pm.html" class="btn-secondary-cta">🎮 Play More Puzzles</a>
+            </div>
+        </div>
+    </div>
+    <aside class="instructions" id="instructions-panel">
+        <div>
+            <button id="close-instructions" class="close-btn">×</button>
+            <h3>How to Play</h3>
+            <ol>
+                <li>Drag word fragments to position them</li>
+                <li>Stack fragments vertically to form complete words</li>
+                <li>Completed words turn blue and lock</li>
+                <li>Find all lifecycle stages to win!</li>
+            </ol>
+        </div>
+    </aside>
+    <button id="help-btn" class="help-btn" title="How to play">?</button>
+    <audio id="success-sound" preload="auto">
+        <source src="../shared/sounds/success.mp3" type="audio/mpeg">
+    </audio>
+    <script src="../shared/core.js"></script>
+    <script>
+        document.getElementById('new-puzzle-btn').addEventListener('click', function() {
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+</html>

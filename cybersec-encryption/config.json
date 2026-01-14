@@ -1,0 +1,20 @@
+{
+  "theme": {
+    "name": "cybersecurity-red",
+    "colors": {
+      "gradientStart": "#dc2626",
+      "gradientEnd": "#f97316",
+      "primary": "#ef4444",
+      "primaryDark": "#dc2626",
+      "primaryHover": "#f87171",
+      "completedBg": "#fee2e2",
+      "completedBorder": "#ef4444",
+      "textDark": "#991b1b"
+    }
+  },
+  "gameSettings": {
+    "snapDistance": 200,
+    "snapTolerance": 30,
+    "completionDelay": 100
+  }
+}

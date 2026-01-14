@@ -1,0 +1,42 @@
+{
+  "title": "What are Access Control concepts?",
+  "description": "Master the fundamentals of controlling who can access what. From entry points to permission management.",
+  "words": [
+    {
+      "word": "ACCESS",
+      "fragments": ["ACC", "ESS"],
+      "orientation": "vertical",
+      "fact": "<strong>Access:</strong> The ability and permission to interact with system resources, data, or facilities. Access control is the selective restriction of access based on identity, role, or context. Proper access management follows the principle of least privilege—users get only the minimum access needed for their role."
+    },
+    {
+      "word": "LOGIN",
+      "fragments": ["LOG", "IN"],
+      "orientation": "vertical",
+      "fact": "<strong>Login:</strong> Process of authenticating a user's identity to gain access to a system. Secure logins require strong credentials, multi-factor authentication (MFA), and protection against brute-force attacks. Failed login attempts should be monitored and rate-limited to detect potential intrusions."
+    },
+    {
+      "word": "PERMIT",
+      "fragments": ["PER", "MIT"],
+      "orientation": "vertical",
+      "fact": "<strong>Permit:</strong> Authorization granting specific access rights to resources or operations. Permits define what authenticated users can do—read, write, execute, or delete. Role-based access control (RBAC) groups permits by job function, while attribute-based access control (ABAC) uses contextual factors."
+    },
+    {
+      "word": "VERIFY",
+      "fragments": ["VER", "IFY"],
+      "orientation": "vertical",
+      "fact": "<strong>Verify:</strong> Process of confirming the accuracy and authenticity of credentials, identities, or claims. Verification methods include knowledge factors (passwords), possession factors (tokens), and inherence factors (biometrics). Continuous verification in zero-trust architectures validates every access request regardless of network location."
+    },
+    {
+      "word": "GRANT",
+      "fragments": ["GRA", "NT"],
+      "orientation": "vertical",
+      "fact": "<strong>Grant:</strong> Formally bestowing access rights or privileges to users, groups, or services. Grants should be time-limited, auditable, and revocable. Privilege Access Management (PAM) systems control grants for high-risk accounts. Over-granting creates security vulnerabilities—regular access reviews identify and remove excessive permissions."
+    },
+    {
+      "word": "ALLOW",
+      "fragments": ["ALL", "OW"],
+      "orientation": "vertical",
+      "fact": "<strong>Allow:</strong> Explicit permission to perform actions or access resources. Allow lists (whitelists) specify approved entities, providing stronger security than deny lists (blacklists). Modern security uses default-deny policies—everything is blocked unless explicitly allowed. Allow rules should be specific, documented, and regularly reviewed."
+    }
+  ]
+}

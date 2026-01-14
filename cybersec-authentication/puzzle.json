@@ -1,0 +1,30 @@
+{
+  "title": "What are the key Authentication Methods?",
+  "description": "Discover how systems verify your identity to grant access. From the traditional to the cutting-edge.",
+  "words": [
+    {
+      "word": "PASSWORD",
+      "fragments": ["PASS", "WORD"],
+      "orientation": "vertical",
+      "fact": "<strong>Password Authentication:</strong> Most common method using a secret string of characters. Best practices include using strong, unique passwords with a mix of letters, numbers, and symbols. Vulnerable to brute force and phishing attacks."
+    },
+    {
+      "word": "BIOMETRIC",
+      "fragments": ["BIO", "MET", "RIC"],
+      "orientation": "vertical",
+      "fact": "<strong>Biometric Authentication:</strong> Uses unique physical characteristics like fingerprints, facial recognition, iris scans, or voice patterns. Highly secure as biological traits are difficult to replicate or steal."
+    },
+    {
+      "word": "TOKEN",
+      "fragments": ["TO", "KEN"],
+      "orientation": "vertical",
+      "fact": "<strong>Token-Based Authentication:</strong> Physical or digital device that generates time-sensitive codes. Examples include hardware tokens, authenticator apps (Google Authenticator, Authy), and SMS codes. Key component of multi-factor authentication (MFA)."
+    },
+    {
+      "word": "CERTIFICATE",
+      "fragments": ["CERTI", "FI", "CATE"],
+      "orientation": "vertical",
+      "fact": "<strong>Certificate-Based Authentication:</strong> Uses digital certificates issued by trusted authorities to verify identity. Common in enterprise environments, VPNs, and secure communications. Based on public key infrastructure (PKI)."
+    }
+  ]
+}

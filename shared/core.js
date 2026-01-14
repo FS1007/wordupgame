@@ -1,7 +1,57 @@
 // ===================================
 // WORDUP GAME ENGINE - CORE
-// Version: 2.0 (Refactored)
+// Version: 2.1 - With Dynamic Back Button
 // Safari 11.1+ Compatible
+// ===================================
+
+// ===================================
+// DYNAMIC BACK BUTTON INJECTION
+// ===================================
+(function() {
+    'use strict';
+    
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initBackButton);
+    } else {
+        initBackButton();
+    }
+    
+    function initBackButton() {
+        const currentPath = window.location.pathname;
+        let archivePage = '../archive-cybersecurity.html';
+        
+        if (currentPath.includes('pm-') || currentPath.includes('/pm/')) {
+            archivePage = '../archive-pm.html';
+        } else if (currentPath.includes('accounting-') || currentPath.includes('/accounting/')) {
+            archivePage = '../archive-accounting.html';
+        } else if (currentPath.includes('cybersec-') || currentPath.includes('analyst-')) {
+            archivePage = '../archive-cybersecurity.html';
+        }
+        
+        const helpBtn = document.getElementById('help-btn');
+        if (!helpBtn) return;
+        
+        if (document.querySelector('.top-nav-buttons')) return;
+        
+        const navContainer = document.createElement('div');
+        navContainer.className = 'top-nav-buttons';
+        
+        const backBtn = document.createElement('a');
+        backBtn.href = archivePage;
+        backBtn.className = 'back-btn';
+        backBtn.title = 'Back to puzzles';
+        backBtn.innerHTML = '←';
+        
+        navContainer.appendChild(backBtn);
+        helpBtn.parentNode.removeChild(helpBtn);
+        navContainer.appendChild(helpBtn);
+        
+        document.body.insertBefore(navContainer, document.body.firstChild);
+    }
+})();
+
+// ===================================
+// ORIGINAL GAME ENGINE CODE BELOW
 // ===================================
 
 // ===================================

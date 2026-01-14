@@ -1,0 +1,20 @@
+{
+  "theme": {
+    "name": "accounting-green",
+    "colors": {
+      "gradientStart": "#065f46",
+      "gradientEnd": "#10b981",
+      "primary": "#10b981",
+      "primaryDark": "#065f46",
+      "primaryHover": "#059669",
+      "completedBg": "#d1fae5",
+      "completedBorder": "#059669",
+      "textDark": "#065f46"
+    }
+  },
+  "gameSettings": {
+    "snapDistance": 200,
+    "snapTolerance": 30,
+    "completionDelay": 100
+  }
+}

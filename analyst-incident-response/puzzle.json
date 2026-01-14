@@ -1,0 +1,42 @@
+{
+  "title": "What are Incident Response phases?",
+  "description": "Master the critical steps in handling security incidents. From initial detection through lessons learned.",
+  "words": [
+    {
+      "word": "DETECT",
+      "fragments": ["DET", "ECT"],
+      "orientation": "vertical",
+      "fact": "<strong>Detect:</strong> Identifying security incidents through monitoring, alerts, and anomaly detection. SIEM systems, IDS/IPS, and security operations centers (SOCs) continuously scan for threats. Average time to detect a breach is 207 days—faster detection minimizes damage."
+    },
+    {
+      "word": "CONTAIN",
+      "fragments": ["CON", "TAIN"],
+      "orientation": "vertical",
+      "fact": "<strong>Contain:</strong> Limiting incident scope by isolating affected systems, blocking malicious IPs, and preventing lateral movement. Network segmentation aids containment. Balance containment speed with evidence preservation for forensic analysis."
+    },
+    {
+      "word": "RESPOND",
+      "fragments": ["RES", "POND"],
+      "orientation": "vertical",
+      "fact": "<strong>Respond:</strong> Taking action to neutralize threats—removing malware, closing vulnerabilities, resetting compromised credentials. Incident response teams follow documented playbooks. Communication with stakeholders, legal, and PR is crucial during response."
+    },
+    {
+      "word": "RECOVER",
+      "fragments": ["RECO", "VER"],
+      "orientation": "vertical",
+      "fact": "<strong>Recover:</strong> Restoring systems and operations to normal state from clean backups. Verify system integrity before bringing back online. Recovery time objectives (RTO) define acceptable downtime. Test recovery procedures regularly through tabletop exercises."
+    },
+    {
+      "word": "ANALYZE",
+      "fragments": ["ANAL", "YZE"],
+      "orientation": "vertical",
+      "fact": "<strong>Analyze:</strong> Investigating root causes through forensic examination of logs, memory dumps, and artifacts. Determine attack vectors, timeline, and scope of compromise. Analysis informs remediation strategies and attribution efforts."
+    },
+    {
+      "word": "LEARN",
+      "fragments": ["LEA", "RN"],
+      "orientation": "vertical",
+      "fact": "<strong>Learn:</strong> Post-incident review captures lessons to improve defenses. Document what worked, what didn't, and update incident response plans. Share intelligence with community through threat sharing platforms. Continuous improvement prevents recurring incidents."
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6CE3JE34J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-D6CE3JE34J');
+        gtag('event', 'page_view', {'page_title': 'Cybersecurity Archive', 'page_location': window.location.href});
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Puzzles - WordUp</title>
+    
+    <!-- Mixpanel Tracking -->
+    <script type="text/javascript">
+        (function(e,c){if(!c.__SV){var l,h;window.mixpanel=c;c._i=[];c.init=function(q,r,f){function t(d,a){var g=a.split(".");2==g.length&&(d=d[g[0]],a=g[1]);d[a]=function(){d.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";b.people=b.people||[];b.toString=function(d){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);d||(a+=" (stub)");return a};b.people.toString=function(){return b.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");for(h=0;h<l.length;h++)t(b,l[h]);var n="set set_once union unset remove delete".split(" ");b.get_group=function(){function d(p){a[p]=function(){b.push([g,[p].concat(Array.prototype.slice.call(arguments,0))])}}for(var a={},g=["get_group"].concat(Array.prototype.slice.call(arguments,0)),m=0;m<n.length;m++)d(n[m]);return a};c._i.push([q,r,f])};c.__SV=1.2;var k=e.createElement("script");k.type="text/javascript";k.async=!0;k.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=e.getElementsByTagName("script")[0];e.parentNode.insertBefore(k,e)}})(document,window.mixpanel||[]);
+        mixpanel.init('4bd06b77bf050a6e4cb61909b82576ff', {
+            autocapture: true,
+            record_sessions_percent: 100,
+        });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #fca5a5;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            color: #fca5a5;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .back-link:hover { color: #fecaca; }
+        .puzzles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .puzzle-card {
+            background: linear-gradient(145deg, #7f1d1d 0%, #450a0a 100%);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .puzzle-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #dc2626, #f97316);
+            border-radius: 16px 16px 0 0;
+        }
+        .puzzle-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(239, 68, 68, 0.6);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .puzzle-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #dc2626, #f97316);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .puzzle-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            color: #fef2f2;
+        }
+        .puzzle-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+            color: #fca5a5;
+        }
+        .puzzle-link {
+            display: block;
+            background: linear-gradient(135deg, #dc2626, #f97316);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .puzzle-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+        }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.2em; }
+            .puzzles-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Cybersecurity Puzzles</h1>
+            <p>Master security concepts through interactive word puzzles</p>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+
+        <div class="puzzles-grid">
+            <div class="puzzle-card">
+                <span class="puzzle-badge">NEW</span>
+                <h3>🛡️ Security Principles</h3>
+                <div class="puzzle-meta">
+                    <span>🎯 6 Words</span>
+                    <span>📱 Vertical</span>
+                    <span>⏱️ 8-12 min</span>
+                </div>
+                <a href="cybersec-security-principles/" class="puzzle-link">Play Now</a>
+            </div>
+
+            <div class="puzzle-card">
+                <span class="puzzle-badge">NEW</span>
+                <h3>🌐 Network Security</h3>
+                <div class="puzzle-meta">
+                    <span>🎯 6 Words</span>
+                    <span>📱 Vertical</span>
+                    <span>⏱️ 8-12 min</span>
+                </div>
+                <a href="cybersec-network-security/" class="puzzle-link">Play Now</a>
+            </div>
+
+            <div class="puzzle-card">
+                <span class="puzzle-badge">NEW</span>
+                <h3>⚠️ Security Threats</h3>
+                <div class="puzzle-meta">
+                    <span>🎯 6 Words</span>
+                    <span>📱 Vertical</span>
+                    <span>⏱️ 8-12 min</span>
+                </div>
+                <a href="cybersec-security-threats/" class="puzzle-link">Play Now</a>
+            </div>
+
+            <div class="puzzle-card">
+                <span class="puzzle-badge">NEW</span>
+                <h3>🔑 Access Control</h3>
+                <div class="puzzle-meta">
+                    <span>🎯 6 Words</span>
+                    <span>📱 Vertical</span>
+                    <span>⏱️ 8-12 min</span>
+                </div>
+                <a href="cybersec-access-control/" class="puzzle-link">Play Now</a>
+            </div>
+
+            <div class="puzzle-card">
+                <span class="puzzle-badge">NEW</span>
+                <h3>🔐 Encryption</h3>
+                <div class="puzzle-meta">
+                    <span>🎯 6 Words</span>
+                    <span>📱 Vertical</span>
+                    <span>⏱️ 8-12 min</span>
+                </div>
+                <a href="cybersec-encryption/" class="puzzle-link">Play Now</a>
+            </div>
+
+            <div class="puzzle-card">
+                <span class="puzzle-badge">POPULAR</span>
+                <h3>🔐 Authentication Methods</h3>
+                <div class="puzzle-meta">
+                    <span>🎯 4 Words</span>
+                    <span>📱 Vertical</span>
+                    <span>⏱️ 5-8 min</span>
+                </div>
+                <a href="cybersec-authentication/" class="puzzle-link">Play Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

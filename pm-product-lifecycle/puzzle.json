@@ -1,0 +1,30 @@
+{
+  "title": "What are the Product Lifecycle Stages?",
+  "description": "Discover the journey every product takes from launch to sunset.",
+  "words": [
+    {
+      "word": "INTRODUCTION",
+      "fragments": ["INTRO", "DUC", "TION"],
+      "orientation": "vertical",
+      "fact": "<strong>Introduction Stage:</strong> Product launch phase with high costs, low sales, and heavy marketing investment. Focus is on building awareness and establishing market presence."
+    },
+    {
+      "word": "GROWTH",
+      "fragments": ["GRO", "WTH"],
+      "orientation": "vertical",
+      "fact": "<strong>Growth Stage:</strong> Rapid sales increase, growing profits, and market expansion. Competition increases as others enter the market. Focus on differentiation and market share."
+    },
+    {
+      "word": "MATURITY",
+      "fragments": ["MATU", "RITY"],
+      "orientation": "vertical",
+      "fact": "<strong>Maturity Stage:</strong> Sales peak and plateau, market saturation occurs, and competition intensifies. Focus shifts to efficiency, cost reduction, and customer retention."
+    },
+    {
+      "word": "DECLINE",
+      "fragments": ["DECLI", "NE"],
+      "orientation": "vertical",
+      "fact": "<strong>Decline Stage:</strong> Sales and profits fall as customer preferences change or better alternatives emerge. Companies must decide whether to harvest, maintain, or discontinue the product."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "theme": {
+    "name": "pm-blue",
+    "colors": {
+      "gradientStart": "#1e3a8a",
+      "gradientEnd": "#3b82f6",
+      "primary": "#3b82f6",
+      "primaryDark": "#1e3a8a",
+      "primaryHover": "#2563eb",
+      "completedBg": "#dbeafe",
+      "completedBorder": "#2563eb",
+      "textDark": "#1e40af"
+    }
+  },
+  "gameSettings": {
+    "snapDistance": 200,
+    "snapTolerance": 30,
+    "completionDelay": 100
+  }
+}
