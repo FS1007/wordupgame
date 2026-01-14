@@ -85,7 +85,12 @@ var CATEGORY_ARCHIVE_MAP = {
     pm: '../archive-pm.html',
     product: '../archive-pm.html',
     accounting: '../archive-accounting.html',
-    finance: '../archive-accounting.html'
+    finance: '../archive-accounting.html',
+    devops: '../archive-devops.html',
+    cybersec: '../archive-cybersecurity.html',
+    analyst: '../archive-cybersecurity.html',
+    physiotherapy: '../archive-physiotherapy.html',
+    physio: '../archive-physiotherapy.html'
 };
 
 function getQueryParameter(name) {
