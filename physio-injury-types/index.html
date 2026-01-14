@@ -80,5 +80,18 @@
             window.location.href = '../index.html';
         });
     </script>
+
+    <script>
+        // Override back button to go to Physiotherapy archive
+        document.addEventListener('DOMContentLoaded', function() {
+            const backBtn = document.querySelector('.back-btn');
+            if (backBtn) {
+                backBtn.onclick = function(e) {
+                    e.preventDefault();
+                    window.location.href = '../archive-physiotherapy.html';
+                };
+            }
+        });
+    </script>
 </body>
 </html>
