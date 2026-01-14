@@ -55,7 +55,7 @@
         }
         @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
         .section-title { font-size: 1.6em; margin-bottom: 25px; text-align: center; color: #f1f5f9; font-weight: 700; letter-spacing: -0.01em; }
-        .categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 50px; }
+        .categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 50px; }
         .category-card {
             background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%); border-radius: 20px; padding: 30px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -74,6 +74,7 @@
         .category-card.cybersec-theme { --card-gradient-start: #ef4444; --card-gradient-end: #f97316; }
         .category-card.pm-theme { --card-gradient-start: #8b5cf6; --card-gradient-end: #a78bfa; }
         .category-card.accounting-theme { --card-gradient-start: #10b981; --card-gradient-end: #34d399; }
+        .category-card.devops-theme { --card-gradient-start: #3b82f6; --card-gradient-end: #60a5fa; }
         .category-icon { font-size: 3em; margin-bottom: 16px; display: block; line-height: 1; }
         .category-title { font-size: 1.8em; font-weight: 700; margin-bottom: 12px; color: #f1f5f9; line-height: 1.25; letter-spacing: -0.01em; }
         .category-description { font-size: 1em; color: #cbd5e1; line-height: 1.6; margin-bottom: 20px; font-weight: 400; }
@@ -130,7 +131,7 @@
                     <span class="category-icon">🔒</span>
                     <h3 class="category-title">Cybersecurity</h3>
                     <p class="category-description">
-                        Discover security concepts that protect our digital world through interactive word puzzles.
+                        Discover security concepts that protect our digital world through interactive puzzles.
                     </p>
                     <div class="category-stats">
                         <div class="stat-item"><span class="stat-icon">🎯</span><span>11 Puzzles</span></div>
@@ -165,6 +166,20 @@
                         <div class="stat-item"><span class="stat-icon">📊</span><span>2 Levels</span></div>
                     </div>
                     <a href="archive-accounting.html" class="btn btn-primary">Explore Puzzles</a>
+                </div>
+
+                <!-- DevOps -->
+                <div class="category-card devops-theme">
+                    <span class="category-icon">⚙️</span>
+                    <h3 class="category-title">DevOps</h3>
+                    <p class="category-description">
+                        Master DevOps practices and tools that streamline software delivery.
+                    </p>
+                    <div class="category-stats">
+                        <div class="stat-item"><span class="stat-icon">🎯</span><span>8 Puzzles</span></div>
+                        <div class="stat-item"><span class="stat-icon">📊</span><span>2 Levels</span></div>
+                    </div>
+                    <a href="archive-devops.html" class="btn btn-primary">Explore Puzzles</a>
                 </div>
             </div>
         </main>
