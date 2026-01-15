@@ -26,6 +26,8 @@
             archivePage = '../archive-accounting.html';
         } else if (currentPath.includes('cybersec-') || currentPath.includes('analyst-')) {
             archivePage = '../archive-cybersecurity.html';
+        } else if (currentPath.includes('design-')) {
+            archivePage = '../archive-design.html';
         }
         
         const helpBtn = document.getElementById('help-btn');
@@ -90,7 +92,8 @@ var CATEGORY_ARCHIVE_MAP = {
     cybersec: '../archive-cybersecurity.html',
     analyst: '../archive-cybersecurity.html',
     physiotherapy: '../archive-physiotherapy.html',
-    physio: '../archive-physiotherapy.html'
+    physio: '../archive-physiotherapy.html',
+    design: '../archive-design.html'
 };
 
 function getQueryParameter(name) {
