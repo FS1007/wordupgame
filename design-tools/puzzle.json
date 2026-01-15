@@ -1,0 +1,36 @@
+{
+  "title": "What Are Popular Design Tools?",
+  "description": "Explore commonly used design tools and understand why designers rely on them every day.",
+  "words": [
+    {
+      "word": "FIGMA",
+      "fragments": ["FI", "GMA"],
+      "orientation": "vertical",
+      "fact": "Did you know? Figma is one of the most widely used design tools today. Why it matters: real-time collaboration helps teams design faster. Today's takeaway: shared design reduces handoff delays."
+    },
+    {
+      "word": "SKETCH",
+      "fragments": ["SKE", "TCH"],
+      "orientation": "vertical",
+      "fact": "Did you know? Sketch popularized reusable UI components. Why it matters: consistency improves usability. Today's takeaway: design systems scale faster when components are reused."
+    },
+    {
+      "word": "INVISION",
+      "fragments": ["IN", "VIS", "ION"],
+      "orientation": "vertical",
+      "fact": "Did you know? InVision made clickable prototypes mainstream. Why it matters: testing early prevents costly changes. Today's takeaway: prototype before you build."
+    },
+    {
+      "word": "CANVA",
+      "fragments": ["CAN", "VA"],
+      "orientation": "vertical",
+      "fact": "Did you know? Canva is heavily used by non-designers. Why it matters: templates lower the design barrier. Today's takeaway: good tools make design more accessible."
+    },
+    {
+      "word": "ADOBE",
+      "fragments": ["ADO", "BE"],
+      "orientation": "vertical",
+      "fact": "Did you know? Adobe tools are industry standards in design. Why it matters: familiarity improves collaboration. Today's takeaway: shared tools speed up creative workflows."
+    }
+  ]
+}

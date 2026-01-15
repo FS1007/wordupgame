@@ -1,0 +1,36 @@
+{
+  "title": "What Are Easy User Research Methods?",
+  "description": "Discover beginner-friendly user research methods designers use to gather insights quickly and effectively.",
+  "words": [
+    {
+      "word": "SURVEYS",
+      "fragments": ["SUR", "VEYS"],
+      "orientation": "vertical",
+      "fact": "Did you know? UX studies show response rates drop sharply after 10 questions. Short, well-worded surveys produce more reliable data than long surveys that users rush through."
+    },
+    {
+      "word": "PERSONAS",
+      "fragments": ["PERS", "ONAS"],
+      "orientation": "vertical",
+      "fact": "Did you know? Research-backed personas help teams align faster. Studies show teams using real-data personas reduce design disagreements and decision time significantly."
+    },
+    {
+      "word": "TESTING",
+      "fragments": ["TEST", "ING"],
+      "orientation": "vertical",
+      "fact": "Did you know? Usability testing doesn't require large samples. Testing with a few users often reveals most critical issues, saving time and reducing development rework."
+    },
+    {
+      "word": "RESEARCH",
+      "fragments": ["RESE", "ARCH"],
+      "orientation": "vertical",
+      "fact": "Did you know? Teams that conduct regular user research are more likely to meet user needs. Even lightweight research improves product success rates."
+    },
+    {
+      "word": "CONTEXT",
+      "fragments": ["CONT", "EXT"],
+      "orientation": "vertical",
+      "fact": "Did you know? Many usability problems only appear in real environments. Studies show context, interruptions, and multitasking strongly affect how users interact with products."
+    }
+  ]
+}
