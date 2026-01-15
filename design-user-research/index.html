@@ -8,12 +8,8 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-D6CE3JE34J');
-        gtag('event', 'puzzle_started', {'puzzle_name': 'User Research Methodologies', 'category': 'Design'});
+        gtag('event', 'puzzle_started', {'puzzle_name': 'User Research Methods', 'category': 'Design'});
     </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Research Methodologies - WordUp Design</title>
 
     <!-- Mixpanel Tracking -->
     <script type="text/javascript">
@@ -23,6 +19,10 @@
             record_sessions_percent: 100,
         });
     </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Research Methods - WordUp Design</title>
 
     <!-- Shared CSS -->
     <link rel="stylesheet" href="../shared/styles.css">
@@ -44,7 +44,10 @@
                 <h3>Did you know?</h3>
                 <ul id="facts-list"></ul>
             </div>
-            <button id="new-puzzle-btn" class="btn-primary">Hope you enjoyed! Visit tomorrow for a new puzzle 🎮</button>
+            <div class="button-group">
+                <button id="new-puzzle-btn" class="btn-primary">🌅 Come Back Tomorrow</button>
+                <a href="../archive-design.html" class="btn-secondary-cta">🎮 Play More Puzzles</a>
+            </div>
         </div>
     </div>
     <aside class="instructions" id="instructions-panel">
@@ -70,5 +73,25 @@
 
     <!-- Shared game engine -->
     <script src="../shared/core.js"></script>
+
+    <!-- Homepage redirect for Come Back Tomorrow button -->
+    <script>
+        document.getElementById('new-puzzle-btn').addEventListener('click', function() {
+            window.location.href = '../index.html';
+        });
+    </script>
+
+    <script>
+        // Override back button to go to Design archive
+        document.addEventListener('DOMContentLoaded', function() {
+            const backBtn = document.querySelector('.back-btn');
+            if (backBtn) {
+                backBtn.onclick = function(e) {
+                    e.preventDefault();
+                    window.location.href = '../archive-design.html';
+                };
+            }
+        });
+    </script>
 </body>
 </html>
