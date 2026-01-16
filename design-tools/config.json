@@ -8,7 +8,7 @@
       "primaryDark": "#db2777",
       "primaryHover": "#f472b6",
       "pieceBackground": "white",
-      "completedBackground": "#fce7f3",
+      "completedBg": "#fce7f3",
       "completedBorder": "#ec4899",
       "textDark": "#9d174d"
     }

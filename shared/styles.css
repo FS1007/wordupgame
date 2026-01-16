@@ -603,6 +603,37 @@ main {
     transform: translateY(0);
 }
 
+.btn-secondary,
+.btn-secondary-cta {
+    background: var(--primary-dark);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-secondary:hover,
+.btn-secondary-cta:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary:active,
+.btn-secondary-cta:active {
+    transform: translateY(0);
+}
+
 .close-btn {
     position: absolute;
     top: 15px;
