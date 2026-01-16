@@ -46,7 +46,7 @@
             </div>
             <div class="button-group">
                 <button id="new-puzzle-btn" class="btn-primary">Come Back Tomorrow</button>
-                <a href="../archive-design.html" class="btn-secondary-cta">Play More Puzzles</a>
+                <button id="play-more-btn" class="btn-secondary">Play More Puzzles</button>
             </div>
         </div>
     </div>
@@ -74,10 +74,13 @@
     <!-- Shared game engine -->
     <script src="../shared/core.js"></script>
 
-    <!-- Homepage redirect for Come Back Tomorrow button -->
+    <!-- Button click handlers -->
     <script>
         document.getElementById('new-puzzle-btn').addEventListener('click', function() {
             window.location.href = '../index.html';
+        });
+        document.getElementById('play-more-btn').addEventListener('click', function() {
+            window.location.href = '../archive-design.html';
         });
     </script>
 
