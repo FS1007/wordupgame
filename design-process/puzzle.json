@@ -1,0 +1,36 @@
+{
+  "title": "What Are the Stages of the Design Process?",
+  "description": "Understand the simple steps designers follow to turn ideas into usable solutions.",
+  "words": [
+    {
+      "word": "DISCOVER",
+      "fragments": ["DIS", "COV", "ER"],
+      "orientation": "vertical",
+      "fact": "Strong design starts with discovery. Why it matters: skipping research leads to wrong solutions. Today's takeaway: learn before you design."
+    },
+    {
+      "word": "DEFINE",
+      "fragments": ["DE", "FINE"],
+      "orientation": "vertical",
+      "fact": "Clear problems lead to better solutions. Why it matters: vague goals waste time. Today's takeaway: define the problem before solving it."
+    },
+    {
+      "word": "IDEATE",
+      "fragments": ["ID", "EATE"],
+      "orientation": "vertical",
+      "fact": "Exploring many ideas increases quality. Why it matters: first ideas are rarely the best. Today's takeaway: quantity fuels creativity."
+    },
+    {
+      "word": "PROTOTYPE",
+      "fragments": ["PRO", "TO", "TYPE"],
+      "orientation": "vertical",
+      "fact": "Prototypes make ideas testable. Why it matters: early feedback prevents costly changes. Today's takeaway: build to learn, not to finish."
+    },
+    {
+      "word": "TESTING",
+      "fragments": ["TEST", "ING"],
+      "orientation": "vertical",
+      "fact": "Testing reveals real user behavior. Why it matters: assumptions often fail. Today's takeaway: feedback improves designs before launch."
+    }
+  ]
+}

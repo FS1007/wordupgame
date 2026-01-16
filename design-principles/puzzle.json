@@ -1,0 +1,36 @@
+{
+  "title": "What Are Core Design Principles?",
+  "description": "Learn the essential design principles that help create clear and usable interfaces.",
+  "words": [
+    {
+      "word": "BALANCE",
+      "fragments": ["BA", "LANCE"],
+      "orientation": "vertical",
+      "fact": "Balanced layouts feel easier to process. Why it matters: visual stability reduces cognitive strain. Today's takeaway: evenly spaced elements help users scan content comfortably."
+    },
+    {
+      "word": "CONTRAST",
+      "fragments": ["CON", "TRAST"],
+      "orientation": "vertical",
+      "fact": "Contrast helps important elements stand out. Why it matters: users notice key information faster. Today's takeaway: use contrast to guide attention."
+    },
+    {
+      "word": "ALIGNMENT",
+      "fragments": ["AL", "IGN", "MENT"],
+      "orientation": "vertical",
+      "fact": "Alignment creates visual order. Why it matters: misalignment feels chaotic and unplanned. Today's takeaway: aligned layouts feel professional and clear."
+    },
+    {
+      "word": "SIMPLICITY",
+      "fragments": ["SIM", "PLI", "CITY"],
+      "orientation": "vertical",
+      "fact": "Simple designs are easier to understand. Why it matters: unnecessary complexity increases errors. Today's takeaway: remove what users don't need."
+    },
+    {
+      "word": "PROXIMITY",
+      "fragments": ["PRO", "XI", "MITY"],
+      "orientation": "vertical",
+      "fact": "Items placed close together feel related. Why it matters: proximity improves comprehension. Today's takeaway: spacing is a powerful organizing tool."
+    }
+  ]
+}
