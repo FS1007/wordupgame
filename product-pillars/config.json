@@ -1,16 +1,16 @@
 {
   "theme": {
-    "name": "blue",
+    "name": "purple",
     "colors": {
-      "primary": "#3b82f6",
-      "primaryDark": "#1e3a8a",
-      "primaryHover": "#2563eb",
-      "gradientStart": "#1e3a8a",
-      "gradientEnd": "#3b82f6",
+      "gradientStart": "#7c3aed",
+      "gradientEnd": "#8b5cf6",
+      "primary": "#8b5cf6",
+      "primaryDark": "#7c3aed",
+      "primaryHover": "#6d28d9",
       "pieceBackground": "white",
-      "completedBg": "#dbeafe",
-      "completedBorder": "#2563eb",
-      "textDark": "#1e40af"
+      "completedBg": "#ede9fe",
+      "completedBorder": "#8b5cf6",
+      "textDark": "#5b21b6"
     }
   },
   "gameSettings": {
