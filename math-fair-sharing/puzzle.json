@@ -1,0 +1,36 @@
+{
+  "title": "Fair Sharing",
+  "description": "Learn words about dividing things equally",
+  "words": [
+    {
+      "word": "BALANCE",
+      "fragments": ["BAL", "ANCE"],
+      "orientation": "vertical",
+      "fact": "Balance means parts are fair."
+    },
+    {
+      "word": "EVENLY",
+      "fragments": ["EVE", "NLY"],
+      "orientation": "vertical",
+      "fact": "Evenly means shared the same way."
+    },
+    {
+      "word": "IDENTICAL",
+      "fragments": ["IDEN", "TI", "CAL"],
+      "orientation": "vertical",
+      "fact": "Identical parts look and size the same."
+    },
+    {
+      "word": "FAIRNESS",
+      "fragments": ["FAIR", "NESS"],
+      "orientation": "vertical",
+      "fact": "Fairness means everyone gets the same."
+    },
+    {
+      "word": "EQUALITY",
+      "fragments": ["EQUA", "LI", "TY"],
+      "orientation": "vertical",
+      "fact": "Equality means no part is bigger or smaller."
+    }
+  ]
+}

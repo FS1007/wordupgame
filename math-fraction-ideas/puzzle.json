@@ -1,0 +1,36 @@
+{
+  "title": "Understanding Fraction Ideas",
+  "description": "Learn core concepts behind fractions",
+  "words": [
+    {
+      "word": "DIVISION",
+      "fragments": ["DI", "VI", "SION"],
+      "orientation": "vertical",
+      "fact": "Division means splitting something into parts."
+    },
+    {
+      "word": "PORTIONS",
+      "fragments": ["POR", "TIONS"],
+      "orientation": "vertical",
+      "fact": "Portions are the parts we get after dividing."
+    },
+    {
+      "word": "REMAINS",
+      "fragments": ["RE", "MAINS"],
+      "orientation": "vertical",
+      "fact": "Remains means what is left after sharing."
+    },
+    {
+      "word": "TOGETHER",
+      "fragments": ["TO", "GETH", "ER"],
+      "orientation": "vertical",
+      "fact": "Together means all parts joined as one."
+    },
+    {
+      "word": "COMPLETE",
+      "fragments": ["COM", "PLETE"],
+      "orientation": "vertical",
+      "fact": "Complete means the whole has no parts missing."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Parts and Groups",
+  "description": "Learn words about parts and how they form groups",
+  "words": [
+    {
+      "word": "PORTION",
+      "fragments": ["POR", "TION"],
+      "orientation": "vertical",
+      "fact": "A portion is one part of something bigger."
+    },
+    {
+      "word": "SECTION",
+      "fragments": ["SEC", "TION"],
+      "orientation": "vertical",
+      "fact": "A section is a space cut from a whole."
+    },
+    {
+      "word": "DIVIDED",
+      "fragments": ["DI", "VID", "ED"],
+      "orientation": "vertical",
+      "fact": "Divided means split into parts."
+    },
+    {
+      "word": "TOGETHER",
+      "fragments": ["TO", "GETH", "ER"],
+      "orientation": "vertical",
+      "fact": "Together means all parts joined."
+    },
+    {
+      "word": "AMOUNT",
+      "fragments": ["A", "MOUNT"],
+      "orientation": "vertical",
+      "fact": "Amount tells how much there is."
+    }
+  ]
+}

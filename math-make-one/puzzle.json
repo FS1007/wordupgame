@@ -1,0 +1,36 @@
+{
+  "title": "Different Ways to Make One",
+  "description": "Learn how fractions combine to make halves and wholes",
+  "words": [
+    {
+      "word": "HALVES",
+      "fragments": ["HAL", "VES"],
+      "orientation": "vertical",
+      "fact": "Two halves (1/2 + 1/2) make one whole."
+    },
+    {
+      "word": "QUARTERS",
+      "fragments": ["QUA", "RTERS"],
+      "orientation": "vertical",
+      "fact": "Four quarters (1/4 + 1/4 + 1/4 + 1/4) make one whole."
+    },
+    {
+      "word": "COMBINE",
+      "fragments": ["COM", "BINE"],
+      "orientation": "vertical",
+      "fact": "Different fraction pieces can be combined to make 1."
+    },
+    {
+      "word": "EQUIVALENT",
+      "fragments": ["EQUI", "VA", "LENT"],
+      "orientation": "vertical",
+      "fact": "Different fractions can equal the same whole amount."
+    },
+    {
+      "word": "WHOLE",
+      "fragments": ["WHO", "LE"],
+      "orientation": "vertical",
+      "fact": "One whole means all parts together equal 1."
+    }
+  ]
+}

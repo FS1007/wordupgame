@@ -1,0 +1,36 @@
+{
+  "title": "Visual Fractions Vocabulary",
+  "description": "Learn the shapes and terms used to represent fractions visually",
+  "words": [
+    {
+      "word": "CIRCLE",
+      "fragments": ["CIR", "CLE"],
+      "orientation": "vertical",
+      "fact": "A circle can be divided into equal parts to show fractions."
+    },
+    {
+      "word": "BAR",
+      "fragments": ["BA", "R"],
+      "orientation": "vertical",
+      "fact": "A bar shows fractions by dividing a long shape into equal parts."
+    },
+    {
+      "word": "SLICE",
+      "fragments": ["SLI", "CE"],
+      "orientation": "vertical",
+      "fact": "A slice is one piece cut from a whole shape."
+    },
+    {
+      "word": "STRIP",
+      "fragments": ["STR", "IP"],
+      "orientation": "vertical",
+      "fact": "A strip shows fractions using long equal sections."
+    },
+    {
+      "word": "MODEL",
+      "fragments": ["MO", "DEL"],
+      "orientation": "vertical",
+      "fact": "A model helps us see and understand fractions clearly."
+    }
+  ]
+}
