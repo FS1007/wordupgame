@@ -346,7 +346,8 @@ async function loadConfig() {
         puzzleConfig = Object.assign({}, mergedConfig, {
             title: puzzleData.title,
             description: puzzleData.description,
-            words: puzzleData.words
+            words: puzzleData.words,
+            universalFragments: puzzleData.universalFragments || []
         });
         gameSettings = puzzleConfig.gameSettings;
         var categoryOverride = getCategoryOverride();
@@ -839,9 +840,15 @@ function trySnapToPieces(pieceData, x, y) {
 
     console.log('🔍 Checking snap for "' + pieceData.fragment + '" (' + pieceOrientation + ')...');
 
-    // Find all pieces from the same word
+    // Check if this fragment is universal (can snap to any word)
+    var universalFragments = puzzleConfig.universalFragments || [];
+    var isUniversal = universalFragments.indexOf(pieceData.fragment) !== -1;
+
+    // Find pieces to snap to (same word, or any word if universal)
     var sameWordPieces = pieces.filter(function(p) {
-        return p.word === pieceWord && p !== pieceData;
+        if (p === pieceData) return false;
+        if (isUniversal) return true;
+        return p.word === pieceWord;
     });
 
     var bestSnap = null;

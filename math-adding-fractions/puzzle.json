@@ -1,0 +1,25 @@
+{
+  "title": "Adding Fractions",
+  "description": "Build equations that add fractions together",
+  "universalFragments": ["+", "="],
+  "words": [
+    {
+      "word": "½+½=1",
+      "fragments": ["½", "+", "½", "=", "1"],
+      "orientation": "vertical",
+      "fact": "One half plus one half equals one whole — two halves make a complete whole!"
+    },
+    {
+      "word": "⅓+⅓=⅔",
+      "fragments": ["⅓", "+", "⅓", "=", "⅔"],
+      "orientation": "vertical",
+      "fact": "One third plus one third equals two thirds — adding the same fraction doubles it"
+    },
+    {
+      "word": "⅛+⅛=¼",
+      "fragments": ["⅛", "+", "⅛", "=", "¼"],
+      "orientation": "vertical",
+      "fact": "One eighth plus one eighth equals one quarter — two eighths simplify to one fourth"
+    }
+  ]
+}
