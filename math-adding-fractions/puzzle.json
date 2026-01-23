@@ -13,13 +13,13 @@
       "word": "⅓+⅓+⅔=1⅓",
       "fragments": ["⅓+⅓+⅔", "=1⅓"],
       "orientation": "vertical",
-      "fact": "One third plus one third equals two thirds — adding the same fraction doubles it"
+      "fact": "One third plus one third plus two thirds — one and one third"
     },
     {
       "word": "⅓+⅓+1=1.6667",
       "fragments": ["⅓+⅓+1", "=1.6667"],
       "orientation": "vertical",
-      "fact": "One third plus one third equals two thirds — adding the same fraction doubles it"
+      "fact": "One third plus one third plus one equals one and two thirds"
     },
     {
       "word": "⅓+⅓=⅔",
