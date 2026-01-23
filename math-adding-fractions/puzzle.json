@@ -6,43 +6,31 @@
     {
       "word": "½+½=1",
       "fragments": ["½+½", "=1"],
-      "orientation": "vertical",
+      "orientation": "horizontal",
       "fact": "One half plus one half equals one whole — two halves make a complete whole!"
     },
     {
       "word": "⅓+⅓+⅔=1⅓",
       "fragments": ["⅓+⅓+⅔", "=1⅓"],
-      "orientation": "vertical",
+      "orientation": "horizontal",
       "fact": "One third plus one third plus two thirds — one and one third"
     },
     {
       "word": "⅓+⅓+1=1.6667",
       "fragments": ["⅓+⅓+1", "=1.6667"],
-      "orientation": "vertical",
+      "orientation": "horizontal",
       "fact": "One third plus one third plus one equals one and two thirds"
     },
     {
       "word": "⅓+⅓=⅔",
       "fragments": ["⅓+⅓", "=⅔"],
-      "orientation": "vertical",
-      "fact": "One third plus one third equals two thirds — adding the same fraction doubles it"
-    },
-    {
-      "word": "⅓+⅓=⅔",
-      "fragments": ["⅓+⅓", "=⅔"],
-      "orientation": "vertical",
-      "fact": "One third plus one third equals two thirds — adding the same fraction doubles it"
-    },
-    {
-      "word": "⅓+⅓=⅔",
-      "fragments": ["⅓+⅓", "=⅔"],
-      "orientation": "vertical",
+      "orientation": "horizontal",
       "fact": "One third plus one third equals two thirds — adding the same fraction doubles it"
     },
     {
       "word": "⅛+⅛=¼",
       "fragments": ["⅛+⅛", "=¼"],
-      "orientation": "vertical",
+      "orientation": "horizontal",
       "fact": "One eighth plus one eighth equals one quarter — two eighths simplify to one fourth"
     }
   ]
