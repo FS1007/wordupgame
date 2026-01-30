@@ -1,0 +1,43 @@
+{
+  "title": "Fraction Operations",
+  "description": "Solve fraction addition and subtraction equations",
+  "universalFragments": ["+", "-", "="],
+  "words": [
+    {
+      "word": "¾-¼=½",
+      "fragments": ["¾-¼", "=½"],
+      "orientation": "horizontal",
+      "fact": "Three quarters minus one quarter equals one half — subtraction with fractions!"
+    },
+    {
+      "word": "⅔+⅓=1",
+      "fragments": ["⅔+⅓", "=1"],
+      "orientation": "horizontal",
+      "fact": "Two thirds plus one third equals one whole — complementary fractions!"
+    },
+    {
+      "word": "½+⅓=⅚",
+      "fragments": ["½+⅓", "=⅚"],
+      "orientation": "horizontal",
+      "fact": "One half plus one third equals five sixths — adding unlike denominators!"
+    },
+    {
+      "word": "⅝-⅜=¼",
+      "fragments": ["⅝-⅜", "=¼"],
+      "orientation": "horizontal",
+      "fact": "Five eighths minus three eighths equals one quarter — or two eighths!"
+    },
+    {
+      "word": "⅞-⅛=¾",
+      "fragments": ["⅞-⅛", "=¾"],
+      "orientation": "horizontal",
+      "fact": "Seven eighths minus one eighth equals three quarters — or six eighths simplified!"
+    },
+    {
+      "word": "½-⅓=⅙",
+      "fragments": ["½-⅓", "=⅙"],
+      "orientation": "horizontal",
+      "fact": "One half minus one third equals one sixth — subtracting unlike denominators!"
+    }
+  ]
+}
