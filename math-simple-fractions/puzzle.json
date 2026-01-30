@@ -1,0 +1,31 @@
+{
+  "title": "Simple Fractions",
+  "description": "Build simple fraction addition equations",
+  "universalFragments": ["+", "="],
+  "words": [
+    {
+      "word": "⅓+⅔=1",
+      "fragments": ["⅓+⅔", "=1"],
+      "orientation": "horizontal",
+      "fact": "One third plus two thirds equals one whole — they complete each other perfectly!"
+    },
+    {
+      "word": "¼+¼=½",
+      "fragments": ["¼+¼", "=½"],
+      "orientation": "horizontal",
+      "fact": "One quarter plus one quarter equals one half — two quarters make a half!"
+    },
+    {
+      "word": "½+¼=¾",
+      "fragments": ["½+¼", "=¾"],
+      "orientation": "horizontal",
+      "fact": "One half plus one quarter equals three quarters!"
+    },
+    {
+      "word": "⅛+⅛=¼",
+      "fragments": ["⅛+⅛", "=¼"],
+      "orientation": "horizontal",
+      "fact": "One eighth plus one eighth equals one quarter — two eighths simplify to one fourth!"
+    }
+  ]
+}
